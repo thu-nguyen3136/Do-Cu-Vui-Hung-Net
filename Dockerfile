@@ -19,6 +19,10 @@ RUN npm run build
 
 # Stage 4: Production runner (Nginx for static export)
 FROM nginx:alpine AS runner
+RUN apk add --no-cache tzdata && \
+    ln -snf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone
+ENV TZ=Asia/Ho_Chi_Minh
 # Remove default nginx static assets
 RUN rm -rf /usr/share/nginx/html/*
 
