@@ -93,8 +93,12 @@ jobs:
           cat docker-compose.prod.yml | eval "$SSH_CMD \"cat > $DEPLOY_PATH/docker-compose.yml\""
           cat logrotate.prod.conf | eval "$SSH_CMD \"cat > $DEPLOY_PATH/logrotate.conf\""
 
+          # Write .env file so Docker Compose resolves ${DEPLOY_PATH} correctly even under sudo
+          eval "$SSH_CMD \"echo 'DEPLOY_PATH=$DEPLOY_PATH' > $DEPLOY_PATH/.env\""
+
           # Register logrotate cron job (daily at 2am) if not already set
           eval "$SSH_CMD \"(crontab -l 2>/dev/null | grep -qF 'logrotate $DEPLOY_PATH' || (crontab -l 2>/dev/null; echo '0 2 * * * /usr/sbin/logrotate $DEPLOY_PATH/logrotate.conf --state $DEPLOY_PATH/logrotate.status') | crontab -)\""
 
           # Pull latest image and restart container
-          eval "$SSH_CMD \"cd $DEPLOY_PATH && sudo docker logout ghcr.io && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3003/tcp || true) && sudo docker ps -q --filter publish=3003 | xargs -r sudo docker rm -f && DEPLOY_PATH=$DEPLOY_PATH sudo docker compose up -d\""
+          eval "$SSH_CMD \"cd $DEPLOY_PATH && sudo docker logout ghcr.io && echo '$GH_PAT' | sudo docker login ghcr.io -u '$GH_USER' --password-stdin && sudo docker compose pull && (sudo fuser -k 3003/tcp || true) && sudo docker ps -q --filter publish=3003 | xargs -r sudo docker rm -f && sudo docker compose up -d\""
+
