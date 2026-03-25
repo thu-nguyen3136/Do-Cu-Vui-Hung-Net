@@ -71,13 +71,9 @@ jobs:
                 - "3003:3003"
               restart: unless-stopped
               volumes:
-<<<<<<< HEAD
                 - ${DEPLOY_PATH}/logs:/var/log/nginx
               environment:
                 - DEPLOY_PATH=${DEPLOY_PATH}
-=======
-                - /home/tgh2171/www/html/do-cu-vui-hung-net/logs:/var/log/nginx
->>>>>>> origin/main
           EOF
 
           # Generate logrotate config with actual DEPLOY_PATH substituted
