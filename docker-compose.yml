@@ -9,4 +9,4 @@ services:
       - "3003:3003"
     restart: unless-stopped
     volumes:
-      - ~/www/html/do-cu-vui-hung-net/logs:/var/log/nginx
+      - /home/tgh2171/www/html/do-cu-vui-hung-net/logs:/var/log/nginx
