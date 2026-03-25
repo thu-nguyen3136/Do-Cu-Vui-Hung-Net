@@ -6,7 +6,7 @@ export default function LienHe() {
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans pb-8">
       <Head>
         <title>Liên Hệ | Đồ Cũ Vui Hùng</title>
-        <meta name="description" content="Liên hệ Đồ Cũ Vui Hùng - Thu mua đồ cũ, thanh lý nhà hàng, đồ gỗ tại TP.HCM. Hotline 24/7: 0988.257.479" />
+        <meta name="description" content="Liên hệ Đồ Cũ Vui Hùng - Thu mua đồ cũ, thanh lý nhà hàng, đồ gỗ tại TP.HCM. Hotline 24/7: 0979.095.076" />
       </Head>
 
       {/* Hero Section (Nhỏ gọn hơn) */}
@@ -40,37 +40,37 @@ export default function LienHe() {
             <div className="relative z-10 flex flex-col gap-4 md:gap-5 flex-grow justify-center">
 
               {/* Điện Thoại */}
-              <a href="tel:0988257479" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
+              <a href="tel:0979095076" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
                 <div className="bg-[#880d11] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#880d11] opacity-50"></span>
                   <span className="text-lg md:text-xl relative z-10">📞</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Hotline Nhận Báo Giá</span>
-                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#880d11] transition-colors drop-shadow-md">0988.257.479</span>
+                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#880d11] transition-colors drop-shadow-md">0979.095.076</span>
                   <span className="text-gray-300 text-[12px] md:text-[13px] mt-0.5 font-medium italic">(Mr. Vui Hùng)</span>
                 </div>
               </a>
 
               {/* Zalo */}
-              <a href="https://zalo.me/0988257479" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#0068ff]/50 hover:bg-[#0068ff]/10 transition-all group/btn">
+              <a href="https://zalo.me/0979095076" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#0068ff]/50 hover:bg-[#0068ff]/10 transition-all group/btn">
                 <div className="bg-[#0068ff] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform shadow-[0_0_15px_rgba(0,104,255,0.4)]">
                   <span className="text-white font-black text-[12px] md:text-[14px]">Zalo</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Gửi Hình Ảnh Qua Zalo</span>
-                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#0068ff] transition-colors drop-shadow-md">0988.257.479</span>
+                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#0068ff] transition-colors drop-shadow-md">0979.095.076</span>
                 </div>
               </a>
 
               {/* Email */}
-              <a href="mailto:trinhvanviet1812@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
+              <a href="mailto:docuvuihung@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
                 <div className="bg-[#710a0d] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform">
                   <span className="text-lg md:text-xl">✉️</span>
                 </div>
                 <div className="flex flex-col items-start overflow-hidden">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Địa Chỉ Email</span>
-                  <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#880d11] transition-colors truncate max-w-full">trinhvanviet1812@gmail.com</span>
+                  <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#880d11] transition-colors truncate max-w-full">docuvuihung@gmail.com</span>
                 </div>
               </a>
 
@@ -91,7 +91,7 @@ export default function LienHe() {
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 1
                   </strong>
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">14 Lê Văn Khương, Xã Đông Thạnh, Huyện Hóc Môn, TP.HCM</span>
+                  <span className="text-gray-600 text-[13px] md:text-[14px]">305 Tân Sơn, P.15, Tân Bình, TP.HCM</span>
                 </div>
               </li>
 
@@ -101,7 +101,7 @@ export default function LienHe() {
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 2
                   </strong>
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">197 Dương Quảng Hàm, Phường 5, Quận Gò Vấp, TP.HCM</span>
+                  <span className="text-gray-600 text-[13px] md:text-[14px]">669 Kha Vạn Cân, Thủ Đức, TP.HCM</span>
                 </div>
               </li>
 
@@ -111,27 +111,7 @@ export default function LienHe() {
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 3
                   </strong>
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">288 Kha Vạn Cân, Hiệp Bình Chánh, Quận Thủ Đức, TP.HCM</span>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-3 md:gap-4 pb-4 md:pb-5 border-b border-gray-100 mb-4 md:mb-5 last:border-0 last:pb-0 last:mb-0">
-                <div className="text-gray-400 text-lg bg-gray-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">🏪</div>
-                <div className="leading-relaxed">
-                  <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
-                    Chi Nhánh 4
-                  </strong>
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">110 Lê Quang Định, Phường 14, Quận Bình Thạnh, TP.HCM</span>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-3 md:gap-4 pb-4 md:pb-5 border-b border-gray-100 mb-4 md:mb-5 last:border-0 last:pb-0 last:mb-0">
-                <div className="text-gray-400 text-lg bg-gray-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">🏪</div>
-                <div className="leading-relaxed">
-                  <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
-                    Chi Nhánh 5
-                  </strong>
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">218 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, TP.HCM</span>
+                  <span className="text-gray-600 text-[13px] md:text-[14px]">332a Huỳnh Tấn Phát, Q.7, TP.HCM</span>
                 </div>
               </li>
             </ul>
@@ -147,15 +127,14 @@ export default function LienHe() {
           </h3>
           <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden bg-gray-100 shadow-inner">
             <iframe
-              src="https://maps.google.com/maps?q=14+Lê+Văn+Khương,+Đông+Thạnh,+Hóc+Môn,+Hồ+Chí+Minh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps?q=305+Tân+Sơn,+Phường+15,+Tân+Bình,+TP.HCM&output=embed"
               width="100%"
-              height="100%"
+              height="400"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bản đồ đường đi đến Đồ Cũ Vui Hùng - Hóc Môn"
-              className="grayscale-[15%] contrast-110 transition-all duration-500 hover:grayscale-0 hover:contrast-100"
+              className="rounded-3xl shadow-lg border border-gray-200"
             ></iframe>
           </div>
         </div>
