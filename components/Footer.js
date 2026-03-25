@@ -35,7 +35,7 @@ export default function Footer() {
             </a>
 
             {/* Box Hotline */}
-            <a href="tel:0988257479" className="flex items-center gap-4 group">
+            <a href="tel:0979095076" className="flex items-center gap-4 group">
               <div className="bg-[#880d11] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform relative shadow-lg">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#880d11] opacity-50"></span>
                 <svg className="w-5 h-5 text-white relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">Hotline 24/7</p>
-                <span className="text-white font-black text-[18px] tracking-wider group-hover:text-[#ff3d44] transition-colors">0988.257.479</span>
+                <span className="text-white font-black text-[18px] tracking-wider group-hover:text-[#ff3d44] transition-colors">0979.095.076</span>
               </div>
             </a>
           </div>

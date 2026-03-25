@@ -1,143 +1,279 @@
 import Head from 'next/head';
-// 1. IMPORT COMPONENT IMAGE CỦA NEXT.JS
 import Image from 'next/image';
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
-export default function ThuMuaTuBepGoPage() {
+export default function ThuMuaDoGoCuPage() {
+  const hotline = "0979.095.076";
+
   return (
-    <div className="min-h-screen bg-white text-[#333333]">
+    <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
-        <title>Thu Mua Tủ Bếp Gỗ - Đồ Cũ Vui Hùng</title>
-        <meta name="description" content="Đồ Cũ Vui Hùng là đơn vị chuyên thu mua tủ bếp gỗ cũ các loại giá cao nhất tphcm và các tỉnh lân cận." />
+        {/* --- SEO META TAGS --- */}
+        <title>Thu Mua Đồ Gỗ Cũ Giá Cao TPHCM | Dịch Vụ Thanh Lý Uy Tín Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua đồ gỗ cũ, thanh lý nội thất gỗ gia đình, văn phòng, nhà hàng, đồ thờ cúng, gỗ mỹ nghệ với giá cao nhất thị trường TPHCM." />
+        <meta name="keywords" content="thu mua đồ gỗ cũ, thanh lý đồ gỗ, thu mua nội thất gỗ, thu mua salon gỗ, thu mua đồ thờ gỗ, đồ cũ vui hùng" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-go-cu" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Gỗ Cũ Giá Cao Trọn Gói Tại TPHCM - Vui Hùng" />
+        <meta property="og:description" content="Cần thanh lý đồ gỗ cũ? Vui Hùng thu mua mọi số lượng các loại gỗ tự nhiên, gỗ công nghiệp, nội thất, đồ thờ cúng với giá cao nhất. Miễn phí vận chuyển." />
+        <meta property="og:type" content="article" />
       </Head>
 
-      <main className="max-w-[1200px] mx-auto px-4 py-8">
-        <div className="flex flex-wrap -mx-4">
+      <main className="flex-grow pb-20">
 
-          {/* ========================================= */}
-          {/* CỘT NỘI DUNG CHÍNH (BÊN TRÁI - 9/12)      */}
-          {/* ========================================= */}
-          <div className="w-full md:w-3/4 px-4">
-
-            {/* Tiêu đề trang */}
-            <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Tủ Bếp Gỗ</h2>
-            </div>
-
-            <div className="prose max-w-none text-[16px] md:text-[18px] leading-relaxed">
-
-              <p className="mb-4 text-justify">
-                <strong>Thu mua các loại tủ bếp gỗ cũ đã qua sử dụng giá cao tại TP.HCM</strong>
-              </p>
-
-              <p className="mb-4 text-justify">
-                <strong>Đồ Cũ Vui Hùng </strong>là đơn vị chuyên thu mua tủ bếp gỗ cũ các loại giá cao nhất tphcm và các tỉnh lân cận.
-              </p>
-
-              <p className="mb-4 text-justify">
-                Hotline: <strong>0988.257.479 Để Được Báo Giá Tốt Nhất!!!</strong>
-              </p>
-
-              {/* ========================================= */}
-              {/* Ảnh 1 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center">
-                <div className="relative w-[1280px] max-w-full" style={{ aspectRatio: '1280 / 960' }}>
-                  <Image
-                    src="/thu-mua-tu-bep-hcm.jpg"
-                    alt="Thu mua tủ bếp gỗ tp hcm"
-                    fill
-                    sizes="(max-width: 1280px) 100vw, 1280px"
-                    className="object-cover mx-auto"
-                    priority // Bức ảnh đầu tiên phải được ưu tiên load
-                  />
-                </div>
-              </div>
-
-              <p className="mb-4 text-justify">
-                Chúng tôi nhận thu mua đồ gỗ của ở các địa điểm ở Sài gòn, TP.HCM như Quận 1, Quận 2, Quận 3, Quận 4, Quận 5, Quận 6, Quận 7, Quận 8, Quận 9, Quận 10, Quận 11, Quận 12, Quận Bình Thạnh, Quận Thủ Đức, Quận Bình Tân, Quận Tân Bình, Quận Phú Nhuận, Quận Gò Vấp và các địa điểm như Biên Hòa, Đồng Nai, Bình Dương, Thủ Dầu Một. Lợi ích mà bạn nhận được khi mua đồ gỗ cũ ở một địa chỉ uy tín, đáng tin cậy.
-              </p>
-
-              <p className="mb-4 text-justify">
-                Trên thị trường hiện nay có hàng trăm cửa hàng mua bán đồ gỗ cũ nhưng để chọn lựa ra một cửa hàng mua đồ gỗ cũ tốt nhất hiện nay thì chắc chắn nhiều người sẽ chọn cửa hàng đồ cũ của chúng tôi
-              </p>
-
-              <p className="mb-4 text-justify">
-                Cửa hàng đồ gỗ cũ của chúng tôi là một cửa hàng mua bán đồ gỗ cũ uy tín, được rất nhiều khách hàng tin tưởng và tìm đến. Không chỉ giới hạn ở một mặt hàng, tại đây bạn có thể tìm thấy rất nhiều mặt hàng khác nhau.
-              </p>
-
-              <p className="mb-4 text-justify">
-                Với đội ngũ nhân viên tư vấn, nhân viên kỹ thuật nhiệt tình, có trách nhiệm sẽ giúp bạn lựa chọn được một sản phẩm phù hợp nhất với mục đích sử dụng và yêu cầu của bạn.
-              </p>
-
-              {/* ========================================= */}
-              {/* Ảnh 2 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center">
-                <div className="relative w-[899px] max-w-full" style={{ aspectRatio: '899 / 1200' }}>
-                  <Image
-                    src="/thanh-ly-tu-bep.jpg"
-                    alt="Thu mua tủ bếp gỗ quận 12"
-                    fill
-                    sizes="(max-width: 899px) 100vw, 899px"
-                    className="object-cover mx-auto"
-                  />
-                </div>
-              </div>
-
-              <p className="mb-4 text-justify">Các sản phẩm đồ gỗ mà Đồ Cũ Vui Hùng nhận thu mua:</p>
-              <p className="mb-4 text-justify">Đồ gỗ cũ nội thất</p>
-              <p className="mb-4 text-justify">Mua cửa cũ</p>
-              <p className="mb-4 text-justify">Bàn ghế giường tủ, salon ván ngựa sập gụ, tủ chè</p>
-              <p className="mb-4 text-justify">Giường cũ</p>
-              <p className="mb-4 text-justify">Tủ đồ quần áo cũ</p>
-              <p className="mb-4 text-justify">Vật dụng trong gia đình bằng gỗ đồ cũ</p>
-              <p className="mb-4 text-justify">Bộ bàn ăn, bàn làm việc, tủ chưng bày đồ, tủ ly tủ thờ, kệ tivi</p>
-              <p className="mb-4 text-justify">Đồ gỗ mỹ nghệ</p>
-              <p className="mb-4 text-justify">Tượng gỗ các loại</p>
-              <p className="mb-4 text-justify">Tất cả các loại đồ xưa cổ, hoàng phi câu đối, trường kỷ, tủ chè tủ chùa, chạm trổ cẩn ốc, đồ đồng đồ gốm sứ</p>
-              <p className="mb-4 text-justify">Mua đồ gỗ huỳnh đàn (gỗ xưa), gỗ gián hương, gỗ gõ đỏ gỗ cẫm lai, gỗ căm xe,thao lao, bộ ván ngựa</p>
-              <p className="mb-4 text-justify">Bàn ghế làm việc, bàn ghế văn phòng, bàn ghế cafe, bàn ghế nhà hàng khách sạn, bàn ghế inox, mua do go cu</p>
-              <p className="mb-4 text-justify">Mua xác nhà cửa gỗ cũ, cửa phòng, cử đi, cửa 4 cánh, 2 cánh 1 cánh, chất liệu gỗ cẫm, gõ hương, thao lao</p>
-              <p className="mb-4 text-justify">Bàn ghế salon - bàn ăn - ván ngựa gỗ (ưu tiên gỗ nhóm 1: cẩm, gõ, nu).</p>
-
-              <p className="mb-4 text-center">&nbsp;</p>
-
-              {/* ========================================= */}
-              {/* Ảnh 3 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center">
-                <div className="relative w-[1280px] max-w-full" style={{ aspectRatio: '1280 / 975' }}>
-                  <Image
-                    src="/thanh-ly-tu-bep.jpg"
-                    alt="Thu mua tủ bếp gỗ giá cao uy tín"
-                    fill
-                    sizes="(max-width: 1280px) 100vw, 1280px"
-                    className="object-cover mx-auto"
-                  />
-                </div>
-              </div>
-
-              {/* Footer Thông Tin Liên Hệ */}
-              <div className="mb-6 mt-8">
-                <h2 className="text-[20px] md:text-[24px] font-bold mb-4 uppercase"><em><strong>THU MUA Đồ Cũ Vui Hùng</strong></em></h2>
-                <ul className="list-none space-y-3 pl-0 text-[20px] md:text-[24px]">
-                  <li><em><strong> Địa Chỉ 1: 14 Lê Văn Khương, Xã Đông Thạnh, Huyện Hóc Môn, TP.HCM</strong></em></li>
-                  <li><em><strong> Email: trinhvanviet1812@gmail.com</strong></em></li>
-                  <li><em><strong> Hotline: 0988.257.479 - Vui Hùng</strong></em></li>
-                </ul>
-              </div>
-
-            </div>
+        {/* ================= BREADCRUMB ================= */}
+        <div className="bg-white border-b border-gray-100 py-4">
+          <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">Thu Mua Đồ Gỗ Cũ</span>
           </div>
-
-          {/* ========================================= */}
-          {/* CỘT SIDEBAR (BÊN PHẢI - 3/12)             */}
-          {/* ========================================= */}
-          <Sidebar />
         </div>
+
+        {/* ================= MAIN LAYOUT (GRID Layout 4 Cột An Toàn) ================= */}
+        <section className="max-w-[1200px] mx-auto px-4 md:px-6 py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-10 items-start">
+
+            {/* --- CỘT TRÁI: NỘI DUNG CHÍNH (Chiếm 3/4) --- */}
+            <article className="lg:col-span-3 bg-white p-6 md:p-10 rounded-[32px] shadow-sm border border-gray-100 overflow-hidden">
+
+              <h1 className="text-3xl md:text-5xl font-black text-[#111827] uppercase leading-tight tracking-tight mb-4">
+                Thu Mua Đồ Gỗ Cũ
+              </h1>
+
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+                Thu Mua Đồ Gỗ Cũ Giá Cao – Dịch Vụ Uy Tín, Chuyên Nghiệp Tại Vui Hùng
+              </h2>
+
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
+                <p>
+                  Bạn đang sở hữu những món <strong className="text-[#111827]">đồ gỗ cũ</strong> không còn phù hợp với không gian sống? Bạn cần thanh lý nội thất gỗ để chuyển nhà, sửa chữa, hay thay đổi mô hình kinh doanh? Việc tìm kiếm một đơn vị thu mua đồ gỗ cũ uy tín, giá cao và xử lý nhanh gọn luôn là bài toán khó.
+                </p>
+                <p>
+                  Thấu hiểu điều đó, <strong className="text-[#880d11]">Vui Hùng</strong> tự hào là địa chỉ tin cậy hàng đầu, chuyên thu mua tất cả các loại đồ gỗ cũ với quy trình chuyên nghiệp, minh bạch và mức giá cạnh tranh nhất thị trường.
+                </p>
+                <p className="border-l-4 border-gray-200 pl-6 italic font-medium mt-4 bg-gray-50 py-3 rounded-r-xl">
+                  Không chỉ đơn thuần là thu mua, Vui Hùng mang đến giải pháp thanh lý nội thất toàn diện, giúp khách hàng giải phóng mặt bằng nhanh chóng, thu hồi vốn tối đa mà không phải lo lắng về việc vận chuyển hay tìm kiếm người mua lẻ.
+                </p>
+              </div>
+
+              {/* --- ẢNH 1: Tổng quan đồ gỗ --- */}
+              <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thu-mua-do-go.jpg"
+                  alt="Dịch vụ thu mua đồ gỗ cũ giá cao trọn gói Đồ Cũ Vui Hùng"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=2000&auto=format&fit=crop"; }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+                  Vui Hùng thu mua mọi mặt hàng đồ gỗ tự nhiên, gỗ công nghiệp giá cao
+                </div>
+              </div>
+
+              {/* SECTION: Đa dạng các loại đồ gỗ */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Thu Mua Đa Dạng Các Loại Đồ Gỗ Cũ
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Chúng tôi nhận thu mua tất cả các dòng sản phẩm từ gỗ với nhiều chất liệu, kiểu dáng và mục đích sử dụng khác nhau:
+                </p>
+
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-5 rounded-2xl mb-8 flex items-start gap-4">
+                  <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                  <p className="text-gray-800 leading-relaxed font-medium">
+                    <strong className="text-[#880d11]">Về chất liệu gỗ:</strong> Vui Hùng thu mua cả gỗ tự nhiên cao cấp (Gụ, Hương, Sồi, Óc Chó, Căm Xe, Trắc, Mun, Mít, Xoan, Dổi...) lẫn các loại gỗ công nghiệp (MDF, MFC, HDF, Plywood, ván ép) với mức giá phù hợp theo từng loại.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    {
+                      title: "Nội Thất Gia Đình",
+                      desc: "Phòng khách (salon gỗ 4-8 ghế, sofa gỗ, kệ tivi, tủ rượu, bình phong). Phòng ngủ (giường đơn/đôi/tầng, tủ quần áo, bàn trang điểm). Phòng ăn (bộ bàn ăn, tủ bếp, kệ bếp). Phòng làm việc (bàn, giá sách)."
+                    },
+                    {
+                      title: "Đồ Thờ Cúng",
+                      desc: "Thu mua với sự trân trọng đặc biệt: tủ thờ treo tường, tủ thờ đứng, bàn thờ gia tiên, sập thờ, khám thờ, long ngai bài vị, bát hương gỗ và các vật phẩm thờ tự khác."
+                    },
+                    {
+                      title: "Văn Phòng & Công Ty",
+                      desc: "Bàn làm việc giám đốc, bàn nhân viên, bàn họp, ghế xoay, ghế họp, tủ tài liệu, kệ sách và vách ngăn gỗ."
+                    },
+                    {
+                      title: "Kinh Doanh & Dịch Vụ",
+                      desc: "Bộ bàn ghế cafe đôi, bàn ghế quán ăn, ghế bar, bàn tròn, bàn dài, quầy bar gỗ và kệ trưng bày cho nhà hàng, khách sạn."
+                    },
+                    {
+                      title: "Đồ Gỗ Mỹ Nghệ & Cổ Vật",
+                      desc: "Tượng gỗ, tranh gỗ, bình phong, sập gụ, tủ chè, bàn trà cổ, ghế thư giãn cổ điển – những sản phẩm có giá trị nghệ thuật và lịch sử."
+                    }
+                  ].map((item, i) => (
+                    <div key={i} className="flex flex-col p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#880d11]/30 hover:bg-white transition-all duration-300 group">
+                      <h4 className="font-black text-[#111827] text-[17px] uppercase mb-3 group-hover:text-[#880d11] transition-colors flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#880d11]"></span>
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 2: Phân loại đồ gỗ --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thu-mua-do-go-cu-tan-nha.png"
+                  alt="Thu mua salon gỗ, bàn ghế phòng khách cũ giá cao"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+
+                />
+              </div>
+
+              {/* SECTION: Quy Trình Thu Mua */}
+              <section className="mb-12 bg-white border-2 border-gray-100 p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-sm">
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thu Mua Chuyên Nghiệp, Nhanh Gọn
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Vui Hùng xây dựng quy trình làm việc bài bản, đảm bảo quyền lợi tối đa và sự hài lòng tuyệt đối cho khách hàng:
+                </p>
+
+                <div className="flex flex-col gap-6 relative z-10">
+                  {[
+                    { step: "1", title: "Tiếp nhận thông tin", desc: "Khách hàng liên hệ qua hotline, Zalo cung cấp hình ảnh, số lượng, chất liệu. Chúng tôi xử lý ngay lập tức." },
+                    { step: "2", title: "Khảo sát & Định giá", desc: "Nhân viên chuyên môn cao sẽ đến kiểm tra thực tế. Thời gian khảo sát chỉ từ 30-60 phút nội thành." },
+                    { step: "3", title: "Báo giá cạnh tranh", desc: "Đưa ra mức giá thu mua hợp lý, cao nhất thị trường. Cam kết không ép giá, không qua trung gian." },
+                    { step: "4", title: "Thỏa thuận & Thanh toán", desc: "Sau khi thống nhất, thanh toán 100% ngay tại thời điểm thỏa thuận bằng tiền mặt hoặc chuyển khoản." },
+                    { step: "5", title: "Vận chuyển miễn phí", desc: "Đội ngũ lành nghề cùng xe chuyên dụng sẽ tháo dỡ, bốc xếp và vận chuyển miễn phí, hoàn thành trong ngày." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-5 group items-start md:items-center">
+                      <div className="mt-1 md:mt-0 w-12 h-12 bg-[#880d11] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(136,13,17,0.4)] transition-all duration-300">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+                        <p className="text-[15px] text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* SECTION: Lý Do Chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Tại Sao Nên Chọn Vui Hùng Để Thu Mua Đồ Gỗ Cũ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Trên thị trường có nhiều đơn vị thu mua đồ cũ, nhưng <strong className="text-[#880d11]">Vui Hùng</strong> là cái tên được hàng ngàn khách hàng cá nhân, công ty, nhà hàng, cơ sở thờ tự tin tưởng nhờ những ưu điểm vượt trội:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {[
+                    { title: "Giá thu mua cao nhất", desc: "Kiến thức chuyên sâu về gỗ giúp Vui Hùng luôn định giá và trả mức giá cạnh tranh nhất trên thị trường." },
+                    { title: "Thu mua mọi số lượng", desc: "Từ vài món đồ gia đình đến số lượng lớn của văn phòng, nhà hàng, khách sạn hay xưởng sản xuất." },
+                    { title: "Năng lực thực tế lớn", desc: "Sở hữu đội ngũ nhân công đông đảo, hệ thống xe tải đa dạng từ 1.25 tấn đến 8 tấn, kho bãi rộng khắp." },
+                    { title: "Uy tín và minh bạch", desc: "Mọi giao dịch đều rõ ràng, làm việc chuyên nghiệp, không phát sinh khoản phí ngầm nào." },
+                    { title: "Thời gian xử lý siêu tốc", desc: "Khảo sát, báo giá, thanh lý và vận chuyển hoàn tất nhanh gọn, thường chỉ trong vòng 24 giờ." }
+                  ].map((item, i) => (
+                    <div key={i} className="bg-gray-50 p-5 rounded-2xl group hover:bg-[#111827] transition-colors duration-300 border border-gray-100">
+                      <h4 className="text-[#111827] text-[16px] font-black uppercase mb-2 group-hover:text-white transition-colors flex items-center gap-2">
+                        <svg className="w-5 h-5 text-[#880d11] group-hover:text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 text-[14px] leading-relaxed group-hover:text-gray-300 transition-colors pl-7">
+                        {item.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 4: Liên hệ báo giá đồ gỗ --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thu-mua-do-go-cu-uy-tin.png"
+                  alt="Liên hệ Đồ Cũ Vui Hùng thanh lý đồ gỗ cũ giá cao"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+
+                />
+              </div>
+
+              {/* SECTION: Các Trường Hợp Cần Thu Mua */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Các Trường Hợp Khách Hàng Cần Thanh Lý
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Dịch vụ của Vui Hùng phù hợp với nhiều nhu cầu thực tế khác nhau của khách hàng:
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {[
+                    { role: "Gia đình", use: "Chuyển nhà, sửa chữa, nâng cấp nội thất mới, hoặc thừa kế tài sản không dùng đến." },
+                    { role: "Văn phòng & Công ty", use: "Chuyển văn phòng, thanh lý tài sản cũ, thay đổi nội thất, hay giải thể doanh nghiệp." },
+                    { role: "Nhà hàng, Khách sạn", use: "Đổi mới không gian, thay đổi mô hình, hết hợp đồng mặt bằng, hoặc cải tạo cơ sở." },
+                    { role: "Trường học, Giáo dục", use: "Nâng cấp cơ sở vật chất, thay mới bàn ghế, tủ, kệ cũ phục vụ giảng dạy." },
+                    { role: "Cơ sở thờ tự", use: "Chùa, nhà thờ họ, đình đền có nhu cầu thay mới đồ thờ, Vui Hùng thu mua với sự trân trọng." },
+                    { role: "Xưởng sản xuất", use: "Thanh lý hàng tồn kho, sản phẩm lỗi, phế liệu gỗ với quy trình nhanh gọn giá cao." }
+                  ].map((item, idx) => (
+                    <div key={idx} className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm hover:border-[#880d11]/40 transition-colors">
+                      <strong className="text-[#880d11] block mb-2 uppercase text-[15px]">{item.role}</strong>
+                      <p className="text-gray-600 text-[14px] leading-relaxed">{item.use}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* Nút Gọi Ngay cuối bài */}
+              <div className="mt-16 text-center border-t border-gray-100 pt-12">
+                <p className="text-xl font-bold text-[#111827] mb-6">Bạn cần thanh lý đồ gỗ cũ? Kết nối ngay với Vui Hùng!</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#880d11] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
+                    <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
+                    {hotline}
+                  </a>
+                  <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#880d11] hover:text-[#880d11] transition-all w-full sm:w-auto justify-center">
+                    Chat Zalo Gửi Hình
+                  </a>
+                </div>
+              </div>
+
+            </article>
+
+            {/* --- CỘT PHẢI: SIDEBAR (Chiếm 1/4 trên Desktop) --- */}
+            <aside className="lg:col-span-1 w-full min-w-0 h-fit sticky top-[100px]">
+              <Sidebar />
+            </aside>
+
+          </div>
+        </section>
+
       </main>
+
+      {/* FOOTER CỐ ĐỊNH (Floating Call Button cho Mobile) - Chỉ dùng trên Mobile */}
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50 lg:hidden">
+        <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+          <span className="text-white font-bold text-xs">Zalo</span>
+        </a>
+        <a href={`tel:${hotline}`} className="w-14 h-14 bg-[#880d11] rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform">
+          <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        </a>
+      </div>
     </div>
   );
 }

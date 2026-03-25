@@ -2,6 +2,29 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
+function Counter({ end, duration = 1500 }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = end / (duration / 16);
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(timer);
+  }, [end, duration]);
+
+  return <span>{count.toLocaleString()}</span>;
+}
+
 export default function Home() {
   const [currentReviewSlide, setCurrentReviewSlide] = useState(0);
   const [reviewsPerSlide, setReviewsPerSlide] = useState(3);
@@ -15,14 +38,14 @@ export default function Home() {
       description: 'Chuyên thu mua các loại đồ cũ với giá cao, tháo dỡ tận nơi chuyên nghiệp.',
       services: [
         { id: 1, title: 'Thu Mua Tủ Đông Cũ', image: '/thu-mua-tu-dong-tu-mat.jpg', link: '/thu-mua-tu-dong-cu' },
-        { id: 2, title: 'Thu Mua Tủ Mát Cũ', image: '/thu-mua-cua-nhom-xingfa.jpg', link: '/thu-mua-tu-mat-cu' },
+        { id: 2, title: 'Thu Mua Tủ Mát Cũ', image: '/thu-mua-tu-mat.jpg', link: '/thu-mua-tu-mat-cu' },
         { id: 3, title: 'Thu Mua Đồ Inox Cũ', image: '/thu-mua-do-inox.jpg', link: '/thu-mua-do-inox-cu' },
-        { id: 4, title: 'Thu Mua Đồ Cũ Giá Cao Tại TPHCM', image: '/thu-mua-cong-nhom-duc.jpg', link: '/thu-mua-do-cu-gia-cao-tai-tphcm' },
+        { id: 4, title: 'Thu Mua Đồ Cũ Giá Cao Tại TPHCM', image: '/thu-mua-do-cu-gia-cao.jpg', link: '/thu-mua-do-cu-gia-cao-tai-tphcm' },
         { id: 5, title: 'Thanh Lý Nhà Hàng', image: '/thanh-ly-nha-hang.jpg', link: '/thanh-ly-nha-hang' },
         { id: 6, title: 'Thanh Lý Quán Ăn', image: '/thanh-ly-quan-an.jpg', link: '/thanh-ly-quan-an' },
         { id: 7, title: 'Thanh Lý Quán Nhậu', image: '/thanh-ly-quan-nhau.jpg', link: '/thanh-ly-quan-nhau' },
-        { id: 8, title: 'Thanh Lý Quán Cafe', image: '/thu-mua-cua-sat-cu.jpg', link: '/thanh-ly-quan-ca-phe' },
-        { id: 9, title: 'Thanh Lý Nhà Nghỉ, Khách Sạn', image: '/thu-mua-cua-sat-cu.jpg', link: '/thanh-ly-nha-nghi-khach-san' },
+        { id: 8, title: 'Thanh Lý Quán Cafe', image: '/thu-mua-quan-cafe.jpg', link: '/thanh-ly-quan-ca-phe' },
+        { id: 9, title: 'Thanh Lý Nhà Nghỉ, Khách Sạn', image: '/thu-mua-khach-san-nha-nghi.jpg', link: '/thanh-ly-nha-nghi-khach-san' },
       ]
     },
     {
@@ -31,9 +54,9 @@ export default function Home() {
       highlightTitle: 'ĐỒ GỖ CŨ', // Phần màu vàng #710a0d
       description: 'Nhận thu mua đồ gỗ cũ, tủ thờ cũ, thu mua bàn ghế gỗ cũ, đồ gỗ cũ với giá cao.',
       services: [
-        { id: 1, title: 'Thu Mua Tủ Thờ Gỗ Cũ', image: '/thu-mua-thiet-bị-ve-sinh-cu.jpg', link: '/thu-mua-tu-tho-go-cu' },
+        { id: 1, title: 'Thu Mua Tủ Thờ Gỗ Cũ', image: '/thu-mua-tu-tho-go.jpg', link: '/thu-mua-tu-tho-go-cu' },
         { id: 2, title: 'Thu Mua Bàn Ghế Gỗ Cũ', image: '/thu-mua-ban-ghe-go.jpg', link: '/thu-mua-ban-ghe-go-cu' },
-        { id: 3, title: 'Thu Mua Đồ Gỗ Cũ', image: '/thu-mua-xac-nha-kho-xuong.jpg', link: '/thu-mua-do-go-cu' },
+        { id: 3, title: 'Thu Mua Đồ Gỗ Cũ', image: '/thu-mua-do-go.jpg', link: '/thu-mua-do-go-cu' },
       ]
     }
   ];
@@ -207,10 +230,166 @@ export default function Home() {
 
       <main className="flex-grow">
 
+        {/* PHẦN THỐNG KÊ */}
+        <section className="bg-gradient-to-r from-[#111827] to-[#1f2937] py-10 md:py-14 text-white">
+          <div className="max-w-[1200px] mx-auto px-6">
+
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-4xl font-black uppercase">
+                KẾT QUẢ THỰC TẾ <span className="text-[#e08a0d]">Những Con Số Biết Nói</span>
+              </h2>
+              <p className="text-gray-400 text-sm mt-2">
+                Dữ liệu cập nhật 2026
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+              <div className="bg-white/5 rounded-2xl p-6 hover:scale-105 transition">
+                <div className="text-3xl font-black text-[#e08a0d] mb-2">
+                  <Counter end={5000} />+
+                </div>
+                <p className="text-sm text-gray-300">Khách hàng</p>
+              </div>
+
+              <div className="bg-white/5 rounded-2xl p-6 hover:scale-105 transition">
+                <div className="text-3xl font-black text-[#e08a0d] mb-2">
+                  <Counter end={10} />+
+                </div>
+                <p className="text-sm text-gray-300">Năm kinh nghiệm</p>
+              </div>
+
+              <div className="bg-white/5 rounded-2xl p-6 hover:scale-105 transition">
+                <div className="text-3xl font-black text-[#e08a0d] mb-2">
+                  <Counter end={10000} />+
+                </div>
+                <p className="text-sm text-gray-300">Đơn hàng</p>
+              </div>
+
+              <div className="bg-white/5 rounded-2xl p-6 hover:scale-105 transition">
+                <div className="text-3xl font-black text-[#e08a0d] mb-2">
+                  <Counter end={30} /> phút
+                </div>
+                <p className="text-sm text-gray-300">Có mặt</p>
+              </div>
+
+            </div>
+
+            <div className="text-center mt-10">
+              <a
+                href="tel:0979095076"
+                className="inline-block bg-[#e08a0d] text-white px-8 py-4 rounded-xl font-black text-lg hover:bg-[#bc700a] transition"
+              >
+                📞 GỌI NGAY: 0979 095 076
+              </a>
+
+              <p className="text-red-400 font-semibold mt-3 text-sm">
+                ⚡ Báo giá trong 5 phút - Miễn phí tận nơi
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* VÌ SAO CHỌN VUI HÙNG */}
+        <section className="relative py-20 md:py-28 bg-[#0f0f10] text-white overflow-hidden">
+
+          {/* Glow */}
+          <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#7a0c0c]/30 blur-[150px] rounded-full"></div>
+
+          <div className="max-w-[1100px] mx-auto px-6 relative z-10">
+
+            {/* TITLE */}
+            <div className="text-center mb-20">
+              <h2 className="text-3xl md:text-5xl font-black">
+                Vì sao khách hàng chọn
+                <span className="text-[#7a0c0c]"> Vui Hùng?</span>
+              </h2>
+              <p className="text-gray-400 mt-4">
+                Không chỉ là thu mua – chúng tôi mang lại giá trị thật
+              </p>
+            </div>
+
+            {/* TIMELINE */}
+            <div className="relative">
+
+              {/* LINE GIỮA */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#7a0c0c] to-transparent"></div>
+
+              {[
+                {
+                  title: "Giá cao hơn thị trường",
+                  desc: "Cam kết thu mua cao hơn 20-30%, không ép giá, thanh toán ngay.",
+                  icon: "💰"
+                },
+                {
+                  title: "Có mặt chỉ sau 30 phút",
+                  desc: "Đội ngũ di chuyển nhanh, khảo sát và chốt giá ngay.",
+                  icon: "⚡"
+                },
+                {
+                  title: "Trọn gói từ A-Z",
+                  desc: "Miễn phí tháo dỡ, vận chuyển, dọn dẹp.",
+                  icon: "🚛"
+                },
+                {
+                  title: "Uy tín lâu năm",
+                  desc: "Hơn 10.000 khách hàng tin tưởng, hoạt động 24/7.",
+                  icon: "🏆"
+                }
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className={`relative flex flex-col md:flex-row items-center md:items-start mb-14 ${i % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                    }`}
+                >
+
+                  {/* BLOCK */}
+                  <div className="w-full md:w-[48%]">
+
+                    <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 hover:border-[#7a0c0c]/40 hover:bg-white/10 transition-all group">
+
+                      <div className="flex items-center gap-4 mb-3">
+                        <div className="w-12 h-12 bg-[#7a0c0c] rounded-xl flex items-center justify-center text-xl shadow-lg">
+                          {item.icon}
+                        </div>
+
+                        <h3 className="text-xl font-black group-hover:text-[#ff4d4f] transition">
+                          {item.title}
+                        </h3>
+                      </div>
+
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        {item.desc}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              ))}
+
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-16">
+              <a
+                href="tel:0988257479"
+                className="inline-flex items-center gap-4 bg-[#7a0c0c] hover:bg-[#5c0909] px-10 py-5 rounded-2xl font-black text-lg shadow-xl transition hover:scale-105"
+              >
+                📞 GỌI NGAY: 0988 257 479
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+
 
 
         {/* --- PHẦN GIỚI THIỆU: THIẾT KẾ ĐẢO CHIỀU & HIỆN ĐẠI --- */}
-        <section id="gioi-thieu" className="py-16 md:py-24 bg-white overflow-hidden">
+        < section id="gioi-thieu" className="py-16 md:py-24 bg-white overflow-hidden" >
           <div className="max-w-[1400px] mx-auto px-4 md:px-10">
             <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
 
@@ -301,7 +480,7 @@ export default function Home() {
                   {/* Badge kinh nghiệm - Di chuyển ra góc ngoài một chút để không che hình */}
                   <div className="absolute -bottom-4 -right-2 md:right-0 bg-white p-4 md:p-6 rounded-3xl shadow-xl border border-gray-100 hidden sm:block">
                     <div className="flex items-center gap-3">
-                      <span className="text-4xl font-black text-brand-600">15+</span>
+                      <span className="text-4xl font-black text-brand-600">10+</span>
                       <div className="h-8 w-[2px] bg-gray-200"></div>
                       <p className="text-[10px] font-bold text-gray-500 uppercase tracking-tighter leading-tight">
                         Năm uy tín<br />thị trường
@@ -313,179 +492,76 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section >
 
-        {/* SECTION: TẠI SAO CHỌN ĐỒ CŨ VUI HÙNG */}
-        <section className="relative py-12 md:py-20 bg-white overflow-hidden">
-          {/* Trang trí nền nhẹ nhàng */}
-          <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-50 to-transparent"></div>
 
-          <div className="max-w-[1400px] mx-auto px-4 md:px-10 relative z-10">
-            {/* Tiêu đề chính */}
-            <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-tight mb-4">
-                Vì sao khách hàng chọn <span className="text-brand-600">Vui Hùng?</span>
-              </h2>
-              <p className="text-gray-500 text-base md:text-xl max-w-2xl mx-auto font-medium">
-                Đơn vị thu mua đồ cũ uy tín hàng đầu TPHCM với quy trình chuyên nghiệp và tận tâm.
-              </p>
-              <div className="mt-4 flex justify-center gap-1">
-                <span className="w-12 h-1.5 bg-brand-600 rounded-full"></span>
-                <span className="w-3 h-1.5 bg-brand-200 rounded-full"></span>
-              </div>
-            </div>
 
-            {/* Grid nội dung - Thiết kế dạng Card hiện đại */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-              {/* Lợi ích 1 */}
-              <div className="group bg-gray-50 p-8 rounded-[32px] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
-                <div className="w-14 h-14 bg-brand-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:rotate-6 transition-transform">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-black text-gray-900 mb-3 uppercase tracking-wide">Giá Cao Nhất</h3>
-                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  Cam kết định giá đúng giá trị, thu mua cao hơn thị trường 20-30%. Không ép giá, thanh toán tiền mặt một lần.
-                </p>
-              </div>
 
-              {/* Lợi ích 2 */}
-              <div className="group bg-gray-50 p-8 rounded-[32px] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
-                <div className="w-14 h-14 bg-brand-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:rotate-6 transition-transform">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-black text-gray-900 mb-3 uppercase tracking-wide">Nhanh Chóng</h3>
-                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  Có mặt sau 30 phút gọi điện. Khảo sát tận nơi, báo giá tức thì. Quy trình làm việc thần tốc, tiết kiệm thời gian.
-                </p>
-              </div>
 
-              {/* Lợi ích 3 */}
-              <div className="group bg-gray-50 p-8 rounded-[32px] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
-                <div className="w-14 h-14 bg-brand-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:rotate-6 transition-transform">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-black text-gray-900 mb-3 uppercase tracking-wide">Trọn Gói A-Z</h3>
-                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  Miễn phí tháo dỡ, bốc xếp và vận chuyển. Đội ngũ nhân viên lành nghề, dọn dẹp mặt bằng sạch sẽ sau khi mua.
-                </p>
-              </div>
-
-              {/* Lợi ích 4 */}
-              <div className="group bg-gray-50 p-8 rounded-[32px] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-2xl transition-all duration-500">
-                <div className="w-14 h-14 bg-brand-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:rotate-6 transition-transform">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-black text-gray-900 mb-3 uppercase tracking-wide">Uy Tín 10 Năm</h3>
-                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  Hơn 10.000 khách hàng đã tin tưởng. Phục vụ 24/7 kể cả ngày lễ. Làm việc minh bạch, trung thực, tận tâm.
-                </p>
-              </div>
-
-            </div>
-
-            {/* Nút Call to Action mới */}
-            <div className="mt-16 text-center">
-              <a href="tel:0988257479" className="group inline-flex items-center gap-4 bg-brand-600 text-white px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-lg hover:bg-brand-700 transition-all shadow-[0_15px_30px_rgba(136,13,17,0.3)]">
-                <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
-                Kết nối ngay với Vui Hùng
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* PHẦN THỐNG KÊ CÔNG TY */}
-        <section className="-mt-6 pt-6 pb-12 bg-white relative z-10 border-b border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.02)]">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 divide-y md:divide-y-0 md:divide-x divide-gray-200">
-              <div className="text-center py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-black text-[#880d11] mb-2">15<span className="text-[#710a0d]">+</span></div>
-                <div className="text-gray-600 font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Năm Kinh Nghiệm</div>
-              </div>
-              <div className="text-center py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-black text-[#880d11] mb-2">5000<span className="text-[#710a0d]">+</span></div>
-                <div className="text-gray-600 font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Khách Hàng Hài Lòng</div>
-              </div>
-              <div className="text-center py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-black text-[#880d11] mb-2">5</div>
-                <div className="text-gray-600 font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Chi Nhánh Tại HCM</div>
-              </div>
-              <div className="text-center py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-black text-[#880d11] mb-2">24<span className="text-[#710a0d]">/7</span></div>
-                <div className="text-gray-600 font-bold text-[14px] md:text-[15px] uppercase tracking-wider">Hỗ Trợ Tận Nơi</div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* TÁCH CÁC SECTION DỊCH VỤ DỰA TRÊN THIẾT KẾ MỚI */}
-        {serviceCategories.map((category, idx) => (
-          <section
-            key={category.id}
-            // border-gray-50/50 tạo đường kẻ cực mảnh, gần như hòa vào nền
-            className={`mt-0 mb-0 py-2 md:py-4 border-t border-gray-50/50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
-          >
-            <div className="max-w-[1400px] mx-auto px-4 md:px-10">
+        {
+          serviceCategories.map((category, idx) => (
+            <section
+              key={category.id}
+              // border-gray-50/50 tạo đường kẻ cực mảnh, gần như hòa vào nền
+              className={`mt-0 mb-0 py-2 md:py-4 border-t border-gray-50/50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+            >
+              <div className="max-w-[1400px] mx-auto px-4 md:px-10">
 
-              {/* TIÊU ĐỀ 2 MÀU IN HOA - ĐÃ ÉP SÁT KHOẢNG CÁCH */}
-              <div className="text-center mb-2 md:mb-4">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-[#111827] uppercase tracking-tight mb-1 md:mb-2">
-                  {category.mainTitle} <span className="text-[#bc700a]">{category.highlightTitle}</span>
-                </h2>
-                <p className="text-gray-500 text-[13px] md:text-base font-medium max-w-2xl mx-auto px-2 leading-tight italic">
-                  {category.description}
-                </p>
-                <div className="w-10 md:w-16 h-1 bg-gradient-to-r from-[#bc700a] to-[#e08a0d] mx-auto mt-2 md:mt-3 rounded-full"></div>
-              </div>
+                {/* TIÊU ĐỀ 2 MÀU IN HOA - ĐÃ ÉP SÁT KHOẢNG CÁCH */}
+                <div className="text-center mb-2 md:mb-4">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-[#111827] uppercase tracking-tight mb-1 md:mb-2">
+                    {category.mainTitle} <span className="text-[#bc700a]">{category.highlightTitle}</span>
+                  </h2>
+                  <p className="text-gray-500 text-[13px] md:text-base font-medium max-w-2xl mx-auto px-2 leading-tight italic">
+                    {category.description}
+                  </p>
+                  <div className="w-10 md:w-16 h-1 bg-gradient-to-r from-[#bc700a] to-[#e08a0d] mx-auto mt-2 md:mt-3 rounded-full"></div>
+                </div>
 
-              {/* GRID DỊCH VỤ - HIỂN THỊ 1 CỘT TRÊN MOBILE */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
-                {category.services.map((srv) => (
-                  <Link
-                    key={srv.id}
-                    href={srv.link}
-                    // border-gray-50 giúp viền thẻ dịch vụ rất nhẹ nhàng, không bị thô
-                    className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-1"
-                  >
+                {/* GRID DỊCH VỤ - HIỂN THỊ 1 CỘT TRÊN MOBILE */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+                  {category.services.map((srv) => (
+                    <Link
+                      key={srv.id}
+                      href={srv.link}
+                      // border-gray-50 giúp viền thẻ dịch vụ rất nhẹ nhàng, không bị thô
+                      className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 hover:-translate-y-1"
+                    >
 
-                    {/* PHẦN ẢNH */}
-                    <div className="relative h-48 md:h-60 lg:h-64 overflow-hidden">
-                      <img
-                        src={srv.image}
-                        alt={srv.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }}
-                      />
-                    </div>
-
-                    {/* NỘI DUNG THẺ DỊCH VỤ */}
-                    <div className="py-2 px-3 flex flex-col flex-grow text-center items-center">
-
-                      {/* Tiêu đề: Xám đen, in đậm, tăng padding để thoáng chữ */}
-                      <h3 className="font-black text-[#111827] group-hover:text-[#e08a0d] text-[15px] md:text-[18px] py-1 md:py-2 mb-1 transition-colors line-clamp-2 leading-tight min-h-[40px] md:min-h-[50px] flex items-center">
-                        {srv.title}
-                      </h3>
-
-                      {/* Nút bấm: Vàng cam chủ đạo, Hover xám đen */}
-                      <div className="inline-block w-full bg-[#e08a0d] group-hover:bg-[#111827] text-white font-black py-2 px-6 rounded-xl text-[11px] md:text-[13px] uppercase tracking-widest transition-all shadow-md group-hover:shadow-lg">
-                        XEM CHI TIẾT
+                      {/* PHẦN ẢNH */}
+                      <div className="relative h-48 md:h-60 lg:h-64 overflow-hidden">
+                        <img
+                          src={srv.image}
+                          alt={srv.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }}
+                        />
                       </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
 
-            </div>
-          </section>
-        ))}
+                      {/* NỘI DUNG THẺ DỊCH VỤ */}
+                      <div className="py-2 px-3 flex flex-col flex-grow text-center items-center">
+
+                        {/* Tiêu đề: Xám đen, in đậm, tăng padding để thoáng chữ */}
+                        <h3 className="font-black text-[#111827] group-hover:text-[#e08a0d] text-[15px] md:text-[18px] py-1 md:py-2 mb-1 transition-colors line-clamp-2 leading-tight min-h-[40px] md:min-h-[50px] flex items-center">
+                          {srv.title}
+                        </h3>
+
+                        {/* Nút bấm: Vàng cam chủ đạo, Hover xám đen */}
+                        <div className="inline-block w-full bg-[#e08a0d] group-hover:bg-[#111827] text-white font-black py-2 px-6 rounded-xl text-[11px] md:text-[13px] uppercase tracking-widest transition-all shadow-md group-hover:shadow-lg">
+                          XEM CHI TIẾT
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+
+              </div>
+            </section>
+          ))
+        }
 
 
 
@@ -560,64 +636,82 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PHẦN ĐÁNH GIÁ CỦA KHÁCH HÀNG */}
-        <section className="py-4 md:py-6 bg-white overflow-hidden">
-          <div className="max-w-[1400px] mx-auto px-4 md:px-10">
 
-            <div className="text-center mb-4">
-              <h2 className="text-2xl md:text-4xl font-black text-[#111827] uppercase leading-tight">
-                Đánh Giá<span className="text-[#710a0d]"> Khách Hàng</span>
+
+        {/* ================= ĐÁNH GIÁ CỦA KHÁCH HÀNG ================= */}
+        <section className="py-20 md:py-24 bg-gray-50 overflow-hidden relative">
+          {/* Họa tiết nền */}
+          <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-white to-transparent"></div>
+
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
+
+            {/* Tiêu đề */}
+            <div className="text-center mb-16 md:mb-20">
+              <h2 className="text-3xl md:text-5xl font-black text-[#111827] uppercase leading-tight tracking-tight">
+                Khách Hàng Nói Về <span className="text-[#880d11]">Vui Hùng</span>
               </h2>
-              <div className="w-16 h-1 bg-gradient-to-r from-[#710a0d] to-[#880d11] mx-auto mt-3 rounded-full"></div>
+              <div className="w-20 h-1.5 bg-gradient-to-r from-[#880d11] to-[#a30f14] mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div className="relative">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-opacity duration-500">
+              {/* Lưới Slider */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 transition-opacity duration-500 pt-8">
                 {getVisibleReviews().map((review) => (
-                  /* TĂNG CHIỀU CAO: Thay p-5 thành py-10 px-6 để block cao hơn */
-                  <div key={review.id} className="bg-gray-50 rounded-2xl py-10 px-6 border border-gray-100 hover:border-[#880d11]/30 hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between h-full">
-                    <div className="text-6xl font-serif text-[#710a0d]/10 absolute top-4 right-8">"</div>
+                  <div key={review.id} className="bg-white rounded-[32px] px-8 pb-10 pt-14 shadow-sm border border-gray-100 hover:border-[#880d11]/20 hover:shadow-[0_20px_40px_rgba(136,13,17,0.08)] transition-all duration-500 relative flex flex-col justify-between h-full group hover:-translate-y-2">
 
-                    <div>
-                      <div className="flex gap-1 mb-4">
+                    {/* AVATAR NỔI LÊN TRÊN */}
+                    <div className="absolute -top-10 left-1/2 -translate-x-1/2">
+                      <div className="relative w-20 h-20 rounded-full overflow-hidden ring-4 ring-white shadow-xl group-hover:ring-[#880d11]/20 transition-all bg-[#111827] flex items-center justify-center">
+                        {review.avatar ? (
+                          <img
+                            src={review.avatar}
+                            alt={review.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling.style.display = 'flex'; }}
+                          />
+                        ) : null}
+                        {/* Chữ cái thay thế nếu lỗi ảnh */}
+                        <div className="w-full h-full text-white font-bold text-3xl uppercase flex items-center justify-center" style={{ display: review.avatar ? 'none' : 'flex' }}>
+                          {review.name.charAt(0)}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Dấu ngoặc kép chìm */}
+                    <div className="text-8xl font-serif text-[#880d11]/5 absolute top-10 left-6 select-none pointer-events-none transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2">"</div>
+
+                    {/* Nội dung Review */}
+                    <div className="relative z-10 text-center flex-grow flex flex-col items-center">
+                      <div className="flex gap-1 mb-6 justify-center">
                         {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-[#880d11] text-lg">★</span>
+                          <svg key={star} className="w-5 h-5 text-[#880d11]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         ))}
                       </div>
 
-                      {/* TĂNG CHIỀU CAO NỘI DUNG: Tăng min-h lên 140px hoặc cao hơn tùy ý */}
-                      <p className="text-gray-700 italic font-medium leading-relaxed mb-10 relative z-10 text-sm md:text-base min-h-[140px]">
-                        {review.comment}
+                      <p className="text-gray-700 italic font-medium leading-relaxed mb-8 text-base min-h-[120px] flex items-center justify-center">
+                        "{review.comment}"
                       </p>
                     </div>
 
-                    <div className="border-t border-gray-200 pt-6 flex items-center gap-4">
-                      {review.avatar ? (
-                        <img
-                          src={review.avatar}
-                          alt={review.name}
-                          className="w-12 h-12 rounded-full object-cover ring-2 ring-[#880d11]/30 shadow-sm"
-                          onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling.style.display = 'flex'; }}
-                        />
-                      ) : null}
-                      <div className="w-12 h-12 bg-[#111827] rounded-full justify-center items-center text-white font-bold text-xl uppercase" style={{ display: review.avatar ? 'none' : 'flex' }}>
-                        {review.name.charAt(0)}
-                      </div>
-                      <div>
-                        <h3 className="font-black text-[#111827] text-lg leading-tight mb-1">{review.name}</h3>
-                        <span className="text-[#710a0d] font-bold tracking-wider text-xs uppercase">{review.role}</span>
-                      </div>
+                    {/* Thông tin Khách hàng */}
+                    <div className="text-center pt-6 border-t border-dashed border-gray-200">
+                      <h3 className="font-black text-[#111827] text-[18px] leading-tight mb-1">{review.name}</h3>
+                      <span className="text-[#880d11] font-bold tracking-widest text-[11px] uppercase bg-[#880d11]/5 px-3 py-1 rounded-full inline-block mt-1">
+                        {review.role}
+                      </span>
                     </div>
+
                   </div>
                 ))}
               </div>
 
-              <div className="flex items-center justify-center gap-2 mt-10">
+              {/* Nút chuyển Slide */}
+              <div className="flex items-center justify-center gap-3 mt-16">
                 {[...Array(totalReviewSlides)].map((_, idx) => (
                   <button
                     key={idx}
                     onClick={() => setCurrentReviewSlide(idx)}
-                    className={`h-1.5 rounded-full transition-all ${idx === currentReviewSlide ? 'w-8 bg-[#880d11]' : 'w-2 bg-gray-300'}`}
+                    className={`h-2.5 rounded-full transition-all duration-300 ${idx === currentReviewSlide ? 'w-10 bg-[#880d11] shadow-[0_4px_10px_rgba(136,13,17,0.3)]' : 'w-2.5 bg-gray-300 hover:bg-gray-400'}`}
                     aria-label={`Slide ${idx + 1}`}
                   />
                 ))}
@@ -625,6 +719,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+
+
 
         {/* KÊU GỌI HÀNH ĐỘNG DƯỚI CÙNG */}
         <section className="py-16 md:py-16 bg-[url('https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-fixed bg-center relative">
@@ -664,17 +761,17 @@ export default function Home() {
               const news = [
                 {
                   id: 1,
-                  title: "Đơn Vị Thu Mua Đồ Cũ Uy Tín Tại TP.HCM",
-                  desc: "Vui Hùng chuyên thu mua đồ cũ giá cao tại TP.HCM, hỗ trợ khảo sát tận nơi, thanh toán nhanh chóng, không ép giá.",
-                  image: "/thu-mua-do-cu-uy-tin-hcm.jpeg",
-                  slug: "/tin-tuc/thu-mua-do-cu-uy-tin-tphcm"
+                  title: "Lưu Ý Khi Thanh Lý Nhà Hàng Khách Sạn",
+                  desc: "Thanh lý nhà hàng, khách sạn trọn gói cần lưu ý những gì để tránh mất oan tiền tỷ?",
+                  image: "/thanh-ly-nha-hang-uy-tin.jpg",
+                  slug: "/tin-tuc/luu-y-khi-thanh-ly-nha-hang-khach-san"
                 },
                 {
                   id: 2,
-                  title: "Thu Mua Thiết Bị Vệ Sinh, Phế Liệu Giá Cao Tại TP.HCM",
-                  desc: "Nhận thu mua thiết bị vệ sinh cũ, phế liệu inox, sắt, nhôm với giá cao, tháo dỡ và vận chuyển tận nơi.",
-                  image: "/thu-mua-thiet-bi-ve-sinh-phe-lieu-gia-cao-tai-tp-hcm.png",
-                  slug: "/tin-tuc/thu-mua-bon-cau-cu-thiet-bi-ve-sinh"
+                  title: "Kinh Nghiệm Thanh Lý Đồ Cũ Giá Cao Tại TPHCM",
+                  desc: "Bí quyết thanh lý đồ cũ gia đình, đồ văn phòng, bàn ghế quán cafe với giá cao nhất TPHCM",
+                  image: "/thu-mua-do-cu-gia-cao-go-vap.jpg",
+                  slug: "/tin-tuc/kinh-nghiem-thanh-ly-do-cu"
                 }
               ];
 
@@ -743,7 +840,7 @@ export default function Home() {
           </div>
         </section>
 
-      </main>
-    </div>
+      </main >
+    </div >
   );
 }
