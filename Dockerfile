@@ -25,6 +25,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy static export from builder
 COPY --from=builder /app/out /usr/share/nginx/html
 
+# Copy log format config (must be loaded at http context, before server block)
+COPY nginx-log-format.conf /etc/nginx/conf.d/00-log-format.conf
+
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
