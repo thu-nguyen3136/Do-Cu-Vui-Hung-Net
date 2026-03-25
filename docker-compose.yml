@@ -8,3 +8,5 @@ services:
     ports:
       - "3003:3003"
     restart: unless-stopped
+    volumes:
+      - ${DEPLOY_PATH:-/tmp}/logs:/var/log/nginx
