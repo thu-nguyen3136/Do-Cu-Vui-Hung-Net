@@ -31,5 +31,9 @@ COPY nginx-log-format.conf /etc/nginx/conf.d/00-log-format.conf
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Copy entrypoint script to write CSV header on first run
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 EXPOSE 3003
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/entrypoint.sh"]
