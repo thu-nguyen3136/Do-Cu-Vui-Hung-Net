@@ -144,10 +144,10 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Đồ Cũ Vui Hùng",
-    "image": "https://thanhlycuacutphcm.com/logo-viet-anh.png",
-    "@id": "https://thanhlycuacutphcm.com/",
-    "url": "https://thanhlycuacutphcm.com/",
-    "telephone": "0988257479",
+    "image": "https://thumuadocugiacao.net/logo-viet-anh.png",
+    "@id": "https://thumuadocugiacao.net/",
+    "url": "https://thumuadocugiacao.net/",
+    "telephone": "0979095076",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "14 Lê Văn Khương",
@@ -200,8 +200,8 @@ export default function Home() {
             "name": "Đồ Cũ Vui Hùng",
             "alternateName": "Thu Mua Đồ Cũ Vui Hùng",
             "description": "Đơn vị chuyên thu mua đồ cũ, thanh lý nhà hàng, khách sạn và các loại cửa cũ giá cao tại TPHCM.",
-            "url": "https://thumuadocugiacao.net/",
-            "telephone": "0988257479",
+            "url": "https://thumuadoc0988257479ugiacao.net/",
+            "telephone": "0979095076",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Hồ Chí Minh",
@@ -221,9 +221,6 @@ export default function Home() {
             alt="Thu Mua Đồ Cũ Giá Cao Vui Hùng"
             // Sử dụng h-auto để ảnh không bị méo hoặc cắt
             className="w-full h-auto block"
-            onError={(e) => {
-              e.currentTarget.src = 'https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=2000&auto=format&fit=crop';
-            }}
           />
         </div>
       </section>
@@ -375,10 +372,10 @@ export default function Home() {
             {/* CTA */}
             <div className="text-center mt-16">
               <a
-                href="tel:0988257479"
+                href="tel:0979095076"
                 className="inline-flex items-center gap-4 bg-[#7a0c0c] hover:bg-[#5c0909] px-10 py-5 rounded-2xl font-black text-lg shadow-xl transition hover:scale-105"
               >
-                📞 GỌI NGAY: 0988 257 479
+                📞 GỌI NGAY: 0979.095.076
               </a>
             </div>
 
@@ -443,14 +440,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                  <a href="tel:0988257479" className="bg-brand-600 text-white px-8 py-4 rounded-2xl font-black hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-200 flex items-center gap-3 group">
+                  <a href="tel:0979095076" className="bg-brand-600 text-white px-8 py-4 rounded-2xl font-black hover:bg-brand-700 transition-all shadow-xl hover:shadow-brand-200 flex items-center gap-3 group">
                     NHẬN BÁO GIÁ NGAY
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </a>
                   <div className="flex items-center gap-3 px-6">
                     <div className="text-left">
                       <p className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">Hotline 24/7</p>
-                      <p className="text-lg font-black text-gray-900 underline decoration-brand-600">0988.257.479</p>
+                      <p className="text-lg font-black text-gray-900 underline decoration-brand-600">0979.095.076</p>
                     </div>
                   </div>
                 </div>
@@ -472,9 +469,7 @@ export default function Home() {
                        - max-h-full: Đảm bảo hình không bị tràn khung.
                     */
                     className="max-w-full max-h-[550px] object-contain rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=1000&auto=format&fit=crop";
-                    }}
+
                   />
 
                   {/* Badge kinh nghiệm - Di chuyển ra góc ngoài một chút để không che hình */}
@@ -537,7 +532,7 @@ export default function Home() {
                           src={srv.image}
                           alt={srv.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                          onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=800&auto=format&fit=crop'; }}
+
                         />
                       </div>
 
@@ -593,7 +588,7 @@ export default function Home() {
               {/* Lưới hiển thị: Giảm khoảng cách trên mobile để các bước sát nhau hơn */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-0 relative z-10">
                 {[
-                  { step: "1", title: "Nhận yêu cầu", desc: "Tiếp nhận thông tin qua hotline: 0988.257.479" },
+                  { step: "1", title: "Nhận yêu cầu", desc: "Tiếp nhận thông tin qua hotline: 0979.095.076" },
                   { step: "2", title: "Khảo sát", desc: "Khảo sát tận nơi hoặc báo giá nhanh qua hình ảnh Zalo." },
                   { step: "3", title: "Báo giá", desc: "Thỏa thuận giá cả minh bạch, không ép giá khách hàng." },
                   { step: "4", title: "Thu mua", desc: "Tháo dỡ nhanh gọn, thanh toán tiền mặt ngay tại chỗ." }
@@ -733,10 +728,10 @@ export default function Home() {
               Thu mua không ép giá - Dọn dẹp sạch sẽ - Tiền trao cháo múc ngay lập tức.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a href="tel:0988257479" className="bg-[#880d11] text-white hover:bg-[#710a0d] font-black uppercase px-8 py-5 rounded-xl shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-3">
+              <a href="tel:0979095076" className="bg-[#880d11] text-white hover:bg-[#710a0d] font-black uppercase px-8 py-5 rounded-xl shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-3">
                 <span className="text-2xl">📞</span> Gọi Hotine
               </a>
-              <a href="https://zalo.me/0988257479" target="_blank" rel="noopener noreferrer" className="bg-[#0068ff] text-white hover:bg-[#0052cc] font-black uppercase px-8 py-5 rounded-xl shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-3">
+              <a href="https://zalo.me/0979095076" target="_blank" rel="noopener noreferrer" className="bg-[#0068ff] text-white hover:bg-[#0052cc] font-black uppercase px-8 py-5 rounded-xl shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-3">
                 <span className="text-2xl font-sans">Zalo</span> Gửi Hình Zalo
               </a>
             </div>
