@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thanhlycuacutphcm.com/sitemap.xml
+Sitemap: https://thumuadocugiacao.net/sitemap.xml
