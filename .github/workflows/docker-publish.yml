@@ -70,6 +70,8 @@ jobs:
               ports:
                 - "3003:3003"
               restart: unless-stopped
+              volumes:
+                - ~/www/html/do-cu-vui-hung-net/logs:/var/log/nginx
           EOF
           
           # Flatten any newlines that might be in the secret to prevent 'access: command not found' errors
