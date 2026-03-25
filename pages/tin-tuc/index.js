@@ -6,17 +6,17 @@ export default function NewsPage() {
   const news = [
     {
       id: 1,
-      title: "Đơn Vị Thu Mua Đồ Cũ Uy Tín Tại TP.HCM",
-      desc: "Vui Hùng là đơn vị chuyên thu mua đồ cũ giá cao tại TP.HCM, hỗ trợ khảo sát tận nơi, thanh toán nhanh chóng, không ép giá.",
-      image: "/thu-mua-do-cu-uy-tin-hcm.jpeg",
-      slug: "/tin-tuc/thu-mua-do-cu-uy-tin-tphcm"
+      title: "Lưu Ý Khi Thanh Lý Nhà Hàng Khách Sạn",
+      desc: "Thanh lý nhà hàng, khách sạn trọn gói cần lưu ý những gì để tránh mất oan tiền tỷ?",
+      image: "/thanh-ly-nha-hang-uy-tin.jpg",
+      slug: "/tin-tuc/luu-y-khi-thanh-ly-nha-hang-khach-san"
     },
     {
       id: 2,
-      title: "Thu Mua Thiết Bị Vệ Sinh, Phế Liệu Giá Cao Tại TP.HCM",
-      desc: "Nhận thu mua thiết bị vệ sinh cũ, phế liệu inox, sắt, nhôm với giá cao, hỗ trợ tháo dỡ và vận chuyển tận nơi.",
-      image: "/thu-mua-thiet-bi-ve-sinh-phe-lieu-gia-cao-tai-tp-hcm.png",
-      slug: "/tin-tuc/thu-mua-bon-cau-cu-thiet-bi-ve-sinh"
+      title: "Kinh Nghiệm Thanh Lý Đồ Cũ Giá Cao Tại TPHCM",
+      desc: "Bí quyết thanh lý đồ cũ gia đình, đồ văn phòng, bàn ghế quán cafe với giá cao nhất TPHCM",
+      image: "/thu-mua-do-cu-gia-cao-go-vap.jpg",
+      slug: "/tin-tuc/kinh-nghiem-thanh-ly-do-cu"
     }
   ];
 

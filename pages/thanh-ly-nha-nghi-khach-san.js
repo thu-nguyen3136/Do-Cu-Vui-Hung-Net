@@ -1,147 +1,259 @@
 import Head from 'next/head';
-// 1. IMPORT COMPONENT IMAGE CỦA NEXT.JS
 import Image from 'next/image';
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
-export default function ThuMuaTonCuPage() {
+export default function ThanhLyNhaNghiKhachSanPage() {
+  const hotline = "0979.095.076";
+
   return (
-    <div className="min-h-screen bg-white text-[#333333]">
+    <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
-        <title>Thu Mua Tôn Cũ - Đồ Cũ Vui Hùng</title>
-        <meta name="description" content="Thu Mua Đồ Cũ Vui Hùng chuyên thu mua và thanh lý tôn cũ giá cao, uy tín chuyên nghiệp, thủ tục nhanh chóng" />
+        {/* --- SEO META TAGS --- */}
+        <title>Thanh Lý Nhà Nghỉ, Khách Sạn Trọn Gói Giá Cao TPHCM | Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thanh lý nhà nghỉ, khách sạn trọn gói từ A-Z. Thu mua nội thất phòng, thiết bị điện lạnh, điện tử giá cao nhất thị trường. Giải phóng mặt bằng siêu tốc 1-2 ngày." />
+        <meta name="keywords" content="thanh lý nhà nghỉ, thanh lý khách sạn, thu mua nội thất khách sạn, đồ cũ vui hùng, thanh lý thiết bị khách sạn" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thanh-ly-nha-nghi-khach-san" />
+        <meta property="og:title" content="Dịch Vụ Thanh Lý Nhà Nghỉ, Khách Sạn Trọn Gói Giá Cao - Vui Hùng" />
+        <meta property="og:description" content="Cần thanh lý toàn bộ khách sạn, nhà nghỉ? Vui Hùng thu mua trọn gói giá cao nhất, tháo dỡ vận chuyển miễn phí, giải phóng mặt bằng siêu tốc." />
+        <meta property="og:type" content="article" />
       </Head>
 
-      <main className="max-w-[1200px] mx-auto px-4 py-8">
-        <div className="flex flex-wrap -mx-4">
+      <main className="flex-grow pb-20">
 
-          {/* ========================================= */}
-          {/* CỘT NỘI DUNG CHÍNH (BÊN TRÁI - 9/12)      */}
-          {/* ========================================= */}
-          <div className="w-full md:w-3/4 px-4">
+        {/* ================= BREADCRUMB ================= */}
+        <div className="bg-white border-b border-gray-100 py-4">
+          <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">Thanh Lý Nhà Nghỉ, Khách Sạn</span>
+          </div>
+        </div>
 
-            {/* Tiêu đề trang */}
-            <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Thu Mua Tôn Cũ</h2>
-            </div>
+        {/* ================= MAIN LAYOUT (GRID Layout 4 Cột An Toàn) ================= */}
+        <section className="max-w-[1200px] mx-auto px-4 md:px-6 py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-10 items-start">
 
-            <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">
+            {/* --- CỘT TRÁI: NỘI DUNG CHÍNH (Chiếm 3/4) --- */}
+            <article className="lg:col-span-3 bg-white p-6 md:p-10 rounded-[32px] shadow-sm border border-gray-100 overflow-hidden">
 
-              <p className="mb-4 text-justify">
-                <span className="text-[#333333]">Dịch Vụ <strong>Thu Mua Tôn Cũ Giá Cao</strong> Tại TP.HCM & Các Tỉnh Lân Cận</span>
-              </p>
+              <h1 className="text-3xl md:text-5xl font-black text-[#111827] uppercase leading-tight tracking-tight mb-4">
+                Thanh Lý Khách Sạn, Nhà Nghỉ
+              </h1>
 
-              <p className="mb-4 text-justify">
-                <strong><span className="text-[#333333]">Thu  Mua Đồ Cũ Vui Hùng </span></strong>
-                <span className="text-[#333333]">chuyên thu mua và t<strong>hanh lý tôn cũ giá cao, uy tín chuyên nghiệp, thủ tục nhanh chóng, giá cả hợp lý nhất đảm bảo hài lòng đến quý khách hàng khó tính nhất. Đối với những nhà xưởng cần bán tôn cũ để thay tôn mới, chúng tôi có thể tự tháo dỡ cho các bạn. Nếu có nhu cầu lắp tôn mới qua công ty chúng tôi thì sẽ có nhân viên đến báo giá và thi công cho quý vị.</strong></span>
-              </p>
-
-              <p className="mb-4 text-center px-4">
-                <strong><span className="text-black"> LIÊN HỆ NHẬN BÁO GIÁ:</span> </strong>
-                <span className="text-[24px] text-[#ff0000]"><strong><span className="bg-[#ffff00] px-1">0988.257.479</span></strong></span>
-              </p>
-
-              {/* ========================================= */}
-              {/* Ảnh 1 - ĐÃ TỐI ƯU VÀ SỬA ĐƯỜNG DẪN         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center px-4">
-                <div className="relative w-[600px] max-w-full" style={{ aspectRatio: '600 / 400' }}>
-                  <Image
-                    src="/mua-ton-cu.jpg" // ĐÃ SỬA: Thêm / ở đầu
-                    alt="Thu mua tôn cũ"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 600px"
-                    className="object-cover mx-auto"
-                    priority // Ưu tiên load vì ảnh nằm trên cùng
-                  />
-                </div>
-              </div>
-
-              <p className="mb-4 text-justify px-4">
-                <span className="text-[#333333]">- Khi những mái tôn nhà bạn đã bị xuống cấp chầm trọng rồi, hay đơn giản là bạn khong còn nhu cầu sử dụng chúng nữa, nhất là lại chuẩn bị những mùa mưa sắp tới làm ảnh hưởng rất lớn đến ngôi nhà của gia đình chúng ta, vậy lên bạn hãy tìm đến những nơi thu mua tôn cũ giá cao, Uy tín, Chất lượng, Nhanh chóng.</span>
-              </p>
-
-              <p className="mb-4 text-center px-4">&nbsp;</p>
-
-              <p className="mb-4 text-justify px-4">
-                <strong><span className="text-[#333333]">OP 1 : THU MUA TÔN CŨ GIÁ CAO </span></strong>
-              </p>
-
-              <p className="mb-2 text-justify px-4">
-                <span className="text-[#333333]">- Đơn vị của chúng tôi không ngại xa, vui vẻ, nhiệt tình, đúng giá, đúng hẹn, thanh lý tôn cũ nhanh chóng trong ngày. </span>
-              </p>
-
-              <p className="mb-2 text-justify px-4">
-                <span className="text-[#333333]">- Không ép giá, thu mua tôn cũ giá cao, thanh toán nhanh. </span>
-              </p>
-
-              <p className="mb-2 text-justify px-4">
-                <span className="text-[#333333]">- Thanh lý tôn cũ tận nơi số lượng nhiều và ít. </span>
-              </p>
-
-              <p className="mb-4 text-justify px-4">
-                <span className="text-[#333333]">- Người giới thiệu thu mua sẽ có 5% đến 10% giá trị trên hóa đơn. </span>
-              </p>
-
-              <p className="mb-4 text-justify px-4">
-                <strong><span className="text-[#333333]">TOP 2 : THU MUA TÔN CŨ TP HCM</span></strong>
-              </p>
-
-              <p className="mb-4 text-justify px-4">
-                <span className="text-[#333333]">- Thu mua tôn cũ hư hỏng của các cơ quan, xí nghiệp, công ty, trường học không hạn chế số lượng. Có nhiều loại tôn cũ như, tôn lạnh, tôn màu, tôn kẽm, tôn sóng vuông, tôn sóng tròn, tôn sóng lớn, tôn sóng nhỏ… đều thu mua và giá của mỗi loại tôn là khác nhau, tuy thuộc vào giá tôn lợp chính phẩm trên thị trường và chất lượng còn lại của từng loại tôn cũ. Sẽ nhận thu mua tôn cũ giá cao và thầu phần thi công tôn mới cho doanh nghiệp, nếu hợp tác với công ty chúng tôi các bạn sẽ được báo giá rất mềm so với thị trường. Chúng tôi có kinh nghiệm trong việc lợp mái tôn cho các nhà xưởng Với phương châm làm việc: "VUI VẺ - NHIỆT TÌNH - KHÔNG ÉP GIÁ" </span>
-              </p>
-
-              {/* ========================================= */}
-              {/* Ảnh 2 - ĐÃ TỐI ƯU VÀ SỬA ĐƯỜNG DẪN         */}
-              {/* ========================================= */}
-              <div className="mb-6 flex justify-center px-4">
-                <div className="relative w-[728px] max-w-full" style={{ aspectRatio: '728 / 960' }}>
-                  <Image
-                    src="/thu-mua-ton-cu-hcm.jpeg" // ĐÃ SỬA: Thêm / ở đầu
-                    alt="Thu mua tôn cũ hcm"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 728px"
-                    className="object-cover mx-auto"
-                  />
-                </div>
-              </div>
-
-              <h2 className="text-xl md:text-2xl font-bold mb-4 px-2">
-                <strong><span className="text-black">Địa bàn thu mua tôn cũ của </span><strong><span className="text-black">Đồ Cũ Vui Hùng</span></strong><span className="text-black"> tại TPHCM:</span></strong>
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+                Thanh Lý Nhà Nghỉ, Khách Sạn Trọn Gói – Dịch Vụ Chuyên Nghiệp, Giá Cao Tại Vui Hùng
               </h2>
 
-              <p className="mb-4 text-justify px-4">
-                <strong><span className="text-[#333333]">Thu mua tôn cũ </span></strong>
-                <span className="text-[#333333]">TPHCM gồm các quận huyện như : quận 1, quận 2, quận 3, quận 4, quận 5, quận 6, quận 7, quận 8, quận 9, quận 10, quận 11, quận 12, quận Tân Bình, Quận Tân Phú, Quận Gò Vấp, quận Bình Tân, Quận Phú Nhuận, Quận Thủ Đức, Huyện Củ Chi, Huyện Hóc Môn, Huyện Nhà Bè, Huyện Bình Chánh..</span>
-              </p>
-
-              <p className="mb-8 text-justify px-4">
-                <span className="text-[#333333]">Khách hàng sẽ hoàn toàn yên tâm khi sử làm việc với chúng tôi. <strong>Dịch vụ thu tôn cũ giá cao </strong>tại <strong>Đồ Cũ Vui Hùng</strong> cam kết mang lại lợi ích tốt nhất, giá cả hợp lý nhất cho mọi khách hàng tại TP.HCM và các tỉnh lân cận</span>
-              </p>
-
-              {/* Footer Thông Tin Liên Hệ */}
-              <div className="mb-6 mt-8 border-t pt-4">
-                <h5 className="text-xl font-bold mb-4 text-[#880d11] uppercase">THU MUA Đồ Cũ Vui Hùng</h5>
-                <ul className="list-none space-y-2 pl-0 text-[16px] md:text-[18px]">
-                  <li><strong> Địa Chỉ 1: 14 Lê Văn Khương, Xã Đông Thạnh, Huyện Hóc Môn, TP.HCM</strong></li>
-                  <li><strong> Địa Chỉ 2: 197 Dương Quảng Hàm, Phường 5, Quận Gò Vấp, TP.HCM</strong></li>
-                  <li><strong> Địa Chỉ 3: 288 Kha Vạn Cân, Hiệp Bình Chánh, Quận Thủ Đức, TP.HCM</strong></li>
-                  <li><strong> Địa Chỉ 4: 110 Lê Quang Định, Phường 14, Quận Bình Thạnh, TP.HCM</strong></li>
-                  <li><strong> Địa Chỉ 5: 218 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, TP.HCM</strong></li>
-                  <li className="mt-4"><strong> Email: trinhvanviet1812@gmail.com</strong></li>
-                  <li><strong> Hotline: 0988.257.479 - Vui Hùng</strong></li>
-                </ul>
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
+                <p>
+                  Bạn đang sở hữu một <strong className="text-[#111827]">nhà nghỉ</strong> hoặc <strong className="text-[#111827]">khách sạn</strong> nhưng muốn thanh lý toàn bộ do thay đổi mô hình kinh doanh, hết hợp đồng thuê mặt bằng, hoặc đơn giản là không còn nhu cầu vận hành? Việc xử lý hàng trăm tài sản có giá trị như nội thất phòng, thiết bị điện lạnh, máy móc… là một bài toán nan giải.
+                </p>
+                <p>
+                  Thấu hiểu điều đó, <strong className="text-[#880d11]">Vui Hùng</strong> tự hào là đơn vị hàng đầu cung cấp dịch vụ thanh lý nhà nghỉ, khách sạn trọn gói, mang đến giải pháp nhanh chóng, tối ưu giá trị và chuyên nghiệp nhất thị trường.
+                </p>
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-5 rounded-2xl mt-6 flex items-start gap-4">
+                  <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                  <p className="text-gray-800 leading-relaxed font-medium">
+                    Không chỉ đơn thuần là thu mua tài sản lẻ, Vui Hùng cung cấp giải pháp <strong className="text-[#880d11] uppercase">thanh lý toàn diện từ A đến Z</strong>, giúp khách hàng giải phóng mặt bằng trong thời gian ngắn nhất với giá trị thu hồi vốn cao nhất.
+                  </p>
+                </div>
               </div>
 
-            </div>
-          </div>
+              {/* --- ẢNH 1: Tổng quan thanh lý khách sạn --- */}
+              <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thu-mua-khach-san-nha-nghi.jpg"
+                  alt="Dịch vụ thanh lý nhà nghỉ khách sạn trọn gói giá cao Đồ Cũ Vui Hùng"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+                  Vui Hùng thu mua trọn gói toàn bộ nội thất, thiết bị nhà nghỉ, khách sạn
+                </div>
+              </div>
 
-          {/* ========================================= */}
-          {/* CỘT SIDEBAR (BÊN PHẢI - 3/12)             */}
-          {/* ========================================= */}
-          <Sidebar />
-        </div>
+              {/* SECTION: Các Hạng Mục Thu Mua */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Thu Mua Trọn Gói Nội Thất Trong Khách Sạn
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Chúng tôi nhận thanh lý trọn gói tất cả các hạng mục trong khách sạn, nhà nghỉ bao gồm:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    {
+                      title: "Nội thất phòng",
+                      desc: "Giường ngủ các loại (giường đơn, giường đôi, giường king), nệm cao su, nệm lò xo, tủ quần áo, bàn trang điểm, bàn làm việc, ghế sofa, rèm cửa, thảm trải sàn."
+                    },
+                    {
+                      title: "Thiết bị điện lạnh & điện tử",
+                      desc: "Máy lạnh (điều hòa) các loại (treo tường, âm trần, tủ đứng), tủ mát, tủ đông, máy nước nóng, tivi, loa đài, minibar, máy sấy tóc."
+                    },
+                    {
+                      title: "Thiết bị vệ sinh",
+                      desc: "Bồn tắm, sen tắm, lavabo, kệ đá, gương soi, máy sấy khăn."
+                    },
+                    {
+                      title: "Thiết bị nhà hàng (nếu có)",
+                      desc: "Bàn ghế nhà hàng, bộ bát đĩa, dụng cụ nhà bếp công nghiệp, tủ hút mùi, bếp công nghiệp."
+                    },
+                    {
+                      title: "Ngoại thất & hạng mục khác",
+                      desc: "Máy phát điện, hệ thống camera an ninh, máy giặt công nghiệp, sảnh đón tiếp, quầy lễ tân."
+                    }
+                  ].map((item, i) => (
+                    <div key={i} className="flex flex-col p-6 rounded-2xl bg-white border border-gray-200 hover:border-[#880d11]/50 hover:shadow-md transition-all duration-300 group">
+                      <h4 className="font-black text-[#111827] text-[16px] uppercase mb-2 group-hover:text-[#880d11] transition-colors flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#880d11]"></span>
+                        {item.title}
+                      </h4>
+                      <p className="text-[15px] text-gray-600 leading-relaxed pl-3.5 border-l border-gray-100">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 2: Nội thất phòng khách sạn --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thanh-ly-khach-san-nha-nghi-tron-goi.jpeg"
+                  alt="Thu mua nội thất giường tủ, máy lạnh khách sạn cũ"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              {/* SECTION: Quy Trình Thanh Lý Khách Sạn */}
+              <section className="mb-12 bg-white border-2 border-gray-100 p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-sm">
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thu Mua Đơn Giản, Chuyên Nghiệp
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Vui Hùng vận hành quy trình bài bản, đảm bảo quyền lợi tối đa cho khách hàng và giải phóng mặt bằng siêu tốc:
+                </p>
+
+                <div className="flex flex-col gap-6 relative z-10">
+                  {[
+                    { step: "1", title: "Tiếp nhận thông tin", desc: "Khách hàng liên hệ qua hotline hoặc website, cung cấp địa chỉ và quy mô khách sạn." },
+                    { step: "2", title: "Khảo sát thực tế", desc: "Nhân viên chuyên môn cao đến kiểm tra, đánh giá tình trạng, thương hiệu, số lượng từng hạng mục tài sản." },
+                    { step: "3", title: "Báo giá cạnh tranh", desc: "Đưa ra bảng báo giá chi tiết, minh bạch, sát với giá trị thị trường. Cam kết không ép giá, không qua trung gian." },
+                    { step: "4", title: "Ký hợp đồng & thanh toán", desc: "Thống nhất mức giá, ký hợp đồng pháp lý rõ ràng và thanh toán 100% ngay khi ký." },
+                    { step: "5", title: "Tháo dỡ & vận chuyển", desc: "Đội ngũ nhân công lành nghề cùng hệ thống xe tải chuyên dụng tháo dỡ, đóng gói, vận chuyển hoàn toàn miễn phí." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-5 group items-start md:items-center">
+                      <div className="mt-1 md:mt-0 w-12 h-12 bg-[#880d11] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(136,13,17,0.4)] transition-all duration-300">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+                        <p className="text-[15px] text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 3: Vận chuyển quy mô lớn --- */}
+              <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-12 shadow-lg group w-full md:w-3/4 mx-auto">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thanh-ly-khach-san-nha-nghi-uy-tin.jpeg"
+                  alt="Đội ngũ xe tải Vui Hùng vận chuyển nội thất khách sạn quy mô lớn"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              {/* SECTION: Tại Sao Nên Chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Tại Sao Nên Chọn Vui Hùng?
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Trên thị trường có nhiều đơn vị thu mua, nhưng <strong className="text-[#880d11]">Vui Hùng</strong> là cái tên được hàng trăm chủ khách sạn, nhà nghỉ tin tưởng nhờ những ưu điểm vượt trội:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {[
+                    { title: "Giá thu mua cao nhất", desc: "Chúng tôi hiểu rõ giá trị của từng thương hiệu lớn (Daikin, Panasonic, Sanaky...) và sẵn sàng trả mức giá cao hơn thị trường." },
+                    { title: "Năng lực thực tế lớn", desc: "Sở hữu nhân công đông đảo, xe tải đa dạng (1.25t - 5t), đáp ứng thanh lý mọi quy mô từ nhà nghỉ nhỏ đến khách sạn 3-5 sao." },
+                    { title: "Thời gian xử lý siêu tốc", desc: "Hoàn tất thủ tục và giải phóng mặt bằng chỉ trong 1-2 ngày (tùy quy mô), giúp bạn nhanh chóng bàn giao cho chủ đầu tư mới." },
+                    { title: "Uy tín – Minh bạch", desc: "Làm việc có hợp đồng pháp lý, quy trình rõ ràng, cam kết không phát sinh bất kỳ khoản phí ngầm nào." }
+                  ].map((item, i) => (
+                    <div key={i} className="bg-gray-50 p-6 rounded-2xl group hover:bg-[#111827] transition-colors duration-300 border border-gray-100 flex flex-col h-full">
+                      <h4 className="text-[#111827] text-[17px] font-black uppercase mb-3 group-hover:text-white transition-colors flex items-center gap-2">
+                        <svg className="w-6 h-6 text-[#880d11] group-hover:text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 text-[15px] leading-relaxed group-hover:text-gray-300 transition-colors flex-grow">
+                        {item.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 4: Liên hệ --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
+                <Image
+                  src="/thanh-ly-khach-san-nha-nghi-gia-cao.png"
+                  alt="Liên hệ Đồ Cũ Vui Hùng thanh lý khách sạn nhà nghỉ trọn gói"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              {/* Nút Gọi Ngay cuối bài */}
+              <div className="mt-16 bg-[#111827] rounded-3xl p-8 md:p-12 text-center shadow-xl relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#880d11 2px, transparent 2px)', backgroundSize: '30px 30px' }}></div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-black text-white uppercase mb-4">Cần Giải Phóng Mặt Bằng Gấp?</h3>
+                  <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">Kết nối ngay với Vui Hùng để được khảo sát và báo giá thanh lý trọn gói khách sạn, nhà nghỉ nhanh nhất!</p>
+
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href={`tel:${hotline}`} className="group inline-flex items-center justify-center gap-3 bg-[#880d11] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-lg hover:bg-[#a30f14] transition-all shadow-[0_10px_20px_rgba(136,13,17,0.3)] hover:-translate-y-1">
+                      <span className="animate-pulse">📞</span> Gọi Hotline: {hotline}
+                    </a>
+                    <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center gap-3 bg-white text-[#111827] px-8 py-4 rounded-xl font-black uppercase tracking-widest text-lg hover:bg-gray-100 transition-all shadow-lg hover:-translate-y-1 border border-transparent">
+                      Chat Zalo Khảo Sát
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </article>
+
+            {/* --- CỘT PHẢI: SIDEBAR (Chiếm 1/4 trên Desktop) --- */}
+            <aside className="lg:col-span-1 w-full min-w-0 h-fit sticky top-[100px]">
+              <Sidebar />
+            </aside>
+
+          </div>
+        </section>
+
       </main>
+
+      {/* FOOTER CỐ ĐỊNH (Floating Call Button cho Mobile) - Chỉ dùng trên Mobile */}
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50 lg:hidden">
+        <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+          <span className="text-white font-bold text-xs">Zalo</span>
+        </a>
+        <a href={`tel:${hotline}`} className="w-14 h-14 bg-[#880d11] rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform">
+          <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        </a>
+      </div>
     </div>
   );
 }

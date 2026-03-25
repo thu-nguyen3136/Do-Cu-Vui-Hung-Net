@@ -100,10 +100,8 @@ export default function Header() {
             <li className="h-full flex items-center">
               <Link href="/tin-tuc" className={navLinkClass}>Tin Tức</Link>
             </li>
-            <li className="h-full flex items-center pl-4">
-              <a href="tel:0988257479" className="bg-brand-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition shadow-md flex items-center gap-2 normal-case">
-                <span className="animate-pulse">📞</span> 0988.257.479
-              </a>
+            <li className="h-full flex items-center">
+              <Link href="/lien-he" className={navLinkClass}>Liên Hệ</Link>
             </li>
           </ul>
         </div>
@@ -150,7 +148,7 @@ export default function Header() {
                 </ul>
 
                 <li><Link href="/tin-tuc" className="block p-3 border-b border-gray-50" onClick={() => setIsOpen(false)}>Tin Tức</Link></li>
-                <li><Link href="/lien-he" className="block p-3" onClick={() => setIsOpen(false)}>Liên hệ</Link></li>
+                <li><Link href="/lien-he" className="block p-3 border-b border-gray-50" onClick={() => setIsOpen(false)}>Liên Hệ</Link></li>
               </ul>
             </div>
 

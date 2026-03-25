@@ -1,146 +1,287 @@
 import Head from 'next/head';
-// 1. IMPORT COMPONENT IMAGE
 import Image from 'next/image';
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
-export default function MuaThietBiVeSinhCuPage() {
+export default function ThuMuaTuThoGoCuPage() {
+  const hotline = "0979.095.076";
+
   return (
-    <div className="min-h-screen bg-white text-[#333333]">
+    <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
-        <title>Mua Thiết Bị Vệ Sinh Cũ - Đồ Cũ Vui Hùng</title>
-        <meta name="description" content="Đồ Cũ Vui Hùng nhận thu mua các thiết bị vệ sinh bao gồm nhiều thứ như bồn cầu, bồn lavabo, bồn rửa tay, bồn tắm" />
+        {/* --- SEO META TAGS --- */}
+        <title>Thu Mua Tủ Thờ Gỗ Cũ Giá Cao | Dịch Vụ Có Tâm, Uy Tín TPHCM</title>
+        <meta name="description" content="Vui Hùng chuyên thu mua tủ thờ gỗ cũ, bàn thờ gia tiên, sập thờ, đồ thờ bằng gỗ tự nhiên giá cao nhất TPHCM. Khảo sát nhanh, tháo dỡ cẩn trọng, trân trọng tâm linh." />
+        <meta name="keywords" content="thu mua tủ thờ gỗ cũ, thanh lý bàn thờ, thu mua sập thờ, thanh lý đồ thờ cúng, đồ cũ vui hùng, thu mua bàn thờ gỗ tự nhiên" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-tu-tho-go-cu" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Tủ Thờ Gỗ Cũ Giá Cao Tận Nơi - Vui Hùng" />
+        <meta property="og:description" content="Bạn cần thanh lý tủ thờ, bàn thờ gỗ cũ? Vui Hùng thu mua giá cao, cam kết tháo dỡ nhẹ nhàng, trân trọng giá trị tâm linh. Miễn phí vận chuyển." />
+        <meta property="og:type" content="article" />
       </Head>
 
-      <main className="max-w-[1200px] mx-auto px-4 py-8">
-        <div className="flex flex-wrap -mx-4">
+      <main className="flex-grow pb-20">
 
-          {/* ========================================= */}
-          {/* CỘT NỘI DUNG CHÍNH (BÊN TRÁI - 9/12)      */}
-          {/* ========================================= */}
-          <div className="w-full md:w-3/4 px-4">
+        {/* ================= BREADCRUMB ================= */}
+        <div className="bg-white border-b border-gray-100 py-4">
+          <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">Thu Mua Tủ Thờ Gỗ Cũ</span>
+          </div>
+        </div>
 
-            {/* Tiêu đề trang */}
-            <div className="mb-6 pb-2 border-b-2 border-blue-600 inline-block">
-              <h2 className="text-2xl font-bold uppercase text-[#000099]">Mua Thiết Bị Vệ Sinh Cũ</h2>
-            </div>
+        {/* ================= MAIN LAYOUT (GRID Layout 4 Cột) ================= */}
+        <section className="max-w-[1200px] mx-auto px-4 md:px-6 py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-10 items-start">
 
-            <div className="prose max-w-none text-[16px] md:text-[20px] leading-relaxed">
+            {/* --- CỘT TRÁI: NỘI DUNG CHÍNH (Chiếm 3/4) --- */}
+            <article className="lg:col-span-3 bg-white p-6 md:p-10 rounded-[32px] shadow-sm border border-gray-100 overflow-hidden">
 
-              <p className="mb-4 text-justify">
-                <strong>Đồ Cũ Vui Hùng</strong> nhận thu mua các thiết bị vệ sinh bao gồm nhiều thứ như bồn cầu, bồn lavabo, bồn rửa tay, bồn tắm, … Thu mua của tất cả các hãng sản xuất thiết bị vệ sinh uy tín trên toàn thế giới, với nhiều kiểu dáng thiết kế khác nhau bao gồm cả những loại có thể vận hành tự động và những loại thường được sử dụng tay. Ngoài ra chúng tôi cũng là công ty chuyên thu mua cửa gỗ cũ với giá cao tại khu vực Tp.HCM, Bình Dương, Bình Phước.
-              </p>
+              <h1 className="text-3xl md:text-5xl font-black text-[#111827] uppercase leading-tight tracking-tight mb-4">
+                Thu Mua Tủ Thờ Gỗ Cũ
+              </h1>
 
-              {/* ========================================= */}
-              {/* Ảnh 1 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center">
-                <div className="relative w-[600px] max-w-full" style={{ aspectRatio: '600 / 361' }}>
-                  <Image
-                    src="/thu-mua-thiet-bi-ve-sinh-viet-anh.jpg"
-                    alt="Thu mua thiết bị vệ sinh"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 600px"
-                    className="object-cover mx-auto"
-                    priority // Ưu tiên load ảnh đầu tiên
-                  />
-                </div>
-              </div>
-
-              <p className="mb-4 text-justify">
-                Quy trình thu mua thiết bị vệ sinh cũ của chúng tôi:
-              </p>
-
-              <ul className="list-disc pl-5 mb-4 space-y-2 text-justify">
-                <li>Thu mua bồn cầu cũ là cả một quá trình chặt chẽ khoa học để có thể tạo cho khách hàng cảm giác thoải mái nhất:</li>
-                <li>Tiếp nhận thông tin khách hàng.</li>
-                <li>Lên lịch hẹn cho khách hàng để nhân viên đến tận nơi để khảo sát.</li>
-                <li>Nhân viên khảo sát sẽ đưa ra mức giá phù hợp nhất.</li>
-                <li>Khách hàng thỏa thuận và đồng ý với mức giá này thì nhân viên sẽ viết phiếu thu mua cho khách hàng.</li>
-                <li>Tiếng hành tháo dỡ dưới sự giám sát của khách hàng.</li>
-                <li>Thanh toán cho khách hàng bằng hình thức chuyển khoản hoặc tiền mặt một lần.</li>
-                <li>Xe chuyên dụng sẽ đến để vận chuyển và đội ngũ nhân viên sẽ dọn dẹp vệ sinh hiện trường sạch sẽ.</li>
-              </ul>
-
-              {/* ========================================= */}
-              {/* Ảnh 2 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-4 flex justify-center">
-                <div className="relative w-[600px] max-w-full" style={{ aspectRatio: '600 / 401' }}>
-                  <Image
-                    src="/mua-thiet-bi-ve-sinh-cu-uy-tin.jpg"
-                    alt="Mua thiết bị vệ sinh cũ uy tin"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 600px"
-                    className="object-cover mx-auto"
-                  />
-                </div>
-              </div>
-
-              <h2 className="text-[20px] font-bold mb-4">
-                Địa điểm cửa hàng nhận thu mua bồn cầu cũ
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+                Thu Mua Tủ Thờ Gỗ Cũ Giá Cao – Dịch Vụ Uy Tín, Có Tâm Tại TPHCM
               </h2>
 
-              <p className="mb-4 text-justify">
-                Thu mua bồn cầu cũ giá cao tại Tp.HCM - tất cả các quận như Tân Bình, Tân Phú, Bình Tân, Phú nhuận, Gò Vấp, Bình Thạnh, Thủ Đức, quận 1, quận 2, quận 3, quận 4, quận 5, quận 6, quận 7, quận 8, huyện 9, quận 10, quận 11, quận 12,...
-              </p>
+              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
+                <p>
+                  Bạn đang có nhu cầu <strong className="text-[#111827]">thanh lý tủ thờ gỗ cũ</strong> do thay đổi không gian thờ tự, muốn nâng cấp sản phẩm mới, hoặc đơn giản là cần giải phóng mặt bằng? Tủ thờ là vật phẩm mang giá trị tâm linh, vì vậy việc tìm kiếm một đơn vị thu mua tủ thờ gỗ cũ uy tín, giá cao và có tâm là điều vô cùng quan trọng.
+                </p>
+                <p>
+                  Thấu hiểu điều đó, <strong className="text-[#880d11]">Vui Hùng</strong> tự hào là địa chỉ tin cậy hàng đầu, chuyên thu mua các loại tủ thờ, bàn thờ, đồ thờ bằng gỗ tự nhiên với quy trình chuyên nghiệp, minh bạch và thái độ trân trọng giá trị văn hóa.
+                </p>
+              </div>
 
-              <p className="mb-4 text-justify">
-                Thu Mua Đồ Cũ Việt  Anh cam kết thu mua các loại bồn cầu cũ giá hơn giá thị trường. Thanh toán 100% trọn gói 1 lần. Không tính phí vận chuyển. Nhận thu mua… Cửa hàng chuyên thu mua các loại bồn cầu cũ đã qua sử dụng ở tại TPHCM.
-              </p>
-
-              {/* ========================================= */}
-              {/* Ảnh 3 - ĐÃ TỐI ƯU                         */}
-              {/* ========================================= */}
-              <div className="mb-6 flex justify-center">
-                <div className="relative w-[624px] max-w-full" style={{ aspectRatio: '624 / 468' }}>
-                  <Image
-                    src="/thu-mua-thiet-bi-ve-sinh-gia-cao.png"
-                    alt="Mua thiết bị vệ sinh cũ giá cao"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 624px"
-                    className="object-cover mx-auto"
-                  />
+              {/* --- ẢNH 1: Tổng quan --- */}
+              <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                <Image
+                  src="/thu-mua-tu-tho-go-cu-1.jpg"
+                  alt="Dịch vụ thu mua tủ thờ gỗ cũ, bàn thờ gia tiên giá cao Đồ Cũ Vui Hùng"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+                  Vui Hùng chuyên thu mua tủ thờ, bàn thờ gia tiên, sập thờ gỗ tự nhiên giá cao
                 </div>
               </div>
 
-              {/* Footer Thông Tin Liên Hệ */}
-              <div className="mb-6 mt-8 border-t pt-4">
-                <h5 className="text-xl font-bold mb-4 uppercase text-[#000099]">Thu Mua Đồ Cũ Vui Hùng</h5>
-                <ul className="list-none space-y-3 pl-0">
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Địa Chỉ 1: 14 Lê Văn Khương, Xã Đông Thạnh, Huyện Hóc Môn, TP.HCM</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Địa Chỉ 2: 197 Dương Quảng Hàm, Phường 5, Quận Gò Vấp, TP.HCM</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Địa Chỉ 3: 288 Kha Vạn Cân, Hiệp Bình Chánh, Quận Thủ Đức, TP.HCM</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Địa Chỉ 4: 110 Lê Quang Định, Phường 14, Quận Bình Thạnh, TP.HCM</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Địa Chỉ 5: 218 Nguyễn Thị Thập, Phường Tân Phong, Quận 7, TP.HCM</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Email: trinhvanviet1812@gmail.com</strong></p>
-                  </li>
-                  <li>
-                    <p className="text-[16px] md:text-[18px]"><strong> Hotline: 0988.257.479 - Vui Hùng</strong></p>
-                  </li>
-                </ul>
+              {/* SECTION: Đa dạng các loại tủ thờ */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Thu Mua Đa Dạng Các Loại Tủ Thờ Gỗ Cũ
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Chúng tôi nhận thu mua tất cả các dòng tủ thờ, bàn thờ với nhiều kích thước, chất liệu và phong cách khác nhau:
+                </p>
+
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-6 rounded-2xl mb-8">
+                  <h4 className="text-[#880d11] font-bold text-lg mb-4 uppercase flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+                    Theo Chất Liệu Gỗ:
+                  </h4>
+                  <ul className="space-y-3 text-gray-800">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#880d11] mt-0.5 font-bold">✔️</span>
+                      <p><strong className="text-[#111827]">Gỗ Gụ:</strong> Dòng gỗ quý, vân đẹp, độ bền cao.</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#880d11] mt-0.5 font-bold">✔️</span>
+                      <p><strong className="text-[#111827]">Gỗ Hương:</strong> Mùi thơm đặc trưng, màu sắc ấm áp.</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#880d11] mt-0.5 font-bold">✔️</span>
+                      <p><strong className="text-[#111827]">Gỗ Sồi, Óc Chó, Căm Xe:</strong> Các loại gỗ tự nhiên cao cấp.</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#880d11] mt-0.5 font-bold">✔️</span>
+                      <p><strong className="text-[#111827]">Gỗ Mít, Xoan, Thông:</strong> Các loại gỗ phổ biến trong sản xuất đồ thờ.</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[#880d11] mt-0.5 font-bold">✔️</span>
+                      <p><strong className="text-[#111827]">Gỗ công nghiệp (MDF, MFC):</strong> Vẫn thu mua với mức giá phù hợp.</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 className="text-[#111827] font-bold text-lg mb-4 uppercase pl-2 border-l-4 border-[#880d11]">Theo Kiểu Dáng & Công Năng:</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    { title: "Tủ thờ treo tường", desc: "Thiết kế gọn gàng, tiết kiệm diện tích." },
+                    { title: "Tủ thờ đứng", desc: "Tủ thờ chân quỳ, chân đứng kiểu dáng truyền thống, sang trọng." },
+                    { title: "Bàn thờ gia tiên", desc: "Kích thước đa dạng, phù hợp nhiều không gian." },
+                    { title: "Tủ thờ tam cấp, ngũ cấp", desc: "Dành cho không gian thờ tự rộng lớn." },
+                    { title: "Đồ thờ cúng khác", desc: "Sập thờ, khám thờ, long ngai bài vị." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex flex-col p-5 rounded-2xl bg-white border border-gray-200 hover:border-[#880d11]/50 hover:shadow-md transition-all duration-300 group">
+                      <h4 className="font-black text-[#111827] text-[15px] uppercase mb-1 group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+                      <p className="text-[14px] text-gray-600 leading-relaxed">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 2: Tủ thờ gỗ tự nhiên --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                <Image
+                  src="/thu-mua-tu-tho-go-cu-2.jpg"
+                  alt="Thu mua các loại tủ thờ, bàn thờ gia tiên cũ"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
 
-            </div>
-          </div>
+              {/* SECTION: Quy Trình Thu Mua */}
+              <section className="mb-12 bg-white border-2 border-gray-100 p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-sm">
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
-          {/* ========================================= */}
-          {/* CỘT SIDEBAR (BÊN PHẢI - 3/12)             */}
-          {/* ========================================= */}
-          <Sidebar />
-        </div>
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thu Mua Chuyên Nghiệp, Có Tâm
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Vui Hùng xây dựng quy trình làm việc bài bản, đảm bảo sự hài lòng tuyệt đối cho khách hàng:
+                </p>
+
+                <div className="flex flex-col gap-6 relative z-10">
+                  {[
+                    { step: "1", title: "Tiếp nhận thông tin", desc: "Khách hàng liên hệ qua hotline, Zalo cung cấp hình ảnh, chất liệu, tình trạng và kích thước của tủ thờ." },
+                    { step: "2", title: "Khảo sát & định giá", desc: "Nhân viên am hiểu về gỗ và giá trị tâm linh đến tận nơi kiểm tra thực tế, đánh giá chất lượng nguyên bản và giá trị nghệ thuật." },
+                    { step: "3", title: "Báo giá cạnh tranh", desc: "Đưa ra mức giá thu mua cao nhất thị trường dựa trên giá trị thực tế. Cam kết không ép giá, không qua trung gian." },
+                    { step: "4", title: "Thỏa thuận & thanh toán", desc: "Thống nhất mức giá, thanh toán 100% ngay sau khi thỏa thuận bằng tiền mặt hoặc chuyển khoản." },
+                    { step: "5", title: "Vận chuyển miễn phí & cẩn trọng", desc: "Đội ngũ tháo dỡ, đóng gói cẩn thận, vận chuyển an toàn, miễn phí, không làm ảnh hưởng đến không gian thờ tự của gia đình." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-5 group items-start md:items-center">
+                      <div className="mt-1 md:mt-0 w-12 h-12 bg-[#880d11] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(136,13,17,0.4)] transition-all duration-300">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+                        <p className="text-[15px] text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 3: Vận chuyển --- */}
+              <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-12 shadow-lg group w-full md:w-3/4 mx-auto">
+                <Image
+                  src="/thu-mua-tu-tho-go-cu-3.jpg"
+                  alt="Đội ngũ Vui Hùng tháo dỡ vận chuyển đồ thờ cúng cẩn trọng"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              {/* SECTION: Lý Do Chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Tại Sao Nên Chọn Vui Hùng?
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Trên thị trường có nhiều đơn vị thu mua đồ cũ, nhưng <strong className="text-[#880d11]">Vui Hùng</strong> là cái tên được hàng ngàn gia đình tin tưởng nhờ những ưu điểm vượt trội:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {[
+                    { icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Giá thu mua cao nhất", desc: "Chúng tôi hiểu rõ giá trị của từng loại gỗ tự nhiên, từ phổ thông đến quý hiếm, sẵn sàng trả mức giá cạnh tranh nhất." },
+                    { icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Uy tín – Trách nhiệm", desc: "Hoạt động minh bạch, hợp đồng rõ ràng. Đặc biệt trân trọng giá trị tâm linh, tháo dỡ nhẹ nhàng, cẩn trọng." },
+                    { icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>, title: "Năng lực thực tế lớn", desc: "Đội ngũ đông đảo, xe tải chuyên dụng, sẵn sàng phục vụ từ tủ thờ nhỏ đến bộ bàn thờ lớn tại các tỉnh thành." },
+                    { icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, title: "Thời gian xử lý nhanh", desc: "Khảo sát và báo giá trong ngày, thanh lý và vận chuyển ngay sau khi thống nhất giúp tiết kiệm thời gian." }
+                  ].map((item, i) => (
+                    <div key={i} className="bg-gray-50 p-6 rounded-2xl group hover:bg-[#111827] transition-colors duration-300 border border-gray-100 flex flex-col">
+                      <div className="w-12 h-12 rounded-full bg-[#880d11]/10 flex items-center justify-center text-[#880d11] mb-4 group-hover:bg-[#880d11] group-hover:text-white transition-colors">
+                        {item.icon}
+                      </div>
+                      <h4 className="text-[#111827] text-[17px] font-black uppercase mb-2 group-hover:text-white transition-colors">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 text-[14px] leading-relaxed group-hover:text-gray-300 transition-colors">
+                        {item.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* --- ẢNH 4: Lưu ý --- */}
+              <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
+                <Image
+                  src="/thu-mua-tu-tho-go-cu-4.jpg"
+                  alt="Lưu ý khi thanh lý tủ thờ, bàn thờ cũ"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              {/* SECTION: Lưu ý */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Lưu Ý Khi Thanh Lý Tủ Thờ Gỗ Cũ
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Để quá trình thanh lý diễn ra thuận lợi và đạt giá trị cao nhất, khách hàng nên lưu ý:
+                </p>
+
+                <div className="bg-[#111827] text-white p-6 md:p-8 rounded-3xl shadow-md">
+                  <ul className="space-y-4">
+                    <li className="flex gap-3 items-start">
+                      <span className="text-[#ff3d44] mt-1 font-bold">👉</span>
+                      <p><strong className="text-[#ff3d44] uppercase tracking-wide">Xác định rõ chất liệu gỗ:</strong> Gỗ tự nhiên hay gỗ công nghiệp? Loại gỗ gì?</p>
+                    </li>
+                    <li className="flex gap-3 items-start">
+                      <span className="text-[#ff3d44] mt-1 font-bold">👉</span>
+                      <p><strong className="text-[#ff3d44] uppercase tracking-wide">Đánh giá tình trạng:</strong> Tủ thờ còn nguyên bản hay đã qua sửa chữa? Có bị mối mọt, nứt nẻ không?</p>
+                    </li>
+                    <li className="flex gap-3 items-start">
+                      <span className="text-[#ff3d44] mt-1 font-bold">👉</span>
+                      <p><strong className="text-[#ff3d44] uppercase tracking-wide">Chọn đơn vị uy tín:</strong> Ưu tiên các đơn vị có kinh nghiệm, hiểu biết về gỗ và có thái độ trân trọng sản phẩm tâm linh như Vui Hùng.</p>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              {/* Nút Gọi Ngay cuối bài */}
+              <div className="mt-16 text-center border-t border-gray-100 pt-12">
+                <p className="text-xl font-bold text-[#111827] mb-6">Bạn cần thanh lý tủ thờ, bàn thờ gỗ cũ? Kết nối ngay với Vui Hùng!</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#880d11] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
+                    <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
+                    Gọi Hotline Ngay
+                  </a>
+                  <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#880d11] hover:text-[#880d11] transition-all w-full sm:w-auto justify-center">
+                    Chat Zalo Gửi Hình
+                  </a>
+                </div>
+              </div>
+
+            </article>
+
+            {/* --- CỘT PHẢI: SIDEBAR (Chiếm 1/4 trên Desktop) --- */}
+            <aside className="lg:col-span-1 w-full min-w-0 h-fit sticky top-[100px]">
+              <Sidebar />
+            </aside>
+
+          </div>
+        </section>
+
       </main>
+
+      {/* FOOTER CỐ ĐỊNH (Floating Call Button cho Mobile) - Chỉ dùng trên Mobile */}
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50 lg:hidden">
+        <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+          <span className="text-white font-bold text-xs">Zalo</span>
+        </a>
+        <a href={`tel:${hotline}`} className="w-14 h-14 bg-[#880d11] rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform">
+          <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        </a>
+      </div>
     </div>
   );
 }
