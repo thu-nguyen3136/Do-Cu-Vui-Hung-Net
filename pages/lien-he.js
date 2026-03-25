@@ -64,13 +64,13 @@ export default function LienHe() {
               </a>
 
               {/* Email */}
-              <a href="mailto:trinhvanviet1812@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
+              <a href="mailto:docuvuihung@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
                 <div className="bg-[#710a0d] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform">
                   <span className="text-lg md:text-xl">✉️</span>
                 </div>
                 <div className="flex flex-col items-start overflow-hidden">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Địa Chỉ Email</span>
-                  <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#880d11] transition-colors truncate max-w-full">trinhvanviet1812@gmail.com</span>
+                  <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#880d11] transition-colors truncate max-w-full">docuvuihung@gmail.com</span>
                 </div>
               </a>
 
@@ -127,15 +127,14 @@ export default function LienHe() {
           </h3>
           <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden bg-gray-100 shadow-inner">
             <iframe
-              src="https://maps.google.com/maps?q=14+Lê+Văn+Khương,+Đông+Thạnh,+Hóc+Môn,+Hồ+Chí+Minh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps?q=305+Tân+Sơn,+Phường+15,+Tân+Bình,+TP.HCM&output=embed"
               width="100%"
-              height="100%"
+              height="400"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Bản đồ đường đi đến Đồ Cũ Vui Hùng - Hóc Môn"
-              className="grayscale-[15%] contrast-110 transition-all duration-500 hover:grayscale-0 hover:contrast-100"
+              className="rounded-3xl shadow-lg border border-gray-200"
             ></iframe>
           </div>
         </div>
