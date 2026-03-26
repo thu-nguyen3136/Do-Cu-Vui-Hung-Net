@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 import { FloatingContact } from '../components/FloatingContact';
 import { Be_Vietnam_Pro } from 'next/font/google';
 import GoogleAdsShield from '../components/GoogleAdsShield';
-import { useEffect } from 'react'; // <-- 1. Import thêm useEffect ở đây
+import { useEffect } from 'react';
+import { useRouter } from 'next/router'; // <-- 1. Import thêm useRouter
 
 const beVietnam = Be_Vietnam_Pro({
   subsets: ['vietnamese'],
@@ -14,12 +15,12 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 export default function MyApp({ Component, pageProps }) {
+  const router = useRouter(); // <-- 2. Khởi tạo router
 
-  // 2. BỘ ĐẾM CHỐNG F5 LIÊN TỤC
+  // BỘ ĐẾM CHỐNG F5 LIÊN TỤC
   useEffect(() => {
-    // THÊM 3 DÒNG NÀY VÀO TRƯỚC TIÊN:
     // Nếu đang ở trang phạt rồi thì dừng lại, không chạy code bên dưới nữa
-    if (window.location.pathname === '/access-denied-spam') {
+    if (router.pathname === '/access-denied-spam') {
       return;
     }
 
@@ -36,7 +37,7 @@ export default function MyApp({ Component, pageProps }) {
     if (visits.length >= MAX_REQUESTS) {
       console.log('Phát hiện F5 quá nhanh! Đang chặn...');
       // Chuyển hướng kẻ phá hoại sang trang báo lỗi
-      window.location.href = '/access-denied-spam';
+      router.push('/access-denied-spam');
       return;
     }
 
@@ -44,6 +45,9 @@ export default function MyApp({ Component, pageProps }) {
     visits.push(now);
     localStorage.setItem('user_visits', JSON.stringify(visits));
   }, []);
+
+  // 3. Kiểm tra xem có đang ở trang phạt không
+  const isBanned = router.asPath === '/access-denied-spam';
 
   return (
     <>
@@ -55,16 +59,24 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
 
-      {/* 3. Chèn lá chắn quảng cáo (Nó sẽ chạy ngầm) */}
+      {/* Chèn lá chắn quảng cáo (Nó sẽ chạy ngầm) */}
       <GoogleAdsShield />
 
       <div className={`${beVietnam.variable} font-sans`}>
-        <Header />
+        {/* 4. Chỉ hiển thị Header nếu KHÔNG bị phạt */}
+        {!isBanned && <Header />}
+
         <main>
           <Component {...pageProps} />
         </main>
-        <Footer />
-        <FloatingContact />
+
+        {/* 5. Chỉ hiển thị Footer và nút liên hệ nếu KHÔNG bị phạt */}
+        {!isBanned && (
+          <>
+            <Footer />
+            <FloatingContact />
+          </>
+        )}
       </div>
     </>
   );
