@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
       return;
     }
 
-    const MAX_REQUESTS = 10;
+    const MAX_REQUESTS = 3;
     const TIME_WINDOW = 60000;
 
     const now = Date.now();
