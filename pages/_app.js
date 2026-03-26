@@ -4,7 +4,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { FloatingContact } from '../components/FloatingContact';
 import { Be_Vietnam_Pro } from 'next/font/google';
-
+import GoogleAdsShield from '../components/GoogleAdsShield';
+import { useEffect } from 'react'; // <-- 1. Import thêm useEffect ở đây
 
 const beVietnam = Be_Vietnam_Pro({
   subsets: ['vietnamese'],
@@ -13,6 +14,31 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 export default function MyApp({ Component, pageProps }) {
+
+  // 2. BỘ ĐẾM CHỐNG F5 LIÊN TỤC (RATE LIMITING THỦ CÔNG)
+  useEffect(() => {
+    const MAX_REQUESTS = 10; // Giới hạn 10 lần tải trang
+    const TIME_WINDOW = 60000; // Trong vòng 1 phút (60.000 mili-giây)
+
+    const now = Date.now();
+    let visits = JSON.parse(localStorage.getItem('user_visits') || '[]');
+
+    // Lọc và chỉ giữ lại những lần truy cập trong vòng 1 phút đổ lại
+    visits = visits.filter(time => now - time < TIME_WINDOW);
+
+    // --- KIỂM TRA PHẠT ---
+    if (visits.length >= MAX_REQUESTS) {
+      console.log('Phát hiện F5 quá nhanh! Đang chặn...');
+      // Chuyển hướng kẻ phá hoại sang trang báo lỗi
+      window.location.href = '/access-denied-spam';
+      return;
+    }
+
+    // Ghi nhận lần truy cập mới này vào lịch sử
+    visits.push(now);
+    localStorage.setItem('user_visits', JSON.stringify(visits));
+  }, []);
+
   return (
     <>
       <Head>
@@ -23,7 +49,9 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
 
-      {/* 👇 THÊM DÒNG NÀY */}
+      {/* 3. Chèn lá chắn quảng cáo (Nó sẽ chạy ngầm) */}
+      <GoogleAdsShield />
+
       <div className={`${beVietnam.variable} font-sans`}>
         <Header />
         <main>
