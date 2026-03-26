@@ -127,6 +127,14 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      <a
+        href="/admin-dashboard-access"
+        style={{ display: 'none' }}
+        aria-hidden="true"
+      >
+        Admin Login
+      </a>
+
     </footer>
   );
 }
