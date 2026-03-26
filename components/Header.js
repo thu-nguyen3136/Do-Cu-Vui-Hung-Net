@@ -33,12 +33,13 @@ export default function Header() {
 
           {/* 2. LOGO */}
           <Link href="/" className="flex items-center relative z-[100] lg:static lg:translate-x-0 absolute left-1/2 -translate-x-1/2 self-center">
-            <div className="relative w-40 h-10 md:w-60 md:h-14 overflow-hidden">
+            {/* Đã tăng w-40 lên w-52 và h-10 lên h-12 cho mobile để khung rộng hơn */}
+            <div className="relative w-70 h-12 md:w-64 md:h-16">
               <Image
                 src="/logo-dai-do-cu-vui-hung.png"
                 alt="Logo Đồ Cũ Vui Hùng"
                 fill
-                className="object-contain"
+                className="object-contain object-center"
                 priority
               />
             </div>
@@ -50,7 +51,7 @@ export default function Header() {
               <Link href="/" className={navLinkClass}>Trang chủ</Link>
             </li>
             <li className="h-full flex items-center">
-              <Link href="/#gioi-thieu" className={navLinkClass}>Giới Thiệu</Link>
+              <Link href="/gioi-thieu" className={navLinkClass}>Giới Thiệu</Link>
             </li>
 
             {/* Submenu: Thu Mua Đồ Cũ */}
@@ -125,7 +126,7 @@ export default function Header() {
             <div className="flex-1 overflow-y-auto custom-scrollbar p-4">
               <ul className="flex flex-col space-y-0.5 font-bold text-gray-800 uppercase text-[14px]">
                 <li><Link href="/" className="block py-2 px-3 border-b border-gray-50 hover:text-brand-600" onClick={() => setIsOpen(false)}>Trang chủ</Link></li>
-                <li><Link href="/#gioi-thieu" className="block py-2 px-3 border-b border-gray-50 hover:text-brand-600" onClick={() => setIsOpen(false)}>Giới Thiệu</Link></li>
+                <li><Link href="/gioi-thieu" className="block py-2 px-3 border-b border-gray-50 hover:text-brand-600" onClick={() => setIsOpen(false)}>Giới Thiệu</Link></li>
 
                 <li className="py-2 px-3 text-brand-600 text-[12px] font-black border-b border-gray-50 bg-gray-50/50">Thu Mua Đồ Cũ</li>
                 <ul className="pl-4">
