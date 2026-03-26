@@ -15,10 +15,16 @@ const beVietnam = Be_Vietnam_Pro({
 
 export default function MyApp({ Component, pageProps }) {
 
-  // 2. BỘ ĐẾM CHỐNG F5 LIÊN TỤC (RATE LIMITING THỦ CÔNG)
+  // 2. BỘ ĐẾM CHỐNG F5 LIÊN TỤC
   useEffect(() => {
-    const MAX_REQUESTS = 10; // Giới hạn 10 lần tải trang
-    const TIME_WINDOW = 60000; // Trong vòng 1 phút (60.000 mili-giây)
+    // THÊM 3 DÒNG NÀY VÀO TRƯỚC TIÊN:
+    // Nếu đang ở trang phạt rồi thì dừng lại, không chạy code bên dưới nữa
+    if (window.location.pathname === '/access-denied-spam') {
+      return;
+    }
+
+    const MAX_REQUESTS = 10;
+    const TIME_WINDOW = 60000;
 
     const now = Date.now();
     let visits = JSON.parse(localStorage.getItem('user_visits') || '[]');

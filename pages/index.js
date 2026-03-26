@@ -347,9 +347,11 @@ export default function Home() {
                         </h3>
 
                         {/* Nút bấm */}
-                        <div className="inline-flex w-full items-center justify-center gap-2 bg-gray-50 group-hover:bg-[#880d11] text-[#710a0d] group-hover:text-white font-black py-3.5 px-6 rounded-xl text-[12px] md:text-[13px] uppercase tracking-widest transition-all duration-300 border border-gray-200 group-hover:border-transparent group-hover:shadow-[0_8px_20px_rgba(136,13,17,0.3)]">
+                        <div className="inline-flex w-full items-center justify-center gap-2 bg-[#880d11] group-hover:bg-[#710a0d] text-white font-black py-3.5 px-6 rounded-xl text-[12px] md:text-[13px] uppercase tracking-widest transition-all duration-300 border border-[#880d11] group-hover:border-[#710a0d] group-hover:shadow-[0_8px_20px_rgba(136,13,17,0.3)]">
                           XEM CHI TIẾT
-                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
                         </div>
                       </div>
                     </Link>
