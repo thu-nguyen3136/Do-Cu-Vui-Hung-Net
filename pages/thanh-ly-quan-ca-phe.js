@@ -13,7 +13,7 @@ export default function ThanhLyQuanCafePage() {
         <title>Thanh Lý Quán Cafe Trọn Gói Giá Cao TPHCM | Đồ Cũ Vui Hùng</title>
         <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua quán cafe trọn gói: máy pha cafe, máy xay, thiết bị làm lạnh, nội thất bàn ghế với giá cao nhất TPHCM. Khảo sát 30p, tháo dỡ miễn phí." />
         <meta name="keywords" content="thanh lý quán cafe, thu mua quán cafe, thu mua máy pha cafe, thanh lý bàn ghế cafe, đồ cũ vui hùng, thu mua thiết bị quán cafe" />
-        <link rel="canonical" href="https://thumuadocugiacao.net/thanh-ly-quan-cafe" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thanh-ly-quan-ca-phe" />
         <meta property="og:title" content="Dịch Vụ Thu Mua Quán Cafe Trọn Gói Giá Cao - Vui Hùng" />
         <meta property="og:description" content="Cần thanh lý quán cafe? Vui Hùng thu mua trọn gói máy pha, máy xay, bàn ghế, thiết bị lạnh giá cao nhất thị trường. Giải phóng mặt bằng nhanh gọn trong ngày." />
         <meta property="og:type" content="article" />

@@ -187,7 +187,7 @@ export default function Home() {
       <Head>
         <title>Thu Mua Đồ Cũ Giá Cao TPHCM | Thanh Lý Nhà Hàng, Khách Sạn - Vui Hùng</title>
         <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua đồ cũ giá cao tại TPHCM. ⭐Thanh lý nhà hàng, khách sạn, quán cafe ⭐Thu mua cửa cũ, xác nhà xưởng. Báo giá tận nơi, vận chuyển 0đ!" />
-        <meta name="keywords" content="đồ cũ vui hùng, thu mua đồ cũ tphcm, thu mua cửa cũ, thanh lý nhà hàng khách sạn, thu mua đồ gỗ cũ, thanh lý quán cafe, thu mua xác nhà xưởng giá cao" />
+        <meta name="keywords" content="đồ cũ vui hùng, thu mua đồ cũ vui hùng, thu mua đồ cũ tphcm, thu mua cửa cũ, thanh lý nhà hàng khách sạn, thu mua đồ gỗ cũ, thanh lý quán cafe, thu mua xác nhà xưởng giá cao" />
         <meta property="og:title" content="CỬA HÀNG THU MUA ĐỒ CŨ GIÁ CAO TPHCM ☎️【VUI HÙNG】" />
         <meta property="og:description" content="Chuyên thu mua thanh lý đồ cũ tận nơi giá cao nhất thị trường. Uy tín - Nhanh chóng - Tháo dỡ miễn phí." />
         <meta property="og:type" content="website" />
@@ -200,7 +200,7 @@ export default function Home() {
             "name": "Đồ Cũ Vui Hùng",
             "alternateName": "Thu Mua Đồ Cũ Vui Hùng",
             "description": "Đơn vị chuyên thu mua đồ cũ, thanh lý nhà hàng, khách sạn và các loại cửa cũ giá cao tại TPHCM.",
-            "url": "https://thumuadoc0988257479ugiacao.net/",
+            "url": "https://thumuadocugiacao.net/",
             "telephone": "0979095076",
             "address": {
               "@type": "PostalAddress",
@@ -214,7 +214,7 @@ export default function Home() {
 
       {/* PHẦN BANNER CHÍNH */}
       <section className="relative w-full overflow-hidden block">
-        <h1 className="sr-only">Thu Mua Đồ Cũ Giá Cao, Thanh Lý Nhà Hàng, Khách Sạn TPHCM - Đồ Cũ Vui Hùng</h1>
+
         <div className="w-full">
           <img
             src="/banner-do-cu-vui-hung.jpg"
@@ -226,6 +226,22 @@ export default function Home() {
       </section>
 
       <main className="flex-grow">
+
+        <section className="bg-white py-3 md:py-6 border-b border-gray-100 text-center px-4">
+          <div className="max-w-[900px] mx-auto">
+
+            <h1 className="text-lg md:text-3xl font-black text-[#111827] tracking-tight leading-[1.3] py-1 md:py-2">
+              <span className="block">THU MUA ĐỒ CŨ GIÁ CAO TP.HCM</span>
+              <span className="block block text-gray-800">Thanh lý nhanh –  <span className="text-[#ff3d44]"> Vui Hùng</span></span>
+            </h1>
+
+            <p className="text-gray-500 mt-3 md:mt-4 mx-auto font-medium text-sm md:text-base leading-[1.6] max-w-[700px]">
+              Vui Hùng chuyên thu mua, thanh lý bàn ghế gỗ cũ, đồ inox, thiết bị nhà hàng ăn uống, quán cà phê tận nơi.
+              Báo giá nhanh chóng, bốc xếp dọn dẹp dứt điểm trong ngày!
+            </p>
+
+          </div>
+        </section>
 
         {/* PHẦN THỐNG KÊ */}
         <section className="bg-gradient-to-r from-[#111827] to-[#1f2937] py-10 md:py-14 text-white">
@@ -436,103 +452,65 @@ export default function Home() {
           </div>
         </section>
 
-        {/* VÌ SAO CHỌN VUI HÙNG */}
-        <section className="relative py-20 md:py-28 bg-[#0f0f10] text-white overflow-hidden">
+        <section className="relative py-10 md:py-16 bg-[#0f0f10] text-white overflow-hidden">
 
-          {/* Glow */}
-          <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#880d11]/20 blur-[150px] rounded-full"></div>
-          <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-[#880d11]/20 blur-[120px] rounded-full"></div>
-
-          <div className="max-w-[1100px] mx-auto px-6 relative z-10">
+          <div className="max-w-[1100px] mx-auto px-4 md:px-6 relative z-10">
 
             {/* TITLE */}
-            <div className="text-center mb-20">
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
-                Vì sao khách hàng chọn
-                <span className="text-[#ff3d44]"> Vui Hùng?</span>
-              </h2>
-              <p className="text-gray-400 mt-4 text-lg">
+            <div className="text-center mb-10 md:mb-14">              <h2 className="text-2xl md:text-4xl font-black tracking-tight">
+              Vì sao khách hàng chọn
+              <span className="text-[#ff3d44]"> Vui Hùng?</span>
+            </h2>
+              <p className="text-gray-400 mt-2 md:mt-3 text-base md:text-lg">
                 Không chỉ là thu mua – chúng tôi mang lại giá trị thật
               </p>
             </div>
 
-            {/* TIMELINE */}
-            <div className="relative">
+            {/* ITEMS */}
+            {[
+              {
+                title: "Giá cao hơn thị trường",
+                desc: "Cam kết thu mua cao hơn 20-30%, không ép giá, thanh toán ngay.",
+                icon: "💰"
+              },
+              {
+                title: "Có mặt chỉ sau 30 phút",
+                desc: "Đội ngũ di chuyển nhanh, khảo sát và chốt giá ngay.",
+                icon: "⚡"
+              },
+              {
+                title: "Trọn gói từ A-Z",
+                desc: "Miễn phí tháo dỡ, vận chuyển, dọn dẹp.",
+                icon: "🚛"
+              },
+              {
+                title: "Uy tín lâu năm",
+                desc: "Hơn 10.000 khách hàng tin tưởng, hoạt động 24/7.",
+                icon: "🏆"
+              }
+            ].map((item, i) => (
+              <div className="mb-8 md:mb-10">
+                <div className="bg-[#1a1a1c]/50 rounded-3xl p-3 md:p-4">
 
-              {/* LINE GIỮA */}
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#880d11] via-[#880d11]/50 to-transparent"></div>
-
-              {[
-                {
-                  title: "Giá cao hơn thị trường",
-                  desc: "Cam kết thu mua cao hơn 20-30%, không ép giá, thanh toán ngay.",
-                  icon: "💰"
-                },
-                {
-                  title: "Có mặt chỉ sau 30 phút",
-                  desc: "Đội ngũ di chuyển nhanh, khảo sát và chốt giá ngay.",
-                  icon: "⚡"
-                },
-                {
-                  title: "Trọn gói từ A-Z",
-                  desc: "Miễn phí tháo dỡ, vận chuyển, dọn dẹp.",
-                  icon: "🚛"
-                },
-                {
-                  title: "Uy tín lâu năm",
-                  desc: "Hơn 10.000 khách hàng tin tưởng, hoạt động 24/7.",
-                  icon: "🏆"
-                }
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className={`relative flex flex-col md:flex-row items-center md:items-start mb-14 ${i % 2 === 0 ? "md:justify-start" : "md:justify-end"
-                    }`}
-                >
-
-                  {/* Vòng tròn timeline */}
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-[#ff3d44] border-4 border-[#0f0f10] z-10 shadow-[0_0_10px_rgba(255,61,68,0.8)]"></div>
-
-                  {/* BLOCK */}
-                  <div className="w-full md:w-[45%]">
-
-                    <div className="bg-[#1a1a1c]/50 border border-white/5 backdrop-blur-md rounded-3xl p-6 md:p-8 hover:border-[#880d11]/50 hover:bg-[#1a1a1c]/80 transition-all duration-500 group shadow-lg hover:-translate-y-1">
-
-                      <div className="flex items-center gap-5 mb-4">
-                        <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#880d11] to-[#5c0909] rounded-2xl flex items-center justify-center text-2xl shadow-[0_5px_15px_rgba(136,13,17,0.4)] group-hover:scale-110 transition-transform duration-300 border border-[#ff3d44]/20">
-                          {item.icon}
-                        </div>
-
-                        <h3 className="text-xl md:text-2xl font-black group-hover:text-[#ff3d44] transition-colors duration-300 tracking-wide">
-                          {item.title}
-                        </h3>
-                      </div>
-
-                      <p className="text-gray-400 text-[15px] leading-relaxed group-hover:text-gray-300 transition-colors">
-                        {item.desc}
-                      </p>
-
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                      {item.icon}
                     </div>
 
+                    <h3 className="text-lg md:text-xl font-black">
+                      {item.title}
+                    </h3>
                   </div>
 
+                  <p className="text-gray-400 text-sm md:text-[15px] leading-[1.5]">
+                    {item.desc}
+                  </p>
+
                 </div>
-              ))}
+              </div>
+            ))}
 
-            </div>
-
-            {/* CTA */}
-            <div className="text-center mt-20">
-              <a
-                href="tel:0979095076"
-                className="inline-flex items-center gap-4 bg-gradient-to-r from-[#880d11] to-[#710a0d] hover:from-[#710a0d] hover:to-[#5c0909] px-10 py-5 rounded-2xl font-black text-lg shadow-[0_10px_20px_rgba(136,13,17,0.3)] transition-all hover:scale-105 border border-[#ff3d44]/20"
-              >
-                📞 GỌI NGAY: 0979.095.076
-              </a>
-            </div>
-
-          </div>
-        </section>
+            {/* CTA */} <div className="text-center mt-20"> <a href="tel:0979095076" className="inline-flex items-center gap-4 bg-gradient-to-r from-[#880d11] to-[#710a0d] hover:from-[#710a0d] hover:to-[#5c0909] px-10 py-5 rounded-2xl font-black text-lg shadow-[0_10px_20px_rgba(136,13,17,0.3)] transition-all hover:scale-105 border border-[#ff3d44]/20" > 📞 GỌI NGAY: 0979.095.076 </a> </div> </div> </section>
 
 
 

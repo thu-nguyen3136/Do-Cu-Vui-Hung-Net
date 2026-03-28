@@ -11,7 +11,7 @@ export default function ArticleKinhNghiemDoCu() {
       <Head>
         <title>Kinh Nghiệm Thanh Lý Đồ Cũ Giá Cao Tại TPHCM (Cập Nhật 2026)</title>
         <meta name="description" content="Bí quyết thanh lý đồ cũ gia đình, đồ văn phòng, bàn ghế quán cafe với giá cao nhất TPHCM. Chọn đúng đơn vị thu mua trọn gói giúp bạn không bị ép giá." />
-        <link rel="canonical" href="https://thumuadocugiacao.net/tin-tuc/kinh-nghiem-thanh-ly-do-cu-gia-cao" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/tin-tuc/kinh-nghiem-thanh-ly-do-cu" />
       </Head>
 
       <main className="flex-grow pb-20">
