@@ -42,12 +42,12 @@ export default function ThuMuaDoInoxPage() {
               </h1>
 
               <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
-                Dịch Vụ Mua Bàn Ghế Inox Cũ - Thu Mua Mọi Sản Phẩm Giá Cao
+                Dịch Vụ Thu Mua Đồ Inox Cũ - Thu Mua Mọi Mặt Hàng Đồ Inox Tận Nơi Khu Vực HCM
               </h2>
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
                 <p>
-                  <strong className="text-[#880d11]">Đồ Cũ Vui Hùng</strong> nhận thu mua mọi mặt hàng sản phẩm bàn ghế inox đã qua sử dụng, mua với số lượng lớn và nhỏ toàn Sài Gòn 24/24. Ở đâu cần, chúng tôi có mặt!
+                  <strong className="text-[#880d11]">Vui Hùng</strong> với 10 năm kinh nghiệm trong lĩnh vực thu mua đồ inox, bàn ghế inox, kệ bếp inox, bồn rửa inox, bếp công nghiệp hay các thiết bị inox khác, chúng tôi đều hỗ trợ tận nơi với mức giá tốt nhất thị trường, chúng tôi mang đến quy trình chuyên nghiệp, định giá minh bạch và thanh toán ngay trong ngày.
                 </p>
                 <p>
                   Ngoài <strong className="text-[#111827]">đồ inox</strong>, chúng tôi còn hỗ trợ thu mua đa dạng các sản phẩm khác như giường tủ gỗ cũ, bàn ghế salon cũ mới đã qua sử dụng, mọi sản phẩm nội ngoại thất phòng khách, phòng ngủ, nhà bếp... Mua nhanh gọn trong ngày, đến tận nhà khi quý khách hàng có nhu cầu muốn thanh lý.
