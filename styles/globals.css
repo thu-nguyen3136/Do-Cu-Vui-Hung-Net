@@ -28,12 +28,21 @@
   --color-brand-400: #ff6969;
   --color-brand-500: #f83b3b;
   /* Đỏ tươi để làm điểm nhấn nhỏ */
+<<<<<<< HEAD
   --color-brand-600: #dc3545;
   /* MÀU CHỦ ĐẠO CỦA THƯ */
   --color-brand-700: #b02a37;
   --color-brand-800: #a10000;
   --color-brand-900: #8b0000;
   --color-brand-950: #5c0000;
+=======
+  --color-brand-600: #880d11;
+  /* MÀU CHỦ ĐẠO CỦA THƯ */
+  --color-brand-700: #710a0d;
+  --color-brand-800: #5e0b0e;
+  --color-brand-900: #500e10;
+  --color-brand-950: #2c0304;
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
   /* Đỏ đen cho chữ hoặc footer đậm */
 }
 
@@ -47,7 +56,11 @@ body {
 /* Custom styles for all pages - Optimized spacing */
 h1,
 h2 {
+<<<<<<< HEAD
   color: #dc3545;
+=======
+  color: #880d11;
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
   /* New brand-600 */
   padding: 0.5rem 0;
   /* Reduced padding for tighter spacing */
@@ -58,7 +71,11 @@ h2 {
 }
 
 h3 {
+<<<<<<< HEAD
   color: #dc3545;
+=======
+  color: #880d11;
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 }
 
 h1 {
@@ -119,6 +136,7 @@ ol {
 
 li {
   margin-bottom: 0.5rem;
+<<<<<<< HEAD
 }
 
 
@@ -174,4 +192,6 @@ li {
   height: auto;
   display: block;
   margin: 0 auto;
+=======
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 }

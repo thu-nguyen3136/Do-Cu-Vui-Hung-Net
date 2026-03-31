@@ -52,7 +52,11 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+<<<<<<< HEAD
         <title>Đồ Cũ Huy Hoàng - Thu Mua Giá Cao Tận Nơi</title>
+=======
+        <title>Đồ Cũ Vui Hùng - Thu Mua Giá Cao Tận Nơi</title>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         <meta name="description" content="Chuyên thu mua đồ gỗ, đồ cũ..." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

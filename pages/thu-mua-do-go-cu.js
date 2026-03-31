@@ -4,18 +4,31 @@ import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
 export default function ThuMuaDoGoCuPage() {
+<<<<<<< HEAD
   const hotline = "0909.549.237";
+=======
+  const hotline = "0979.095.076";
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
+<<<<<<< HEAD
         <title>Thu Mua Đồ Gỗ Cũ Giá Cao TPHCM | Dịch Vụ Thanh Lý Uy Tín Huy Hoàng</title>
         <meta name="description" content="Đồ Cũ Huy Hoàng chuyên thu mua đồ gỗ cũ, thanh lý nội thất gỗ gia đình, văn phòng, nhà hàng, đồ thờ cúng, gỗ mỹ nghệ với giá cao nhất thị trường TPHCM." />
         <meta name="keywords" content="thu mua đồ gỗ cũ, thanh lý đồ gỗ, thu mua nội thất gỗ, thu mua salon gỗ, thu mua đồ thờ gỗ, đồ cũ Huy Hoàng" />
         <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-go-cu" />
         <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Gỗ Cũ Giá Cao Trọn Gói Tại TPHCM - Huy Hoàng" />
         <meta property="og:description" content="Cần thanh lý đồ gỗ cũ? Huy Hoàng thu mua mọi số lượng các loại gỗ tự nhiên, gỗ công nghiệp, nội thất, đồ thờ cúng với giá cao nhất. Miễn phí vận chuyển." />
+=======
+        <title>Thu Mua Đồ Gỗ Cũ Giá Cao TPHCM | Dịch Vụ Thanh Lý Uy Tín Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua đồ gỗ cũ, thanh lý nội thất gỗ gia đình, văn phòng, nhà hàng, đồ thờ cúng, gỗ mỹ nghệ với giá cao nhất thị trường TPHCM." />
+        <meta name="keywords" content="thu mua đồ gỗ cũ, thanh lý đồ gỗ, thu mua nội thất gỗ, thu mua salon gỗ, thu mua đồ thờ gỗ, đồ cũ vui hùng" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-go-cu" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Gỗ Cũ Giá Cao Trọn Gói Tại TPHCM - Vui Hùng" />
+        <meta property="og:description" content="Cần thanh lý đồ gỗ cũ? Vui Hùng thu mua mọi số lượng các loại gỗ tự nhiên, gỗ công nghiệp, nội thất, đồ thờ cúng với giá cao nhất. Miễn phí vận chuyển." />
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         <meta property="og:type" content="article" />
       </Head>
 
@@ -24,7 +37,11 @@ export default function ThuMuaDoGoCuPage() {
         {/* ================= BREADCRUMB ================= */}
         <div className="bg-white border-b border-gray-100 py-4">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+<<<<<<< HEAD
             <Link href="/" className="hover:text-[#dc3545] transition-colors">Trang chủ</Link>
+=======
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             <span>/</span>
             <span className="text-gray-900 font-medium">Thu Mua Đồ Gỗ Cũ</span>
           </div>
@@ -41,8 +58,13 @@ export default function ThuMuaDoGoCuPage() {
                 Thu Mua Đồ Gỗ Cũ
               </h1>
 
+<<<<<<< HEAD
               <h2 className="text-xl md:text-2xl font-bold text-[#dc3545] mb-8 leading-snug border-l-4 border-[#dc3545] pl-4">
                 Thu Mua Đồ Gỗ Cũ Giá Cao – Dịch Vụ Uy Tín, Chuyên Nghiệp Tại Huy Hoàng
+=======
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+                Thu Mua Đồ Gỗ Cũ Giá Cao – Dịch Vụ Uy Tín, Chuyên Nghiệp Tại Vui Hùng
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               </h2>
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
@@ -50,10 +72,17 @@ export default function ThuMuaDoGoCuPage() {
                   Bạn đang sở hữu những món <strong className="text-[#111827]">đồ gỗ cũ</strong> không còn phù hợp với không gian sống? Bạn cần thanh lý nội thất gỗ để chuyển nhà, sửa chữa, hay thay đổi mô hình kinh doanh? Việc tìm kiếm một đơn vị thu mua đồ gỗ cũ uy tín, giá cao và xử lý nhanh gọn luôn là bài toán khó.
                 </p>
                 <p>
+<<<<<<< HEAD
                   Thấu hiểu điều đó, <strong className="text-[#dc3545]">Huy Hoàng</strong> tự hào là địa chỉ tin cậy hàng đầu, chuyên thu mua tất cả các loại đồ gỗ cũ với quy trình chuyên nghiệp, minh bạch và mức giá cạnh tranh nhất thị trường.
                 </p>
                 <p className="border-l-4 border-gray-200 pl-6 italic font-medium mt-4 bg-gray-50 py-3 rounded-r-xl">
                   Không chỉ đơn thuần là thu mua, Huy Hoàng mang đến giải pháp thanh lý nội thất toàn diện, giúp khách hàng giải phóng mặt bằng nhanh chóng, thu hồi vốn tối đa mà không phải lo lắng về việc vận chuyển hay tìm kiếm người mua lẻ.
+=======
+                  Thấu hiểu điều đó, <strong className="text-[#880d11]">Vui Hùng</strong> tự hào là địa chỉ tin cậy hàng đầu, chuyên thu mua tất cả các loại đồ gỗ cũ với quy trình chuyên nghiệp, minh bạch và mức giá cạnh tranh nhất thị trường.
+                </p>
+                <p className="border-l-4 border-gray-200 pl-6 italic font-medium mt-4 bg-gray-50 py-3 rounded-r-xl">
+                  Không chỉ đơn thuần là thu mua, Vui Hùng mang đến giải pháp thanh lý nội thất toàn diện, giúp khách hàng giải phóng mặt bằng nhanh chóng, thu hồi vốn tối đa mà không phải lo lắng về việc vận chuyển hay tìm kiếm người mua lẻ.
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
               </div>
 
@@ -62,31 +91,50 @@ export default function ThuMuaDoGoCuPage() {
                 {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
                 <Image
                   src="/thu-mua-do-go.jpg"
+<<<<<<< HEAD
                   alt="Dịch vụ thu mua đồ gỗ cũ giá cao trọn gói Đồ Cũ Huy Hoàng"
+=======
+                  alt="Dịch vụ thu mua đồ gỗ cũ giá cao trọn gói Đồ Cũ Vui Hùng"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   priority
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=2000&auto=format&fit=crop"; }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+<<<<<<< HEAD
                   Huy Hoàng thu mua mọi mặt hàng đồ gỗ tự nhiên, gỗ công nghiệp giá cao
+=======
+                  Vui Hùng thu mua mọi mặt hàng đồ gỗ tự nhiên, gỗ công nghiệp giá cao
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </div>
 
               {/* SECTION: Đa dạng các loại đồ gỗ */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   Thu Mua Đa Dạng Các Loại Đồ Gỗ Cũ
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Chúng tôi nhận thu mua tất cả các dòng sản phẩm từ gỗ với nhiều chất liệu, kiểu dáng và mục đích sử dụng khác nhau:
                 </p>
 
+<<<<<<< HEAD
                 <div className="bg-[#dc3545]/5 border border-[#dc3545]/20 p-5 rounded-2xl mb-8 flex items-start gap-4">
                   <svg className="w-6 h-6 text-[#dc3545] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                   <p className="text-gray-800 leading-relaxed font-medium">
                     <strong className="text-[#dc3545]">Về chất liệu gỗ:</strong> Huy Hoàng thu mua cả gỗ tự nhiên cao cấp (Gụ, Hương, Sồi, Óc Chó, Căm Xe, Trắc, Mun, Mít, Xoan, Dổi...) lẫn các loại gỗ công nghiệp (MDF, MFC, HDF, Plywood, ván ép) với mức giá phù hợp theo từng loại.
+=======
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-5 rounded-2xl mb-8 flex items-start gap-4">
+                  <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                  <p className="text-gray-800 leading-relaxed font-medium">
+                    <strong className="text-[#880d11]">Về chất liệu gỗ:</strong> Vui Hùng thu mua cả gỗ tự nhiên cao cấp (Gụ, Hương, Sồi, Óc Chó, Căm Xe, Trắc, Mun, Mít, Xoan, Dổi...) lẫn các loại gỗ công nghiệp (MDF, MFC, HDF, Plywood, ván ép) với mức giá phù hợp theo từng loại.
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   </p>
                 </div>
 
@@ -113,9 +161,15 @@ export default function ThuMuaDoGoCuPage() {
                       desc: "Tượng gỗ, tranh gỗ, bình phong, sập gụ, tủ chè, bàn trà cổ, ghế thư giãn cổ điển – những sản phẩm có giá trị nghệ thuật và lịch sử."
                     }
                   ].map((item, i) => (
+<<<<<<< HEAD
                     <div key={i} className="flex flex-col p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#dc3545]/30 hover:bg-white transition-all duration-300 group">
                       <h4 className="font-black text-[#111827] text-[17px] uppercase mb-3 group-hover:text-[#dc3545] transition-colors flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#dc3545]"></span>
+=======
+                    <div key={i} className="flex flex-col p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#880d11]/30 hover:bg-white transition-all duration-300 group">
+                      <h4 className="font-black text-[#111827] text-[17px] uppercase mb-3 group-hover:text-[#880d11] transition-colors flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#880d11]"></span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         {item.title}
                       </h4>
                       <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
@@ -138,6 +192,7 @@ export default function ThuMuaDoGoCuPage() {
 
               {/* SECTION: Quy Trình Thu Mua */}
               <section className="mb-12 bg-white border-2 border-gray-100 p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-sm">
+<<<<<<< HEAD
                 <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#dc3545 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
@@ -146,6 +201,16 @@ export default function ThuMuaDoGoCuPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
                   Huy Hoàng xây dựng quy trình làm việc bài bản, đảm bảo quyền lợi tối đa và sự hài lòng tuyệt đối cho khách hàng:
+=======
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thu Mua Chuyên Nghiệp, Nhanh Gọn
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Vui Hùng xây dựng quy trình làm việc bài bản, đảm bảo quyền lợi tối đa và sự hài lòng tuyệt đối cho khách hàng:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="flex flex-col gap-6 relative z-10">
@@ -157,11 +222,19 @@ export default function ThuMuaDoGoCuPage() {
                     { step: "5", title: "Vận chuyển miễn phí", desc: "Đội ngũ lành nghề cùng xe chuyên dụng sẽ tháo dỡ, bốc xếp và vận chuyển miễn phí, hoàn thành trong ngày." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-5 group items-start md:items-center">
+<<<<<<< HEAD
                       <div className="mt-1 md:mt-0 w-12 h-12 bg-[#dc3545] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(220,53,69,0.4)] transition-all duration-300">
                         {item.step}
                       </div>
                       <div>
                         <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#dc3545] transition-colors">{item.title}</h4>
+=======
+                      <div className="mt-1 md:mt-0 w-12 h-12 bg-[#880d11] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(136,13,17,0.4)] transition-all duration-300">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-[15px] text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
@@ -169,6 +242,7 @@ export default function ThuMuaDoGoCuPage() {
                 </div>
               </section>
 
+<<<<<<< HEAD
               {/* SECTION: Lý Do Chọn Huy Hoàng */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
@@ -177,11 +251,25 @@ export default function ThuMuaDoGoCuPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8">
                   Trên thị trường có nhiều đơn vị thu mua đồ cũ, nhưng <strong className="text-[#dc3545]">Huy Hoàng</strong> là cái tên được hàng ngàn khách hàng cá nhân, công ty, nhà hàng, cơ sở thờ tự tin tưởng nhờ những ưu điểm vượt trội:
+=======
+              {/* SECTION: Lý Do Chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Tại Sao Nên Chọn Vui Hùng Để Thu Mua Đồ Gỗ Cũ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Trên thị trường có nhiều đơn vị thu mua đồ cũ, nhưng <strong className="text-[#880d11]">Vui Hùng</strong> là cái tên được hàng ngàn khách hàng cá nhân, công ty, nhà hàng, cơ sở thờ tự tin tưởng nhờ những ưu điểm vượt trội:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   {[
+<<<<<<< HEAD
                     { title: "Giá thu mua cao nhất", desc: "Kiến thức chuyên sâu về gỗ giúp Huy Hoàng luôn định giá và trả mức giá cạnh tranh nhất trên thị trường." },
+=======
+                    { title: "Giá thu mua cao nhất", desc: "Kiến thức chuyên sâu về gỗ giúp Vui Hùng luôn định giá và trả mức giá cạnh tranh nhất trên thị trường." },
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                     { title: "Thu mua mọi số lượng", desc: "Từ vài món đồ gia đình đến số lượng lớn của văn phòng, nhà hàng, khách sạn hay xưởng sản xuất." },
                     { title: "Năng lực thực tế lớn", desc: "Sở hữu đội ngũ nhân công đông đảo, hệ thống xe tải đa dạng từ 1.25 tấn đến 8 tấn, kho bãi rộng khắp." },
                     { title: "Uy tín và minh bạch", desc: "Mọi giao dịch đều rõ ràng, làm việc chuyên nghiệp, không phát sinh khoản phí ngầm nào." },
@@ -189,7 +277,11 @@ export default function ThuMuaDoGoCuPage() {
                   ].map((item, i) => (
                     <div key={i} className="bg-gray-50 p-5 rounded-2xl group hover:bg-[#111827] transition-colors duration-300 border border-gray-100">
                       <h4 className="text-[#111827] text-[16px] font-black uppercase mb-2 group-hover:text-white transition-colors flex items-center gap-2">
+<<<<<<< HEAD
                         <svg className="w-5 h-5 text-[#dc3545] group-hover:text-[#ff4d4d]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+=======
+                        <svg className="w-5 h-5 text-[#880d11] group-hover:text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         {item.title}
                       </h4>
                       <p className="text-gray-600 text-[14px] leading-relaxed group-hover:text-gray-300 transition-colors pl-7">
@@ -205,7 +297,11 @@ export default function ThuMuaDoGoCuPage() {
                 {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
                 <Image
                   src="/thu-mua-do-go-cu-uy-tin.png"
+<<<<<<< HEAD
                   alt="Liên hệ Đồ Cũ Huy Hoàng thanh lý đồ gỗ cũ giá cao"
+=======
+                  alt="Liên hệ Đồ Cũ Vui Hùng thanh lý đồ gỗ cũ giá cao"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
 
@@ -215,11 +311,19 @@ export default function ThuMuaDoGoCuPage() {
               {/* SECTION: Các Trường Hợp Cần Thu Mua */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Các Trường Hợp Khách Hàng Cần Thanh Lý
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8">
                   Dịch vụ của Huy Hoàng phù hợp với nhiều nhu cầu thực tế khác nhau của khách hàng:
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Các Trường Hợp Khách Hàng Cần Thanh Lý
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Dịch vụ của Vui Hùng phù hợp với nhiều nhu cầu thực tế khác nhau của khách hàng:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -228,11 +332,19 @@ export default function ThuMuaDoGoCuPage() {
                     { role: "Văn phòng & Công ty", use: "Chuyển văn phòng, thanh lý tài sản cũ, thay đổi nội thất, hay giải thể doanh nghiệp." },
                     { role: "Nhà hàng, Khách sạn", use: "Đổi mới không gian, thay đổi mô hình, hết hợp đồng mặt bằng, hoặc cải tạo cơ sở." },
                     { role: "Trường học, Giáo dục", use: "Nâng cấp cơ sở vật chất, thay mới bàn ghế, tủ, kệ cũ phục vụ giảng dạy." },
+<<<<<<< HEAD
                     { role: "Cơ sở thờ tự", use: "Chùa, nhà thờ họ, đình đền có nhu cầu thay mới đồ thờ, Huy Hoàng thu mua với sự trân trọng." },
                     { role: "Xưởng sản xuất", use: "Thanh lý hàng tồn kho, sản phẩm lỗi, phế liệu gỗ với quy trình nhanh gọn giá cao." }
                   ].map((item, idx) => (
                     <div key={idx} className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm hover:border-[#dc3545]/40 transition-colors">
                       <strong className="text-[#dc3545] block mb-2 uppercase text-[15px]">{item.role}</strong>
+=======
+                    { role: "Cơ sở thờ tự", use: "Chùa, nhà thờ họ, đình đền có nhu cầu thay mới đồ thờ, Vui Hùng thu mua với sự trân trọng." },
+                    { role: "Xưởng sản xuất", use: "Thanh lý hàng tồn kho, sản phẩm lỗi, phế liệu gỗ với quy trình nhanh gọn giá cao." }
+                  ].map((item, idx) => (
+                    <div key={idx} className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm hover:border-[#880d11]/40 transition-colors">
+                      <strong className="text-[#880d11] block mb-2 uppercase text-[15px]">{item.role}</strong>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                       <p className="text-gray-600 text-[14px] leading-relaxed">{item.use}</p>
                     </div>
                   ))}
@@ -241,6 +353,7 @@ export default function ThuMuaDoGoCuPage() {
 
               {/* Nút Gọi Ngay cuối bài */}
               <div className="mt-16 text-center border-t border-gray-100 pt-12">
+<<<<<<< HEAD
                 <p className="text-xl font-bold text-[#111827] mb-6">Bạn cần thanh lý đồ gỗ cũ? Kết nối ngay với Huy Hoàng!</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#dc3545] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
@@ -248,6 +361,15 @@ export default function ThuMuaDoGoCuPage() {
                     {hotline}
                   </a>
                   <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#dc3545] hover:text-[#dc3545] transition-all w-full sm:w-auto justify-center">
+=======
+                <p className="text-xl font-bold text-[#111827] mb-6">Bạn cần thanh lý đồ gỗ cũ? Kết nối ngay với Vui Hùng!</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#880d11] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
+                    <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
+                    {hotline}
+                  </a>
+                  <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#880d11] hover:text-[#880d11] transition-all w-full sm:w-auto justify-center">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                     Chat Zalo Gửi Hình
                   </a>
                 </div>

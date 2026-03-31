@@ -15,7 +15,11 @@ export function FloatingContact() {
       
       {/* Left: Phone Button with Icon + Number (New Glossy Pill Design) */}
       <a
+<<<<<<< HEAD
         href="tel:0909549237"
+=======
+        href="tel:0979095076"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 flex items-center group hover:no-underline"
         title="Gọi điện ngay"
         aria-label="Gọi điện"
@@ -29,13 +33,21 @@ export function FloatingContact() {
           </div>
 
           {/* Pill Container */}
+<<<<<<< HEAD
           <div className="relative flex items-center bg-[#dc3545] group-hover:bg-[#b02a37] rounded-full shadow-[0_4px_15px_rgba(220,53,69,0.5)] transition-all duration-300 transform group-hover:scale-105 border border-[#ff4d4d] overflow-hidden ml-1">
+=======
+          <div className="relative flex items-center bg-[#880d11] group-hover:bg-[#710a0d] rounded-full shadow-[0_4px_15px_rgba(224,138,13,0.5)] transition-all duration-300 transform group-hover:scale-105 border border-[#e59524] overflow-hidden ml-1">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             
             {/* Glossy top overlay (no horizontal line) */}
             <div className="absolute top-0 left-0 right-0 h-full bg-gradient-to-b from-white/20 to-transparent pointer-events-none"></div>
             
             {/* Phone Icon Circle */}
+<<<<<<< HEAD
             <div className="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#ff4d4d] to-[#dc3545] rounded-full border-[3px] border-[#ff4d4d] shadow-[inset_0_2px_4px_rgba(255,255,255,0.4)] z-10 mx-[2px] my-[2px]">
+=======
+            <div className="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#e59524] to-[#880d11] rounded-full border-[3px] border-[#efbe7a] shadow-[inset_0_2px_4px_rgba(255,255,255,0.4)] z-10 mx-[2px] my-[2px]">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               <svg 
                 className="w-5 h-5 md:w-6 md:h-6 text-white group-hover:rotate-12 transition-transform duration-300" 
                 fill="currentColor" 
@@ -49,7 +61,11 @@ export function FloatingContact() {
             {/* Text */}
             <div className="px-3 md:px-5 pr-4 md:pr-7 relative z-10">
               <span className="text-white font-black text-[17px] md:text-xl tracking-wider drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+<<<<<<< HEAD
                 0909.549.237
+=======
+                0979.095.076
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               </span>
             </div>
           </div>
@@ -58,7 +74,11 @@ export function FloatingContact() {
 
       {/* Right: SMS Icon (Orange background for harmony) */}
       <a
+<<<<<<< HEAD
         href="sms:0909549237"
+=======
+        href="sms:0979095076"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         className="fixed bottom-6 right-6 z-40 group hover:no-underline"
         title="Gửi SMS"
         aria-label="Gửi tin nhắn SMS"
@@ -77,7 +97,11 @@ export function FloatingContact() {
 
       {/* Right: Zalo Icon (Orange background with Wiki Avatar) */}
       <a
+<<<<<<< HEAD
         href="https://zalo.me/0909549237"
+=======
+        href="https://zalo.me/0979095076"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-24 right-6 z-40 group hover:no-underline"

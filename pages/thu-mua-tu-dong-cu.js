@@ -4,18 +4,31 @@ import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
 export default function ThuMuaTuDongPage() {
+<<<<<<< HEAD
   const hotline = "0909.549.237";
+=======
+  const hotline = "0979.095.076";
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
+<<<<<<< HEAD
         <title>Thu Mua Tủ Đông Cũ Giá Cao TPHCM | Dịch Vụ Uy Tín Huy Hoàng</title>
         <meta name="description" content="Đồ Cũ Huy Hoàng chuyên thu mua tủ đông cũ, tủ đông công nghiệp, tủ đông 2-4 cánh giá cao nhất TPHCM. Khảo sát tận nơi 20 phút, miễn phí tháo dỡ vận chuyển." />
         <meta name="keywords" content="thu mua tủ đông cũ, thanh lý tủ đông, thu mua tủ đông công nghiệp, thu mua tủ đông mini, đồ cũ Huy Hoàng, thu mua thiết bị điện lạnh" />
         <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-tu-dong-cu" />
         <meta property="og:title" content="Dịch Vụ Thu Mua Tủ Đông Cũ Giá Cao, Tận Nơi TPHCM - Huy Hoàng" />
         <meta property="og:description" content="Cần thanh lý tủ đông cũ? Huy Hoàng thu mua mọi số lượng, các loại tủ đông đứng, nằm, công nghiệp với giá cao nhất. Thanh toán ngay tại chỗ." />
+=======
+        <title>Thu Mua Tủ Đông Cũ Giá Cao TPHCM | Dịch Vụ Uy Tín Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua tủ đông cũ, tủ đông công nghiệp, tủ đông 2-4 cánh giá cao nhất TPHCM. Khảo sát tận nơi 20 phút, miễn phí tháo dỡ vận chuyển." />
+        <meta name="keywords" content="thu mua tủ đông cũ, thanh lý tủ đông, thu mua tủ đông công nghiệp, thu mua tủ đông mini, đồ cũ vui hùng, thu mua thiết bị điện lạnh" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-tu-dong" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Tủ Đông Cũ Giá Cao, Tận Nơi TPHCM - Vui Hùng" />
+        <meta property="og:description" content="Cần thanh lý tủ đông cũ? Vui Hùng thu mua mọi số lượng, các loại tủ đông đứng, nằm, công nghiệp với giá cao nhất. Thanh toán ngay tại chỗ." />
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         <meta property="og:type" content="article" />
       </Head>
 
@@ -24,7 +37,11 @@ export default function ThuMuaTuDongPage() {
         {/* ================= BREADCRUMB ================= */}
         <div className="bg-white border-b border-gray-100 py-4">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+<<<<<<< HEAD
             <Link href="/" className="hover:text-[#dc3545] transition-colors">Trang chủ</Link>
+=======
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             <span>/</span>
             <span className="text-gray-900 font-medium">Thu Mua Tủ Đông</span>
           </div>
@@ -41,7 +58,11 @@ export default function ThuMuaTuDongPage() {
                 Thu Mua Tủ Đông
               </h1>
 
+<<<<<<< HEAD
               <h2 className="text-xl md:text-2xl font-bold text-[#dc3545] mb-8 leading-snug border-l-4 border-[#dc3545] pl-4">
+=======
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 Dịch Vụ Thu Mua Tủ Đông Giá Cao, Uy Tín Tại TPHCM
               </h2>
 
@@ -50,10 +71,17 @@ export default function ThuMuaTuDongPage() {
                   Bạn đang có nhu cầu thanh lý <strong className="text-[#111827]">tủ đông</strong>, bàn mát hay các thiết bị điện lạnh khác do ngừng kinh doanh, thay đổi mô hình hay nâng cấp thiết bị mới? Bạn lo lắng về giá cả, thủ tục phức tạp và chi phí vận chuyển?
                 </p>
                 <p>
+<<<<<<< HEAD
                   Hãy đến với <strong className="text-[#dc3545]">Cửa hàng đồ cũ Huy Hoàng</strong> – đơn vị chuyên <strong className="text-[#111827]">thu mua tủ đông</strong> với mức giá cao nhất thị trường tại TPHCM và các tỉnh lân cận.
                 </p>
                 <div className="bg-[#dc3545]/5 border border-[#dc3545]/20 p-5 rounded-2xl mt-6 flex items-start gap-4">
                   <svg className="w-6 h-6 text-[#dc3545] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+=======
+                  Hãy đến với <strong className="text-[#880d11]">Cửa hàng đồ cũ Vui Hùng</strong> – đơn vị chuyên <strong className="text-[#111827]">thu mua tủ đông</strong> với mức giá cao nhất thị trường tại TPHCM và các tỉnh lân cận.
+                </p>
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-5 rounded-2xl mt-6 flex items-start gap-4">
+                  <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   <p className="text-gray-800 leading-relaxed font-medium">
                     Với đội ngũ nhân viên chuyên nghiệp, giàu kinh nghiệm và dịch vụ trọn gói từ tháo dỡ đến vận chuyển, chúng tôi cam kết mang đến sự hài lòng tuyệt đối cho khách hàng.
                   </p>
@@ -64,24 +92,40 @@ export default function ThuMuaTuDongPage() {
               <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-12 shadow-lg group">
                 <Image
                   src="/thu-mua-tu-dong-tu-mat.jpg"
+<<<<<<< HEAD
                   alt="Dịch vụ thu mua tủ đông cũ trọn gói giá cao Đồ Cũ Huy Hoàng"
+=======
+                  alt="Dịch vụ thu mua tủ đông cũ trọn gói giá cao Đồ Cũ Vui Hùng"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   priority
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+<<<<<<< HEAD
                   Huy Hoàng chuyên thu mua tủ đông công nghiệp, tủ đông gia đình giá cao
+=======
+                  Vui Hùng chuyên thu mua tủ đông công nghiệp, tủ đông gia đình giá cao
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </div>
 
               {/* SECTION: Các Loại Tủ Đông */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Các Loại Tủ Đông Được Thu Mua Hiện Nay
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Cửa hàng đồ cũ Huy Hoàng chuyên thu mua đa dạng các loại tủ đông với nhiều kích thước, thương hiệu và tình trạng khác nhau:
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Các Loại Tủ Đông Được Thu Mua Hiện Nay
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Cửa hàng đồ cũ Vui Hùng chuyên thu mua đa dạng các loại tủ đông với nhiều kích thước, thương hiệu và tình trạng khác nhau:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -94,14 +138,24 @@ export default function ThuMuaTuDongPage() {
                     "Thu mua tủ đông 3 cánh",
                     "Thu mua tủ đông 4 cánh"
                   ].map((item, i) => (
+<<<<<<< HEAD
                     <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-[#dc3545]/40 hover:bg-white transition-all duration-300 group">
                       <span className="w-2 h-2 rounded-full bg-[#dc3545] group-hover:scale-150 transition-transform"></span>
                       <span className="font-bold text-[#111827] text-[15px] group-hover:text-[#dc3545] transition-colors">{item}</span>
+=======
+                    <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-[#880d11]/40 hover:bg-white transition-all duration-300 group">
+                      <span className="w-2 h-2 rounded-full bg-[#880d11] group-hover:scale-150 transition-transform"></span>
+                      <span className="font-bold text-[#111827] text-[15px] group-hover:text-[#880d11] transition-colors">{item}</span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                     </div>
                   ))}
                 </div>
 
+<<<<<<< HEAD
                 <p className="text-[#dc3545] leading-relaxed mt-6 font-bold italic pl-4 border-l-4 border-[#dc3545]">
+=======
+                <p className="text-[#880d11] leading-relaxed mt-6 font-bold italic pl-4 border-l-4 border-[#880d11]">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   * Chúng tôi thu mua từ số lượng nhỏ cho đến số lượng lớn, đáp ứng mọi nhu cầu thanh lý của khách hàng.
                 </p>
               </section>
@@ -118,6 +172,7 @@ export default function ThuMuaTuDongPage() {
 
               {/* SECTION: Quy Trình Thu Mua */}
               <section className="mb-12 bg-white border-2 border-gray-100 p-6 md:p-8 rounded-3xl relative overflow-hidden shadow-sm">
+<<<<<<< HEAD
                 <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#dc3545 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
@@ -126,6 +181,16 @@ export default function ThuMuaTuDongPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
                   Quy trình thu mua tại Huy Hoàng được thiết kế đơn giản, minh bạch và nhanh chóng để tiết kiệm tối đa thời gian cho khách hàng:
+=======
+                <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thu Mua Nhanh Gọn
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Quy trình thu mua tại Vui Hùng được thiết kế đơn giản, minh bạch và nhanh chóng để tiết kiệm tối đa thời gian cho khách hàng:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="flex flex-col gap-6 relative z-10">
@@ -136,11 +201,19 @@ export default function ThuMuaTuDongPage() {
                     { step: "4", title: "Thanh toán nhanh chóng", desc: "Thanh toán 100% giá trị thỏa thuận tiền mặt hoặc chuyển khoản ngay sau khi kết thúc quá trình thu mua." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-5 group items-start md:items-center">
+<<<<<<< HEAD
                       <div className="mt-1 md:mt-0 w-12 h-12 bg-[#dc3545] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(220,53,69,0.4)] transition-all duration-300">
                         {item.step}
                       </div>
                       <div>
                         <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#dc3545] transition-colors">{item.title}</h4>
+=======
+                      <div className="mt-1 md:mt-0 w-12 h-12 bg-[#880d11] text-white rounded-full flex items-center justify-center text-xl font-black flex-shrink-0 group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(136,13,17,0.4)] transition-all duration-300">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[17px] uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-[15px] text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
@@ -152,17 +225,29 @@ export default function ThuMuaTuDongPage() {
               <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-12 shadow-lg group w-full md:w-3/4 mx-auto">
                 <Image
                   src="/thu-mua-tu-dong-uy-tin.jpg"
+<<<<<<< HEAD
                   alt="Nhân viên Huy Hoàng vận chuyển tủ đông cũ chuyên nghiệp"
+=======
+                  alt="Nhân viên Vui Hùng vận chuyển tủ đông cũ chuyên nghiệp"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
+<<<<<<< HEAD
               {/* SECTION: Tại Sao Chọn Huy Hoàng */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Lý Do Nên Chọn Huy Hoàng?
+=======
+              {/* SECTION: Tại Sao Chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Lý Do Nên Chọn Vui Hùng?
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -176,7 +261,11 @@ export default function ThuMuaTuDongPage() {
                   ].map((item, i) => (
                     <div key={i} className="bg-gray-50 p-6 rounded-2xl group hover:bg-[#111827] transition-colors duration-300 border border-gray-100 flex flex-col">
                       <h4 className="text-[#111827] text-[16px] font-black uppercase mb-2 group-hover:text-white transition-colors flex items-center gap-2">
+<<<<<<< HEAD
                         <svg className="w-5 h-5 text-[#dc3545] group-hover:text-[#ff4d4d]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+=======
+                        <svg className="w-5 h-5 text-[#880d11] group-hover:text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         {item.title}
                       </h4>
                       <p className="text-gray-600 text-[14px] leading-relaxed group-hover:text-gray-300 transition-colors">
@@ -190,11 +279,19 @@ export default function ThuMuaTuDongPage() {
               {/* SECTION: Cam Kết */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Cam Kết Dịch Vụ Uy Tín
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Cửa hàng đồ cũ Huy Hoàng đặt uy tín làm kim chỉ nam và cam kết mang đến dịch vụ thu mua tủ đông tốt nhất với những điều khoản rõ ràng:
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Cam Kết Dịch Vụ Uy Tín
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Cửa hàng đồ cũ Vui Hùng đặt uy tín làm kim chỉ nam và cam kết mang đến dịch vụ thu mua tủ đông tốt nhất với những điều khoản rõ ràng:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="bg-[#111827] text-white p-6 md:p-8 rounded-3xl shadow-md">
@@ -207,7 +304,11 @@ export default function ThuMuaTuDongPage() {
                       "Cam kết hoạt động 24/7, sẵn sàng hỗ trợ mọi lúc khi khách hàng có nhu cầu."
                     ].map((text, idx) => (
                       <li key={idx} className="flex gap-3 items-start">
+<<<<<<< HEAD
                         <span className="text-[#ff4d4d] mt-1 font-bold">👉</span>
+=======
+                        <span className="text-[#ff3d44] mt-1 font-bold">👉</span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-gray-200 text-[15px]">{text}</p>
                       </li>
                     ))}
@@ -221,6 +322,7 @@ export default function ThuMuaTuDongPage() {
                 <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Nếu bạn đang có nhu cầu thanh lý tủ đông hay bất kỳ thiết bị điện lạnh nào, đừng ngần ngại liên hệ với chúng tôi.</p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<<<<<<< HEAD
                   <a href={`tel:${hotline}`} className="group inline-flex items-center justify-center gap-3 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#dc3545] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto">
                     <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
                     Gọi Hotline Ngay
@@ -230,6 +332,17 @@ export default function ThuMuaTuDongPage() {
                   </a>
                 </div>
                 <p className="text-gray-500 mt-6 text-sm uppercase tracking-widest font-semibold"><span className="text-[#dc3545]">Khu vực hoạt động:</span> TPHCM, Đồng Nai, Bình Dương và lân cận</p>
+=======
+                  <a href={`tel:${hotline}`} className="group inline-flex items-center justify-center gap-3 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#880d11] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto">
+                    <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
+                    Gọi Hotline Ngay
+                  </a>
+                  <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center gap-3 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#880d11] hover:text-[#880d11] transition-all w-full sm:w-auto">
+                    Chat Zalo Báo Giá
+                  </a>
+                </div>
+                <p className="text-gray-500 mt-6 text-sm uppercase tracking-widest font-semibold"><span className="text-[#880d11]">Khu vực hoạt động:</span> TPHCM, Đồng Nai, Bình Dương và lân cận</p>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               </div>
 
             </article>

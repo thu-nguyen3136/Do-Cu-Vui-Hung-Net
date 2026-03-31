@@ -4,18 +4,31 @@ import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
 export default function ThanhLyQuanAnPage() {
+<<<<<<< HEAD
   const hotline = "0909.549.237";
+=======
+  const hotline = "0979.095.076";
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
+<<<<<<< HEAD
         <title>Thanh Lý Quán Ăn Giá Cao TPHCM | Thu Mua Trọn Gói Huy Hoàng</title>
         <meta name="description" content="Đồ Cũ Huy Hoàng chuyên thanh lý quán ăn, thu mua bàn ghế, nội thất quán ăn giá cao nhất TPHCM & các tỉnh. Khảo sát tận nơi sau 20 phút, tháo dỡ vận chuyển miễn phí." />
         <meta name="keywords" content="thanh lý quán ăn, thu mua bàn ghế quán ăn, thanh lý nội thất quán ăn, đồ cũ Huy Hoàng, thanh lý quán ăn tphcm giá cao" />
         <link rel="canonical" href="https://thumuadocugiacao.net/thanh-ly-quan-an" />
         <meta property="og:title" content="Dịch Vụ Thanh Lý Quán Ăn Trọn Gói Giá Cao TPHCM - Huy Hoàng" />
         <meta property="og:description" content="Bạn cần thanh lý quán ăn? Huy Hoàng thu mua trọn gói bàn ghế, thiết bị bếp, tủ lạnh giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
+=======
+        <title>Thanh Lý Quán Ăn Giá Cao TPHCM | Thu Mua Trọn Gói Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thanh lý quán ăn, thu mua bàn ghế, nội thất quán ăn giá cao nhất TPHCM & các tỉnh. Khảo sát tận nơi sau 20 phút, tháo dỡ vận chuyển miễn phí." />
+        <meta name="keywords" content="thanh lý quán ăn, thu mua bàn ghế quán ăn, thanh lý nội thất quán ăn, đồ cũ vui hùng, thanh lý quán ăn tphcm giá cao" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thanh-ly-quan-an" />
+        <meta property="og:title" content="Dịch Vụ Thanh Lý Quán Ăn Trọn Gói Giá Cao TPHCM - Vui Hùng" />
+        <meta property="og:description" content="Bạn cần thanh lý quán ăn? Vui Hùng thu mua trọn gói bàn ghế, thiết bị bếp, tủ lạnh giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         <meta property="og:type" content="article" />
       </Head>
 
@@ -24,7 +37,11 @@ export default function ThanhLyQuanAnPage() {
         {/* ================= BREADCRUMB ================= */}
         <div className="bg-white border-b border-gray-100 py-4">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+<<<<<<< HEAD
             <Link href="/" className="hover:text-[#dc3545] transition-colors">Trang chủ</Link>
+=======
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             <span>/</span>
             <span className="text-gray-900 font-medium">Thanh Lý Quán Ăn</span>
           </div>
@@ -41,13 +58,21 @@ export default function ThanhLyQuanAnPage() {
                 Thanh Lý Quán Ăn
               </h1>
 
+<<<<<<< HEAD
               <h2 className="text-xl md:text-2xl font-bold text-[#dc3545] mb-8 leading-snug border-l-4 border-[#dc3545] pl-4">
+=======
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 Thanh Lý Quán Ăn - Dịch Vụ Thu Mua Nội Thất Giá Cao Tại TPHCM & Các Tỉnh
               </h2>
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
                 <p>
+<<<<<<< HEAD
                   Bạn đang có nhu cầu <strong className="text-[#111827]">thanh lý quán ăn</strong>, đổi mới nội thất hay ngừng kinh doanh? Bạn lo lắng về giá cả, thủ tục phức tạp và chi phí vận chuyển? Đừng lo, <strong className="text-[#dc3545]">Đồ Cũ Huy Hoàng</strong> chính là đơn vị uy tín hàng đầu chuyên thu mua bàn ghế quán ăn và toàn bộ nội thất quán ăn với mức giá cao nhất thị trường khu vực TPHCM và các tỉnh lân cận.
+=======
+                  Bạn đang có nhu cầu <strong className="text-[#111827]">thanh lý quán ăn</strong>, đổi mới nội thất hay ngừng kinh doanh? Bạn lo lắng về giá cả, thủ tục phức tạp và chi phí vận chuyển? Đừng lo, <strong className="text-[#880d11]">Đồ Cũ Vui Hùng</strong> chính là đơn vị uy tín hàng đầu chuyên thu mua bàn ghế quán ăn và toàn bộ nội thất quán ăn với mức giá cao nhất thị trường khu vực TPHCM và các tỉnh lân cận.
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
               </div>
 
@@ -56,21 +81,37 @@ export default function ThanhLyQuanAnPage() {
                 {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
                 <Image
                   src="/thanh-ly-quan-an-uy-tin-tphcm.jpg"
+<<<<<<< HEAD
                   alt="Dịch vụ thanh lý quán ăn trọn gói giá cao Huy Hoàng"
                   fill
                   priority
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+=======
+                  alt="Dịch vụ thanh lý quán ăn trọn gói giá cao Vui Hùng"
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=1000&auto=format&fit=crop"; }}
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 />
               </div>
 
               {/* SECTION: Vì Sao Nên Chọn */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Vì Sao Nên Chọn Đồ Cũ Huy Hoàng?
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8">
                   Khi bạn cần <strong className="text-[#111827]">thanh lý quán ăn</strong>, việc tìm được đơn vị vừa trả giá cao vừa hỗ trợ trọn gói là điều vô cùng quan trọng. Huy Hoàng tự hào là địa chỉ tin cậy với những ưu điểm vượt trội:
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Vì Sao Nên Chọn Đồ Cũ Vui Hùng?
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  Khi bạn cần <strong className="text-[#111827]">thanh lý quán ăn</strong>, việc tìm được đơn vị vừa trả giá cao vừa hỗ trợ trọn gói là điều vô cùng quan trọng. Vui Hùng tự hào là địa chỉ tin cậy với những ưu điểm vượt trội:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="flex flex-col gap-5">
@@ -97,11 +138,19 @@ export default function ThanhLyQuanAnPage() {
                     }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start md:items-center gap-4 p-5 rounded-2xl bg-gray-50 hover:bg-white border border-transparent hover:border-gray-200 transition-all duration-300 group">
+<<<<<<< HEAD
                       <div className="w-12 h-12 rounded-full bg-[#dc3545] flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 group-hover:bg-[#e35d6a] transition-all">
                         {item.icon}
                       </div>
                       <div>
                         <h4 className="font-bold text-[#111827] text-lg uppercase group-hover:text-[#dc3545] transition-colors">{item.title}</h4>
+=======
+                      <div className="w-12 h-12 rounded-full bg-[#880d11] flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 group-hover:bg-[#a30f14] transition-all">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-lg uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-sm text-gray-600 mt-1 leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
@@ -117,23 +166,36 @@ export default function ThanhLyQuanAnPage() {
                   alt="Thu mua đa dạng các loại bàn ghế quán ăn cũ giá cao"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+<<<<<<< HEAD
 
+=======
+                  onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=1000&auto=format&fit=crop"; }}
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 />
               </div>
 
               {/* SECTION: Các Loại Nội Thất Được Thu Mua */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Các Loại Nội Thất Được Thu Mua
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Đồ Cũ Huy Hoàng chuyên thu mua đa dạng các loại nội thất quán ăn, quán cafe với nhiều chất liệu và kích thước khác nhau, bao gồm:
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Các Loại Nội Thất Được Thu Mua
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Đồ Cũ Vui Hùng chuyên thu mua đa dạng các loại nội thất quán ăn, quán cafe với nhiều chất liệu và kích thước khác nhau, bao gồm:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
                   <ul className="space-y-4 text-gray-700">
                     <li className="flex items-start gap-3">
+<<<<<<< HEAD
                       <svg className="w-6 h-6 text-[#dc3545] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                       <p><strong className="text-[#111827]">Thu mua bàn ghế các loại:</strong> Bàn ghế gỗ, bàn ghế sắt, bàn mặt đá, mặt kính, ghế đôn, ghế bọc nệm...</p>
                     </li>
@@ -147,11 +209,30 @@ export default function ThanhLyQuanAnPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <svg className="w-6 h-6 text-[#dc3545] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+=======
+                      <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      <p><strong className="text-[#111827]">Thu mua bàn ghế các loại:</strong> Bàn ghế gỗ, bàn ghế sắt, bàn mặt đá, mặt kính, ghế đôn, ghế bọc nệm...</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      <p><strong className="text-[#111827]">Thu mua nội thất quán ăn:</strong> Quầy bar, kệ trưng bày, tủ đựng đồ, máy móc thiết bị pha chế...</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      <p><strong className="text-[#111827]">Thu mua đồ dùng quán ăn:</strong> Bếp công nghiệp, tủ lạnh, máy lạnh, quạt, dàn âm thanh...</p>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                       <p><strong className="text-[#111827]">Đa dạng kích thước:</strong> Phù hợp với mọi không gian và phong cách từ nhỏ đến lớn.</p>
                     </li>
                   </ul>
                 </div>
+<<<<<<< HEAD
                 <p className="text-[#dc3545] leading-relaxed mt-6 font-medium italic border-l-4 border-[#dc3545] pl-4">
+=======
+                <p className="text-[#880d11] leading-relaxed mt-6 font-medium italic border-l-4 border-[#880d11] pl-4">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   * Chúng tôi đặc biệt nhận thanh lý các sản phẩm còn mới, chất lượng tốt, đáp ứng nhu cầu tái sử dụng cao.
                 </p>
               </section>
@@ -160,6 +241,7 @@ export default function ThanhLyQuanAnPage() {
 
               {/* SECTION: Quy Trình Nhanh Gọn */}
               <section className="mb-12 bg-gray-50 p-6 md:p-8 rounded-3xl border border-gray-100 relative overflow-hidden">
+<<<<<<< HEAD
                 <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#dc3545 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
@@ -168,6 +250,16 @@ export default function ThanhLyQuanAnPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
                   Quy trình thanh lý tại Đồ Cũ Huy Hoàng được thiết kế đơn giản, minh bạch và nhanh chóng để tiết kiệm tối đa thời gian cho khách hàng:
+=======
+                <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#880d11 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 relative z-10 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Quy Trình Thanh Lý Nhanh Gọn
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-8 relative z-10">
+                  Quy trình thanh lý tại Đồ Cũ Vui Hùng được thiết kế đơn giản, minh bạch và nhanh chóng để tiết kiệm tối đa thời gian cho khách hàng:
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 relative z-10">
@@ -178,11 +270,19 @@ export default function ThanhLyQuanAnPage() {
                     { step: "4", title: "Thanh toán", desc: "Chúng tôi thực hiện tháo dỡ, vận chuyển và thanh toán 100% giá trị hợp đồng ngay sau đó." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 group">
+<<<<<<< HEAD
                       <div className="w-14 h-14 mx-auto bg-white border-4 border-[#dc3545]/20 text-[#dc3545] rounded-full flex items-center justify-center text-3xl font-black flex-shrink-0 group-hover:bg-[#dc3545] group-hover:text-white transition-all duration-300 shadow-md">
                         {item.step}
                       </div>
                       <div>
                         <h4 className="font-bold text-[#111827] text-lg uppercase group-hover:text-[#dc3545] transition-colors">{item.title}</h4>
+=======
+                      <div className="w-14 h-14 mx-auto bg-white border-4 border-[#880d11]/20 text-[#880d11] rounded-full flex items-center justify-center text-3xl font-black flex-shrink-0 group-hover:bg-[#880d11] group-hover:text-white transition-all duration-300 shadow-md">
+                        {item.step}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-lg uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
                       </div>
                     </div>
@@ -195,16 +295,27 @@ export default function ThanhLyQuanAnPage() {
                 {/* BẠN CHÈN ĐƯỜNG DẪN ẢNH THỰC TẾ VÀO ĐÂY */}
                 <Image
                   src="/thanh-ly-quan-an-tphcm.jpg"
+<<<<<<< HEAD
                   alt="Huy Hoàng hỗ trợ tháo dỡ và vận chuyển đồ cũ quán ăn miễn phí"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+=======
+                  alt="Vui Hùng hỗ trợ tháo dỡ và vận chuyển đồ cũ quán ăn miễn phí"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1541889025078-450f78235e23?q=80&w=1000&auto=format&fit=crop"; }}
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 />
               </div>
 
               {/* SECTION: Cam Kết */}
               <section className="mb-8">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   Cam Kết Của Chúng Tôi
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -219,8 +330,13 @@ export default function ThanhLyQuanAnPage() {
                     { title: "Cam kết phục vụ tận nơi:", desc: "Nhận thu mua ở tất cả các quận/huyện tại TPHCM, Đồng Nai, Bình Dương và lân cận." },
                     { title: "Cam kết thời gian linh hoạt:", desc: "Hoạt động 24/24, tất cả các ngày trong tuần, sẵn sàng phục vụ khi bạn cần." }
                   ].map((item, i) => (
+<<<<<<< HEAD
                     <div key={i} className="flex gap-4 items-center bg-white p-4 rounded-xl border border-gray-100 hover:border-[#dc3545]/20 hover:shadow-sm transition-all group">
                       <div className="w-8 h-8 rounded-full bg-[#dc3545]/10 flex items-center justify-center flex-shrink-0 text-[#dc3545] group-hover:bg-[#dc3545] group-hover:text-white transition-colors">
+=======
+                    <div key={i} className="flex gap-4 items-center bg-white p-4 rounded-xl border border-gray-100 hover:border-[#880d11]/20 hover:shadow-sm transition-all group">
+                      <div className="w-8 h-8 rounded-full bg-[#880d11]/10 flex items-center justify-center flex-shrink-0 text-[#880d11] group-hover:bg-[#880d11] group-hover:text-white transition-colors">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
                       </div>
                       <p className="text-gray-700 text-base">
@@ -233,6 +349,7 @@ export default function ThanhLyQuanAnPage() {
 
               {/* Nút Gọi Ngay cuối bài */}
               <div className="mt-16 bg-[#111827] rounded-3xl p-8 md:p-12 text-center shadow-xl relative overflow-hidden">
+<<<<<<< HEAD
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#dc3545 2px, transparent 2px)', backgroundSize: '30px 30px' }}></div>
                 <div className="relative z-10">
                   <h3 className="text-2xl md:text-3xl font-black text-white uppercase mb-4">Kết nối ngay với Huy Hoàng</h3>
@@ -240,6 +357,15 @@ export default function ThanhLyQuanAnPage() {
 
                   <div className="flex flex-col sm:flex-row gap-6 justify-center">
                     <a href={`tel:${hotline}`} className="group inline-flex items-center justify-center gap-3 bg-[#dc3545] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-lg hover:bg-[#e35d6a] transition-all shadow-[0_10px_20px_rgba(220,53,69,0.3)] hover:-translate-y-1">
+=======
+                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#880d11 2px, transparent 2px)', backgroundSize: '30px 30px' }}></div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-black text-white uppercase mb-4">Kết nối ngay với Vui Hùng</h3>
+                  <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">Bạn cần thanh lý quán ăn trọn gói? Gọi ngay hoặc gửi hình qua Zalo để nhận báo giá tốt nhất!</p>
+
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href={`tel:${hotline}`} className="group inline-flex items-center justify-center gap-3 bg-[#880d11] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-lg hover:bg-[#a30f14] transition-all shadow-[0_10px_20px_rgba(136,13,17,0.3)] hover:-translate-y-1">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                       <span className="animate-pulse">📞</span> {hotline}
                     </a>
                     <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center gap-3 bg-white text-[#111827] px-8 py-4 rounded-xl font-black uppercase tracking-widest text-lg hover:bg-gray-100 transition-all shadow-lg hover:-translate-y-1 border border-transparent">

@@ -4,18 +4,31 @@ import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 
 export default function ThuMuaDoCuGiaCaoPage() {
+<<<<<<< HEAD
   const hotline = "0909.549.237";
+=======
+  const hotline = "0979.095.076";
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
+<<<<<<< HEAD
         <title>Thu Mua Đồ Cũ Giá Cao Tận Nơi Tại TPHCM | Đồ Cũ Huy Hoàng</title>
         <meta name="description" content="Huy Hoàng chuyên thu mua đồ cũ giá cao tận nơi tại TPHCM (2026). Thu mua bàn ghế văn phòng, đồ nhà hàng, quán cafe, sofa, đồ gia dụng. Báo giá nhanh, thanh toán ngay." />
         <meta name="keywords" content="thu mua đồ cũ, thu mua đồ cũ giá cao, thu mua đồ cũ tphcm, thanh lý đồ cũ, đồ cũ Huy Hoàng, thu mua đồ văn phòng cũ, thu mua nội thất cũ" />
         <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-cu-gia-cao-tai-tphcm" />
         <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Cũ Giá Cao, Tận Nơi Tại TP.HCM - Huy Hoàng" />
         <meta property="og:description" content="Bạn cần thanh lý đồ cũ? Huy Hoàng thu mua trọn gói nội thất gia đình, văn phòng, quán ăn, cafe giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
+=======
+        <title>Thu Mua Đồ Cũ Giá Cao Tận Nơi Tại TPHCM | Đồ Cũ Vui Hùng</title>
+        <meta name="description" content="Vui Hùng chuyên thu mua đồ cũ giá cao tận nơi tại TPHCM (2026). Thu mua bàn ghế văn phòng, đồ nhà hàng, quán cafe, sofa, đồ gia dụng. Báo giá nhanh, thanh toán ngay." />
+        <meta name="keywords" content="thu mua đồ cũ, thu mua đồ cũ giá cao, thu mua đồ cũ tphcm, thanh lý đồ cũ, đồ cũ vui hùng, thu mua đồ văn phòng cũ, thu mua nội thất cũ" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-cu-gia-cao-tai-tphcm" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Cũ Giá Cao, Tận Nơi Tại TP.HCM - Vui Hùng" />
+        <meta property="og:description" content="Bạn cần thanh lý đồ cũ? Vui Hùng thu mua trọn gói nội thất gia đình, văn phòng, quán ăn, cafe giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
         <meta property="og:type" content="article" />
       </Head>
 
@@ -24,7 +37,11 @@ export default function ThuMuaDoCuGiaCaoPage() {
         {/* ================= BREADCRUMB ================= */}
         <div className="bg-white border-b border-gray-100 py-4">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-sm text-gray-500 flex items-center gap-2">
+<<<<<<< HEAD
             <Link href="/" className="hover:text-[#dc3545] transition-colors">Trang chủ</Link>
+=======
+            <Link href="/" className="hover:text-[#880d11] transition-colors">Trang chủ</Link>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             <span>/</span>
             <span className="text-gray-900 font-medium">Thu Mua Đồ Cũ Giá Cao</span>
           </div>
@@ -41,17 +58,29 @@ export default function ThuMuaDoCuGiaCaoPage() {
                 Thu Mua Đồ Cũ Giá Cao
               </h1>
 
+<<<<<<< HEAD
               <h2 className="text-xl md:text-2xl font-bold text-[#dc3545] mb-8 leading-snug border-l-4 border-[#dc3545] pl-4">
+=======
+              <h2 className="text-xl md:text-2xl font-bold text-[#880d11] mb-8 leading-snug border-l-4 border-[#880d11] pl-4">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 Dịch Vụ Thu Mua Đồ Cũ Giá Cao, Tận Nơi Tại TP.HCM
               </h2>
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-justify mb-10 space-y-4">
                 <p>
+<<<<<<< HEAD
                   <strong className="text-[#dc3545]">Huy Hoàng</strong> chuyên thu mua đồ cũ giá cao tận nơi tại TP.HCM. Chúng tôi nhận thu mua bàn ghế văn phòng, bàn ghế cafe, sofa, tủ quần áo, giường ngủ, ghế massage… Khảo sát nhanh, báo giá cạnh tranh, thanh toán ngay. Liên hệ 24/7.
                 </p>
                 <div className="bg-gray-50 border border-gray-200 p-5 rounded-2xl mt-4">
                   <p className="text-gray-800 m-0">
                     Huy Hoàng tự hào là đơn vị thu mua đồ cũ giá cao hàng đầu tại TP.HCM (2026). Chúng tôi nhận mua đa dạng đồ nội thất và thiết bị đã qua sử dụng: từ đồ gia đình đến nội thất kinh doanh — báo giá siêu tốc, thanh toán ngay tại chỗ, tháo dỡ và vận chuyển miễn phí.
+=======
+                  <strong className="text-[#880d11]">Vui Hùng</strong> chuyên thu mua đồ cũ giá cao tận nơi tại TP.HCM. Chúng tôi nhận thu mua bàn ghế văn phòng, bàn ghế cafe, sofa, tủ quần áo, giường ngủ, ghế massage… Khảo sát nhanh, báo giá cạnh tranh, thanh toán ngay. Liên hệ 24/7.
+                </p>
+                <div className="bg-gray-50 border border-gray-200 p-5 rounded-2xl mt-4">
+                  <p className="text-gray-800 m-0">
+                    Vui Hùng tự hào là đơn vị thu mua đồ cũ giá cao hàng đầu tại TP.HCM (2026). Chúng tôi nhận mua đa dạng đồ nội thất và thiết bị đã qua sử dụng: từ đồ gia đình đến nội thất kinh doanh — báo giá siêu tốc, thanh toán ngay tại chỗ, tháo dỡ và vận chuyển miễn phí.
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   </p>
                 </div>
               </div>
@@ -66,14 +95,22 @@ export default function ThuMuaDoCuGiaCaoPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6 text-sm md:text-base text-center font-medium">
+<<<<<<< HEAD
                   Huy Hoàng thu mua đa dạng các loại đồ cũ từ gia đình, văn phòng đến cơ sở kinh doanh
+=======
+                  Vui Hùng thu mua đa dạng các loại đồ cũ từ gia đình, văn phòng đến cơ sở kinh doanh
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </div>
 
               {/* SECTION: Danh mục thu mua */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   Dịch Vụ Thu Mua Đồ Cũ Đa Dạng
                 </h3>
 
@@ -85,12 +122,21 @@ export default function ThuMuaDoCuGiaCaoPage() {
                     { title: "Đồ gia dụng & phòng ngủ", desc: "Tủ quần áo, giường ngủ, bàn trang điểm, tủ lạnh, máy lạnh." },
                     { title: "Thiết bị chuyên dụng", desc: "Ghế massage cũ, quầy lễ tân, thiết bị karaoke, nội thất khách sạn, nhà nghỉ." }
                   ].map((item, i) => (
+<<<<<<< HEAD
                     <div key={i} className="flex gap-4 p-5 bg-white border border-gray-200 rounded-2xl hover:border-[#dc3545]/40 hover:shadow-md transition-all group">
                       <div className="w-10 h-10 rounded-full bg-[#dc3545]/10 flex items-center justify-center flex-shrink-0 text-[#dc3545] group-hover:bg-[#dc3545] group-hover:text-white transition-colors">
                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                       </div>
                       <div>
                         <h4 className="font-bold text-[#111827] text-[16px] mb-1 uppercase group-hover:text-[#dc3545] transition-colors">{item.title}</h4>
+=======
+                    <div key={i} className="flex gap-4 p-5 bg-white border border-gray-200 rounded-2xl hover:border-[#880d11]/40 hover:shadow-md transition-all group">
+                      <div className="w-10 h-10 rounded-full bg-[#880d11]/10 flex items-center justify-center flex-shrink-0 text-[#880d11] group-hover:bg-[#880d11] group-hover:text-white transition-colors">
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#111827] text-[16px] mb-1 uppercase group-hover:text-[#880d11] transition-colors">{item.title}</h4>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-gray-600 text-[14px] leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
@@ -108,11 +154,19 @@ export default function ThuMuaDoCuGiaCaoPage() {
                 />
               </div>
 
+<<<<<<< HEAD
               {/* SECTION: Tại sao chọn Huy Hoàng */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Tại Sao Hàng Ngàn Khách Hàng Tin Chọn Huy Hoàng?
+=======
+              {/* SECTION: Tại sao chọn Vui Hùng */}
+              <section className="mb-12">
+                <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Tại Sao Hàng Ngàn Khách Hàng Tin Chọn Vui Hùng?
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -137,8 +191,13 @@ export default function ThuMuaDoCuGiaCaoPage() {
 
               {/* SECTION: Quy trình & Cam kết */}
               <section className="mb-12 bg-[#111827] rounded-3xl p-6 md:p-10 relative overflow-hidden shadow-xl text-white">
+<<<<<<< HEAD
                 <div className="absolute top-0 right-0 w-64 h-64 bg-[#dc3545] opacity-20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#dc3545] opacity-20 rounded-full blur-3xl"></div>
+=======
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#880d11] opacity-20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#880d11] opacity-20 rounded-full blur-3xl"></div>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
 
                 <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
                   {/* Cột Quy Trình */}
@@ -148,6 +207,7 @@ export default function ThuMuaDoCuGiaCaoPage() {
                     </h3>
                     <ul className="space-y-5">
                       <li className="flex gap-4 items-start">
+<<<<<<< HEAD
                         <span className="w-8 h-8 rounded-full bg-[#dc3545] text-white flex items-center justify-center font-bold flex-shrink-0">1</span>
                         <p className="text-gray-300"><strong className="text-white">Liên hệ Huy Hoàng:</strong> Gọi Hotline/Zalo {hotline} gửi hình ảnh nhận tư vấn.</p>
                       </li>
@@ -161,6 +221,21 @@ export default function ThuMuaDoCuGiaCaoPage() {
                       </li>
                       <li className="flex gap-4 items-start">
                         <span className="w-8 h-8 rounded-full bg-[#dc3545] text-white flex items-center justify-center font-bold flex-shrink-0">4</span>
+=======
+                        <span className="w-8 h-8 rounded-full bg-[#880d11] text-white flex items-center justify-center font-bold flex-shrink-0">1</span>
+                        <p className="text-gray-300"><strong className="text-white">Liên hệ Vui Hùng:</strong> Gọi Hotline/Zalo {hotline} gửi hình ảnh nhận tư vấn.</p>
+                      </li>
+                      <li className="flex gap-4 items-start">
+                        <span className="w-8 h-8 rounded-full bg-[#880d11] text-white flex items-center justify-center font-bold flex-shrink-0">2</span>
+                        <p className="text-gray-300"><strong className="text-white">Khảo sát nhanh:</strong> Nhân viên đến tận nơi trong ngày (khu vực nội thành).</p>
+                      </li>
+                      <li className="flex gap-4 items-start">
+                        <span className="w-8 h-8 rounded-full bg-[#880d11] text-white flex items-center justify-center font-bold flex-shrink-0">3</span>
+                        <p className="text-gray-300"><strong className="text-white">Báo giá minh bạch:</strong> Thương lượng trực tiếp, cam kết không ép giá.</p>
+                      </li>
+                      <li className="flex gap-4 items-start">
+                        <span className="w-8 h-8 rounded-full bg-[#880d11] text-white flex items-center justify-center font-bold flex-shrink-0">4</span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <p className="text-gray-300"><strong className="text-white">Thanh toán & Vận chuyển:</strong> Thanh toán ngay, hỗ trợ dọn dẹp và vận chuyển 100% miễn phí.</p>
                       </li>
                     </ul>
@@ -173,6 +248,7 @@ export default function ThuMuaDoCuGiaCaoPage() {
                     </h3>
                     <ul className="space-y-4">
                       <li className="flex gap-3 items-center">
+<<<<<<< HEAD
                         <svg className="w-5 h-5 text-[#ff4d4d]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                         <span className="text-gray-200">Giá cả công khai, tuyệt đối không ép giá.</span>
                       </li>
@@ -186,6 +262,21 @@ export default function ThuMuaDoCuGiaCaoPage() {
                       </li>
                       <li className="flex gap-3 items-start">
                         <svg className="w-5 h-5 text-[#ff4d4d] mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+=======
+                        <svg className="w-5 h-5 text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span className="text-gray-200">Giá cả công khai, tuyệt đối không ép giá.</span>
+                      </li>
+                      <li className="flex gap-3 items-center">
+                        <svg className="w-5 h-5 text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span className="text-gray-200">Nhân viên lịch sự, làm việc nhanh gọn, sạch sẽ.</span>
+                      </li>
+                      <li className="flex gap-3 items-center">
+                        <svg className="w-5 h-5 text-[#ff3d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span className="text-gray-200">Thu mua linh hoạt: Nhận cả lô hàng lớn và đồ lẻ.</span>
+                      </li>
+                      <li className="flex gap-3 items-start">
+                        <svg className="w-5 h-5 text-[#ff3d44] mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                         <span className="text-gray-200">Bảo vệ thông tin khách hàng, xử lý an toàn các vật dụng có nội dung nhạy cảm.</span>
                       </li>
                     </ul>
@@ -197,7 +288,11 @@ export default function ThuMuaDoCuGiaCaoPage() {
               <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-12 shadow-lg group w-full md:w-3/4 mx-auto">
                 <Image
                   src="/thu-mua-do-cu-gia-cao-tan-binh.jpg"
+<<<<<<< HEAD
                   alt="Đội ngũ Huy Hoàng bốc xếp, vận chuyển đồ cũ miễn phí"
+=======
+                  alt="Đội ngũ Vui Hùng bốc xếp, vận chuyển đồ cũ miễn phí"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -206,6 +301,7 @@ export default function ThuMuaDoCuGiaCaoPage() {
               {/* SECTION: Khu vực phục vụ */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-6 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
                   Khu Vực Phục Vụ
                 </h3>
@@ -213,6 +309,15 @@ export default function ThuMuaDoCuGiaCaoPage() {
                   <svg className="w-8 h-8 text-[#dc3545] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                   <p className="text-gray-800 leading-relaxed text-[16px]">
                     <strong className="text-[#dc3545]">Phục vụ toàn TP.HCM và vùng lân cận</strong> — Chúng tôi nhận thu mua tận nơi tại tất cả quận huyện: Quận 1, Quận 3, Quận 4, Quận 5, Quận 7, Bình Thạnh, Phú Nhuận, Tân Bình, Tân Phú, Gò Vấp, Thủ Đức, Hóc Môn, Nhà Bè, Bình Tân...
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+                  Khu Vực Phục Vụ
+                </h3>
+                <div className="bg-[#880d11]/5 border border-[#880d11]/20 p-5 md:p-6 rounded-2xl flex items-start gap-4">
+                  <svg className="w-8 h-8 text-[#880d11] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  <p className="text-gray-800 leading-relaxed text-[16px]">
+                    <strong className="text-[#880d11]">Phục vụ toàn TP.HCM và vùng lân cận</strong> — Chúng tôi nhận thu mua tận nơi tại tất cả quận huyện: Quận 1, Quận 3, Quận 4, Quận 5, Quận 7, Bình Thạnh, Phú Nhuận, Tân Bình, Tân Phú, Gò Vấp, Thủ Đức, Hóc Môn, Nhà Bè, Bình Tân...
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   </p>
                 </div>
               </section>
@@ -220,14 +325,22 @@ export default function ThuMuaDoCuGiaCaoPage() {
               {/* SECTION: FAQ (Accordion Đóng/Mở) */}
               <section className="mb-12">
                 <h3 className="text-2xl md:text-3xl font-black text-[#111827] uppercase tracking-tight mb-8 flex items-center gap-3">
+<<<<<<< HEAD
                   <span className="w-2 h-8 bg-[#dc3545] rounded-full"></span>
+=======
+                  <span className="w-2 h-8 bg-[#880d11] rounded-full"></span>
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   Câu Hỏi Thường Gặp (FAQ)
                 </h3>
 
                 <div className="space-y-4">
                   {[
                     {
+<<<<<<< HEAD
                       q: "Huy Hoàng thu mua những mặt hàng nào?",
+=======
+                      q: "Vui Hùng thu mua những mặt hàng nào?",
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                       a: "Chúng tôi thu mua đa dạng đồ nội thất và thiết bị đã qua sử dụng: bàn ghế, sofa, tủ, giường, kệ, thiết bị điện lạnh, ghế massage, quầy lễ tân, thiết bị karaoke, v.v."
                     },
                     {
@@ -240,13 +353,21 @@ export default function ThuMuaDoCuGiaCaoPage() {
                     },
                     {
                       q: "Có thu mua số lượng ít không?",
+<<<<<<< HEAD
                       a: "Có — Huy Hoàng nhận thu mua cả những món đồ lẻ của hộ gia đình cho đến thu mua số lượng lớn trọn gói của công ty, nhà hàng, khách sạn."
+=======
+                      a: "Có — Vui Hùng nhận thu mua cả những món đồ lẻ của hộ gia đình cho đến thu mua số lượng lớn trọn gói của công ty, nhà hàng, khách sạn."
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                     }
                   ].map((faq, index) => (
                     <details key={index} className="group bg-white border border-gray-200 rounded-2xl overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
                       <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 text-[#111827] font-bold text-[16px] md:text-[17px] hover:bg-gray-50 transition-colors">
                         {faq.q}
+<<<<<<< HEAD
                         <span className="transition duration-300 group-open:-rotate-180 bg-[#dc3545]/10 text-[#dc3545] rounded-full p-1">
+=======
+                        <span className="transition duration-300 group-open:-rotate-180 bg-[#880d11]/10 text-[#880d11] rounded-full p-1">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="h-5 w-5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                           </svg>
@@ -264,7 +385,11 @@ export default function ThuMuaDoCuGiaCaoPage() {
               <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-12 shadow-lg group">
                 <Image
                   src="/thu-mua-do-cu-gia-cao-go-vap.jpg"
+<<<<<<< HEAD
                   alt="Liên hệ Đồ Cũ Huy Hoàng để được thu mua giá cao tận nơi"
+=======
+                  alt="Liên hệ Đồ Cũ Vui Hùng để được thu mua giá cao tận nơi"
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -272,6 +397,7 @@ export default function ThuMuaDoCuGiaCaoPage() {
 
               {/* Nút Gọi Ngay cuối bài */}
               <div className="mt-12 text-center border-t border-gray-100 pt-12">
+<<<<<<< HEAD
                 <p className="text-xl font-bold text-[#111827] mb-6">Bạn muốn thanh lý đồ cũ nhanh? Nhận ngay báo giá cao từ Huy Hoàng!</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#dc3545] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
@@ -279,6 +405,15 @@ export default function ThuMuaDoCuGiaCaoPage() {
                     Gọi Hotline Ngay
                   </a>
                   <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#dc3545] hover:text-[#dc3545] transition-all w-full sm:w-auto justify-center">
+=======
+                <p className="text-xl font-bold text-[#111827] mb-6">Bạn muốn thanh lý đồ cũ nhanh? Nhận ngay báo giá cao từ Vui Hùng!</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <a href={`tel:${hotline}`} className="group inline-flex items-center gap-4 bg-[#111827] text-white px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:bg-[#880d11] transition-all shadow-[0_10px_20px_rgba(17,24,39,0.2)] hover:-translate-y-1 w-full sm:w-auto justify-center">
+                    <span className="bg-white/20 p-2 rounded-lg group-hover:scale-110 transition-transform">📞</span>
+                    Gọi Hotline Ngay
+                  </a>
+                  <a href={`https://zalo.me/${hotline.replace(/\./g, '')}`} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-4 bg-white border-2 border-gray-200 text-[#111827] px-10 py-4 rounded-2xl font-black uppercase tracking-widest text-[16px] hover:border-[#880d11] hover:text-[#880d11] transition-all w-full sm:w-auto justify-center">
+>>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                     Chat Zalo Báo Giá
                   </a>
                 </div>
