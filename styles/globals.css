@@ -1,0 +1,177 @@
+/* Đặt dòng này ở trên cùng của file */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ép toàn bộ web nhận font Be Vietnam Pro làm mặc định */
+@layer base {
+
+  html,
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@theme {
+  /* Dải màu Đỏ Thẫm chuyên nghiệp */
+  --color-brand-50: #fff1f1;
+  /* Đỏ cực nhạt cho background nhẹ */
+  --color-brand-100: #ffe1e1;
+  --color-brand-200: #ffc7c7;
+  --color-brand-300: #ffa0a0;
+  --color-brand-400: #ff6969;
+  --color-brand-500: #f83b3b;
+  /* Đỏ tươi để làm điểm nhấn nhỏ */
+  --color-brand-600: #dc3545;
+  /* MÀU CHỦ ĐẠO CỦA THƯ */
+  --color-brand-700: #b02a37;
+  --color-brand-800: #a10000;
+  --color-brand-900: #8b0000;
+  --color-brand-950: #5c0000;
+  /* Đỏ đen cho chữ hoặc footer đậm */
+}
+
+/* Global font application - Apply Be Vietnam Pro to entire website */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif !important;
+  line-height: 1.6;
+  /* Better readability */
+}
+
+/* Custom styles for all pages - Optimized spacing */
+h1,
+h2 {
+  color: #dc3545;
+  /* New brand-600 */
+  padding: 0.5rem 0;
+  /* Reduced padding for tighter spacing */
+  font-weight: 700;
+  /* Bold for emphasis */
+  margin-bottom: 0.5rem;
+  /* Add bottom margin for separation */
+}
+
+h3 {
+  color: #dc3545;
+}
+
+h1 {
+  font-size: 2.25rem;
+  /* text-4xl equivalent */
+  line-height: 2.5rem;
+
+}
+
+h2 {
+  font-size: 1.875rem;
+  /* text-3xl equivalent */
+  line-height: 2.25rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    /* text-5xl on md+ */
+    line-height: 1;
+    padding: 0.1rem 0;
+    /* Slightly more on desktop */
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    /* text-4xl on md+ */
+    line-height: 2.5rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* General spacing optimizations */
+section {
+  margin-bottom: 2rem;
+  /* Reduce section spacing */
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 3rem;
+    /* Slightly more on desktop */
+  }
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1rem;
+  /* Consistent paragraph spacing */
+}
+
+/* List spacing */
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* --- CẤU HÌNH LAYOUT CHUẨN (KHÔNG PHỤ THUỘC THƯ VIỆN) --- */
+
+.custom-container {
+  width: 100%;
+  max-width: 1200px;
+  /* Độ rộng tối đa của website */
+  margin: 0 auto;
+  /* Tự động căn giữa màn hình */
+  padding-left: 20px;
+  /* Lề trái để không sát viền đt */
+  padding-right: 20px;
+  /* Lề phải */
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-col-main {
+  width: 100%;
+  /* Mặc định trên điện thoại chiếm 100% */
+}
+
+.custom-col-sidebar {
+  width: 100%;
+  margin-top: 30px;
+  /* Cắt lớp với bài viết trên điện thoại */
+}
+
+/* Áp dụng cho màn hình máy tính (từ 768px trở lên) */
+@media (min-width: 768px) {
+  .custom-col-main {
+    width: 75%;
+    /* Cột trái chiếm 75% */
+    padding-right: 40px;
+    /* Đẩy nội dung cách xa Sidebar ra một chút */
+  }
+
+  .custom-col-sidebar {
+    width: 25%;
+    /* Sidebar chiếm 25% */
+    margin-top: 0;
+  }
+}
+
+/* Fix CSS cho hình ảnh tự động co giãn không bị vỡ */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
