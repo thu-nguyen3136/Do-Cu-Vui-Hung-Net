@@ -9,11 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",
-<<<<<<< HEAD
     "next": "^16.2.1",
-=======
-    "next": "14.2.3",
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

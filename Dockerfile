@@ -19,10 +19,15 @@ RUN npm run build
 
 # Stage 4: Production runner (Nginx for static export)
 FROM nginx:alpine AS runner
-RUN apk add --no-cache tzdata && \
+RUN apk add --no-cache tzdata busybox-extras && \
     ln -snf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
     echo "Asia/Ho_Chi_Minh" > /etc/timezone
 ENV TZ=Asia/Ho_Chi_Minh
+
+# Setup CGI for downloading sorted logs
+RUN mkdir -p /app/www/cgi-bin
+COPY download-log.sh /app/www/cgi-bin/download.sh
+RUN chmod +x /app/www/cgi-bin/download.sh
 # Remove default nginx static assets
 RUN rm -rf /usr/share/nginx/html/*
 
@@ -36,4 +41,5 @@ COPY nginx-log-format.conf /etc/nginx/conf.d/00-log-format.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3003
-CMD ["nginx", "-g", "daemon off;"]
+# Run busybox httpd on port 8080 and then start nginx
+CMD busybox-extras httpd -p 127.0.0.1:8080 -h /app/www && nginx -g "daemon off;"
