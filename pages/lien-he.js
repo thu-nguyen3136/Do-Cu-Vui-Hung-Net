@@ -5,30 +5,17 @@ export default function LienHe() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans pb-8">
       <Head>
-<<<<<<< HEAD
         <title>Liên Hệ | Đồ Cũ Huy Hoàng</title>
         <meta name="description" content="Liên hệ Đồ Cũ Huy Hoàng - Thu mua đồ cũ, thanh lý nhà hàng, đồ gỗ tại TP.HCM. Hotline 24/7: 0909.549.237" />
-=======
-        <title>Liên Hệ | Đồ Cũ Vui Hùng</title>
-        <meta name="description" content="Liên hệ Đồ Cũ Vui Hùng - Thu mua đồ cũ, thanh lý nhà hàng, đồ gỗ tại TP.HCM. Hotline 24/7: 0979.095.076" />
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
       </Head>
 
       {/* Hero Section (Nhỏ gọn hơn) */}
       <div className="bg-[#111827] relative overflow-hidden py-16 md:py-20">
-<<<<<<< HEAD
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#b02a37]/20 to-transparent opacity-60"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#b02a37]/20 via-transparent to-transparent blur-3xl pointer-events-none"></div>
         <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-black text-white uppercase mb-4 tracking-wider drop-shadow-lg">
             Liên Hệ <span className="text-[#dc3545]">Huy Hoàng</span>
-=======
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#710a0d]/20 to-transparent opacity-60"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#710a0d]/20 via-transparent to-transparent blur-3xl pointer-events-none"></div>
-        <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10 text-center">
-          <h1 className="text-3xl md:text-5xl font-black text-white uppercase mb-4 tracking-wider drop-shadow-lg">
-            Liên Hệ <span className="text-[#880d11]">Vui Hùng</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
           </h1>
           <p className="text-gray-300 text-sm md:text-base max-w-2xl mx-auto font-medium leading-relaxed">
             Hệ thống cửa hàng thu mua đồ cũ uy tín hàng đầu TP.HCM. Chúng tôi luôn sẵn sàng hỗ trợ khảo sát và tiến hành thu dọn 24/7 mọi nơi.
@@ -43,82 +30,47 @@ export default function LienHe() {
 
           {/* Cột Trái: Hotline, Zalo, Email */}
           <div className="flex flex-col h-full bg-[#111827] rounded-3xl p-6 md:p-8 shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-gray-800 text-white relative overflow-hidden group">
-<<<<<<< HEAD
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#dc3545]/20 blur-2xl rounded-full transition-transform duration-700 group-hover:scale-125"></div>
 
             <h3 className="text-xl md:text-2xl font-black mb-6 md:mb-8 uppercase text-gray-100 flex items-center gap-3 relative z-10">
               <span className="w-1.5 h-6 bg-[#dc3545] rounded-full inline-block"></span>
-=======
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#880d11]/20 blur-2xl rounded-full transition-transform duration-700 group-hover:scale-125"></div>
-
-            <h3 className="text-xl md:text-2xl font-black mb-6 md:mb-8 uppercase text-gray-100 flex items-center gap-3 relative z-10">
-              <span className="w-1.5 h-6 bg-[#880d11] rounded-full inline-block"></span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               Tư Vấn Trực Tiếp
             </h3>
 
             <div className="relative z-10 flex flex-col gap-4 md:gap-5 flex-grow justify-center">
 
               {/* Điện Thoại */}
-<<<<<<< HEAD
               <a href="tel:0909549237" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#dc3545]/50 hover:bg-white/10 transition-all group/btn">
                 <div className="bg-[#dc3545] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#dc3545] opacity-50"></span>
-=======
-              <a href="tel:0979095076" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
-                <div className="bg-[#880d11] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#880d11] opacity-50"></span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   <span className="text-lg md:text-xl relative z-10">📞</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Hotline Nhận Báo Giá</span>
-<<<<<<< HEAD
                   <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#dc3545] transition-colors drop-shadow-md">0909.549.237</span>
                   <span className="text-gray-300 text-[12px] md:text-[13px] mt-0.5 font-medium italic">(Mr. Huy Hoàng)</span>
-=======
-                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#880d11] transition-colors drop-shadow-md">0979.095.076</span>
-                  <span className="text-gray-300 text-[12px] md:text-[13px] mt-0.5 font-medium italic">(Mr. Vui Hùng)</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </a>
 
               {/* Zalo */}
-<<<<<<< HEAD
               <a href="https://zalo.me/0909549237" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#0068ff]/50 hover:bg-[#0068ff]/10 transition-all group/btn">
-=======
-              <a href="https://zalo.me/0979095076" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#0068ff]/50 hover:bg-[#0068ff]/10 transition-all group/btn">
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 <div className="bg-[#0068ff] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform shadow-[0_0_15px_rgba(0,104,255,0.4)]">
                   <span className="text-white font-black text-[12px] md:text-[14px]">Zalo</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Gửi Hình Ảnh Qua Zalo</span>
-<<<<<<< HEAD
                   <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#0068ff] transition-colors drop-shadow-md">0909.549.237</span>
-=======
-                  <span className="text-white font-black text-xl md:text-2xl tracking-wider group-hover/btn:text-[#0068ff] transition-colors drop-shadow-md">0979.095.076</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </a>
 
               {/* Email */}
-<<<<<<< HEAD
               <a href="mailto:thumuaxacnhahuyhoang@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#dc3545]/50 hover:bg-white/10 transition-all group/btn">
                 <div className="bg-[#b02a37] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform">
-=======
-              <a href="mailto:docuvuihung@gmail.com" className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#880d11]/50 hover:bg-white/10 transition-all group/btn">
-                <div className="bg-[#710a0d] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 group-hover/btn:scale-105 transition-transform">
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                   <span className="text-lg md:text-xl">✉️</span>
                 </div>
                 <div className="flex flex-col items-start overflow-hidden">
                   <span className="text-gray-400 text-[11px] md:text-[12px] uppercase font-bold tracking-widest mb-0.5 shadow-sm">Địa Chỉ Email</span>
-<<<<<<< HEAD
                   <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#dc3545] transition-colors truncate max-w-full">thumuaxacnhahuyhoang@gmail.com</span>
-=======
-                  <span className="text-white font-medium text-[13px] md:text-[15px] group-hover/btn:text-[#880d11] transition-colors truncate max-w-full">docuvuihung@gmail.com</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </a>
 
@@ -128,48 +80,28 @@ export default function LienHe() {
           {/* Cột Phải: Hệ Thống Chi Nhánh */}
           <div className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_15px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col h-full justify-center">
             <h3 className="text-xl md:text-2xl font-black mb-6 md:mb-8 uppercase text-gray-800 flex items-center gap-3">
-<<<<<<< HEAD
               <span className="w-1.5 h-6 bg-[#b02a37] rounded-full inline-block"></span>
-=======
-              <span className="w-1.5 h-6 bg-[#710a0d] rounded-full inline-block"></span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               Hệ Thống Chi Nhánh
             </h3>
 
             <ul className="flex flex-col flex-grow justify-center">
               <li className="flex items-start gap-3 md:gap-4 pb-4 md:pb-5 border-b border-gray-100 mb-4 md:mb-5 last:border-0 last:pb-0 last:mb-0">
-<<<<<<< HEAD
                 <div className="text-[#b02a37] text-lg bg-orange-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">📍</div>
-=======
-                <div className="text-[#710a0d] text-lg bg-orange-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">📍</div>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 <div className="leading-relaxed">
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 1
                   </strong>
-<<<<<<< HEAD
                   <span className="text-gray-600 text-[13px] md:text-[14px]">88 Phạm Văn Bạch, Phường 15, Quận Tân Bình, TP.HCM</span>
-=======
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">305 Tân Sơn, P.15, Tân Bình, TP.HCM</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </li>
 
               <li className="flex items-start gap-3 md:gap-4 pb-4 md:pb-5 border-b border-gray-100 mb-4 md:mb-5 last:border-0 last:pb-0 last:mb-0">
-<<<<<<< HEAD
                 <div className="text-[#b02a37] text-lg bg-orange-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">🏪</div>
-=======
-                <div className="text-gray-400 text-lg bg-gray-50 w-10 h-10 flex items-center justify-center rounded-xl flex-shrink-0">🏪</div>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 <div className="leading-relaxed">
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 2
                   </strong>
-<<<<<<< HEAD
                   <span className="text-gray-600 text-[13px] md:text-[14px]">21/18B Nơ Trang Long, Phường 13, Quận Bình Thạnh, TP.HCM</span>
-=======
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">669 Kha Vạn Cân, Thủ Đức, TP.HCM</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </li>
 
@@ -179,11 +111,7 @@ export default function LienHe() {
                   <strong className="text-gray-800 flex items-center gap-2 text-[14px] md:text-[15px] mb-1 uppercase font-black tracking-wide">
                     Chi Nhánh 3
                   </strong>
-<<<<<<< HEAD
                   <span className="text-gray-600 text-[13px] md:text-[14px]">10 Bình Long, Phường Phú Thạnh, Quận Bình Tân, TP.HCM</span>
-=======
-                  <span className="text-gray-600 text-[13px] md:text-[14px]">332a Huỳnh Tấn Phát, Q.7, TP.HCM</span>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </div>
               </li>
             </ul>
@@ -195,7 +123,6 @@ export default function LienHe() {
         <div className="mt-10 md:mt-12 bg-white rounded-3xl p-4 shadow-[0_15px_30px_rgba(0,0,0,0.05)] border border-gray-100 relative">
           <h3 className="text-xl md:text-2xl font-black mb-6 md:mb-8 uppercase text-gray-800 text-center relative max-w-max mx-auto px-4 mt-4">
             Bản Đồ Cửa Hàng
-<<<<<<< HEAD
             <div className="absolute -bottom-2 lg:-bottom-3 left-1/2 -translate-x-1/2 w-1/3 h-[3px] bg-gradient-to-r from-[#b02a37] to-[#dc3545] rounded-full"></div>
           </h3>
           <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden bg-gray-100 shadow-inner">
@@ -203,15 +130,6 @@ export default function LienHe() {
               src="https://maps.google.com/maps?q=88%20Phạm%20Văn%20Bạch,%20Phường%2015,%20Tân%20Bình,%20TP.HCM&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
-=======
-            <div className="absolute -bottom-2 lg:-bottom-3 left-1/2 -translate-x-1/2 w-1/3 h-[3px] bg-gradient-to-r from-[#710a0d] to-[#880d11] rounded-full"></div>
-          </h3>
-          <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden bg-gray-100 shadow-inner">
-            <iframe
-              src="https://www.google.com/maps?q=305+Tân+Sơn,+Phường+15,+Tân+Bình,+TP.HCM&output=embed"
-              width="100%"
-              height="400"
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

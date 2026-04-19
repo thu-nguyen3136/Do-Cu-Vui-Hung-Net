@@ -36,7 +36,6 @@ export default function Header() {
             {/* Đã tăng w-40 lên w-52 và h-10 lên h-12 cho mobile để khung rộng hơn */}
             <div className="relative w-70 h-12 md:w-64 md:h-16">
               <Image
-<<<<<<< HEAD
                 src="/logo-do-cu-huy-hoang.jpg"
                 alt="Logo Đồ Cũ Huy Hoàng"
                 fill
@@ -44,13 +43,6 @@ export default function Header() {
                 priority
                 unoptimized={true}
                 quality={100}
-=======
-                src="/logo-dai-do-cu-vui-hung.png"
-                alt="Logo Đồ Cũ Vui Hùng"
-                fill
-                className="object-contain object-center"
-                priority
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
               />
             </div>
           </Link>
@@ -77,7 +69,6 @@ export default function Header() {
 
               <div className="absolute left-0 top-[100%] w-[260px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-2">
                 <ul className="bg-white border-t-4 border-brand-600 shadow-xl rounded-b-lg overflow-hidden border-x border-b border-gray-100">
-<<<<<<< HEAD
                   <li><Link href="/thu-mua-noi-that-khach-san" className={subMenuLinkClass}>Thu Mua Nội Thất Khách Sạn</Link></li>
                   <li><Link href="/thanh-ly-quan-ca-phe" className={subMenuLinkClass}>Thanh Lý Quán Cafe</Link></li>
                   <li><Link href="/thanh-ly-quan-an" className={subMenuLinkClass}>Thanh Lý Quán Ăn</Link></li>
@@ -90,39 +81,6 @@ export default function Header() {
                 </ul>
               </div>
             </li>
-=======
-                  <li><Link href="/thu-mua-tu-dong-cu" className={subMenuLinkClass}>Thu mua tủ đông cũ</Link></li>
-                  <li><Link href="/thu-mua-tu-mat-cu" className={subMenuLinkClass}>Thu mua tủ mát cũ</Link></li>
-                  <li><Link href="/thu-mua-do-inox-cu" className={subMenuLinkClass}>Thu mua đồ inox cũ</Link></li>
-                  <li><Link href="/thu-mua-do-cu-gia-cao-tai-tphcm" className={subMenuLinkClass}>Thu mua đồ cũ giá cao tại tphcm</Link></li>
-                  <li><Link href="/thanh-ly-nha-hang" className={subMenuLinkClass}>Thanh lý nhà hàng</Link></li>
-                  <li><Link href="/thanh-ly-quan-an" className={subMenuLinkClass}>Thanh lý quán ăn</Link></li>
-                  <li><Link href="/thanh-ly-quan-nhau" className={subMenuLinkClass}>Thanh lý quán nhậu</Link></li>
-                  <li><Link href="/thanh-ly-quan-ca-phe" className={subMenuLinkClass}> Thanh lý quán cafe</Link></li>
-                  <li><Link href="/thanh-ly-nha-nghi-khach-san" className={subMenuLinkClass}>Thanh lý nhà nghỉ, khách sạn</Link></li>
-                </ul>
-              </div>
-            </li>
-
-            {/* Submenu: Thu Mua Đồ Cũ */}
-            <li className="relative group h-full cursor-pointer flex items-center">
-              <div className={navLinkClass}>
-                Thu Mua Đồ Gỗ Cũ
-                <svg className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-                </svg>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-600 transition-all group-hover:w-full"></span>
-              </div>
-              <div className="absolute left-0 top-[100%] w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pt-2">
-                <ul className="bg-white border-t-4 border-brand-600 shadow-xl rounded-b-lg overflow-hidden border-x border-b border-gray-100">
-                  <li><Link href="/thu-mua-tu-tho-go-cu" className={subMenuLinkClass}>Thu mua tủ thờ gỗ cũ</Link></li>
-                  <li><Link href="/thu-mua-ban-ghe-go-cu" className={subMenuLinkClass}>Thu mua bàn ghế gỗ cũ</Link></li>
-                  <li><Link href="/thu-mua-do-go-cu" className={subMenuLinkClass}>Thu mua đồ gỗ cũ</Link></li>
-                </ul>
-              </div>
-            </li>
-
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
             <li className="h-full flex items-center">
               <Link href="/tin-tuc" className={navLinkClass}>Tin Tức</Link>
             </li>
@@ -155,7 +113,6 @@ export default function Header() {
 
                 <li className="py-2 px-3 text-brand-600 text-[12px] font-black border-b border-gray-50 bg-gray-50/50">Thu Mua Đồ Cũ</li>
                 <ul className="pl-4">
-<<<<<<< HEAD
                   <li><Link href="/thu-mua-noi-that-khach-san" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu Mua Nội Thất Khách Sạn</Link></li>
                   <li><Link href="/thanh-ly-quan-ca-phe" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh Lý Quán Cafe</Link></li>
                   <li><Link href="/thanh-ly-quan-an" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh Lý Quán Ăn</Link></li>
@@ -165,24 +122,6 @@ export default function Header() {
                   <li><Link href="/thanh-ly-quan-tra-sua" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh Lý Quán Trà Sữa</Link></li>
                   <li><Link href="/thu-mua-tu-dong-tu-mat" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu Mua Tủ Đông, Tủ Mát</Link></li>
                   <li><Link href="/thu-mua-do-inox-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu Mua Đồ Inox Cũ</Link></li>
-=======
-                  <li><Link href="/thu-mua-tu-dong-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua tủ đông cũ</Link></li>
-                  <li><Link href="/thu-mua-tu-mat-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua tủ mát cũ</Link></li>
-                  <li><Link href="/thu-mua-do-inox-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua đồ inox cũ</Link></li>
-                  <li><Link href="/thu-mua-do-cu-gia-cao-tai-tphcm" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua đồ cũ giá cao tại tphcm</Link></li>
-                  <li><Link href="/thanh-ly-nha-hang" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh lý nhà hàng</Link></li>
-                  <li><Link href="/thanh-ly-quan-an" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh lý quán ăn</Link></li>
-                  <li><Link href="/thanh-ly-quan-nhau" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh lý quán nhậu</Link></li>
-                  <li><Link href="/thanh-ly-quan-ca-phe" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh lý quán cafe</Link></li>
-                  <li><Link href="/thanh-ly-nha-nghi-khach-san" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thanh lý nhà nghỉ, khách sạn</Link></li>
-                </ul>
-
-                <li className="py-2 px-3 text-brand-600 text-[12px] font-black border-b border-gray-50 bg-gray-50/50">Thu Mua Đồ Gỗ Cũ</li>
-                <ul className="pl-4">
-                  <li><Link href="/thu-mua-tu-tho-go-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua tủ thờ gỗ cũ</Link></li>
-                  <li><Link href="/thu-mua-ban-ghe-go-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua bàn ghế gỗ cũ</Link></li>
-                  <li><Link href="/thu-mua-do-go-cu" className="block py-0.5 px-3 text-[13px] normal-case font-semibold border-b border-gray-50" onClick={() => setIsOpen(false)}>Thu mua đồ gỗ cũ</Link></li>
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 </ul>
 
                 <li><Link href="/tin-tuc" className="block py-2 px-3 border-b border-gray-50" onClick={() => setIsOpen(false)}>Tin Tức</Link></li>
@@ -192,11 +131,7 @@ export default function Header() {
 
             {/* Button call mobile */}
             <div className="p-4 bg-gray-50">
-<<<<<<< HEAD
               <a href="tel:0909549237" className="block w-full bg-brand-600 text-white text-center py-4 rounded-xl font-bold shadow-lg hover:bg-brand-700 transition">
-=======
-              <a href="tel:0988257479" className="block w-full bg-brand-600 text-white text-center py-4 rounded-xl font-bold shadow-lg hover:bg-brand-700 transition">
->>>>>>> eae833ececbb6564c0cdcdd5313023d18a7c1615
                 GỌI BÁO GIÁ NGAY
               </a>
             </div>
