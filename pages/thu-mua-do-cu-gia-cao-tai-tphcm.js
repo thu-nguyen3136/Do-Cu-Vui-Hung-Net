@@ -10,12 +10,12 @@ export default function ThuMuaDoCuGiaCaoPage() {
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
-        <title>Thu Mua Đồ Cũ Giá Cao Tận Nơi Tại TPHCM | Đồ Cũ Huy Hoàng</title>
-        <meta name="description" content="Huy Hoàng chuyên thu mua đồ cũ giá cao tận nơi tại TPHCM (2026). Thu mua bàn ghế văn phòng, đồ nhà hàng, quán cafe, sofa, đồ gia dụng. Báo giá nhanh, thanh toán ngay." />
-        <meta name="keywords" content="thu mua đồ cũ, thu mua đồ cũ giá cao, thu mua đồ cũ tphcm, thanh lý đồ cũ, đồ cũ Huy Hoàng, thu mua đồ văn phòng cũ, thu mua nội thất cũ" />
-        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-cu-gia-cao-tai-tphcm" />
-        <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Cũ Giá Cao, Tận Nơi Tại TP.HCM - Huy Hoàng" />
-        <meta property="og:description" content="Bạn cần thanh lý đồ cũ? Huy Hoàng thu mua trọn gói nội thất gia đình, văn phòng, quán ăn, cafe giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
+        <title>Thu Mua Đồ Cũ Giá Cao Tận Nơi Tại TPHCM | Đồ Cũ Vui Hùng</title>
+        <meta name="description" content="Vui Hùng chuyên thu mua đồ cũ giá cao tận nơi tại TPHCM (2026). Thu mua bàn ghế văn phòng, đồ nhà hàng, quán cafe, sofa, đồ gia dụng. Báo giá nhanh, thanh toán ngay." />
+        <meta name="keywords" content="thu mua đồ cũ, thu mua đồ cũ giá cao, thu mua đồ cũ tphcm, thanh lý đồ cũ, đồ cũ vui hùng, thu mua đồ văn phòng cũ, thu mua nội thất cũ" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-do-cu-gia-cao-tphcm" />
+        <meta property="og:title" content="Dịch Vụ Thu Mua Đồ Cũ Giá Cao, Tận Nơi Tại TP.HCM - Vui Hùng" />
+        <meta property="og:description" content="Bạn cần thanh lý đồ cũ? Vui Hùng thu mua trọn gói nội thất gia đình, văn phòng, quán ăn, cafe giá cao nhất thị trường. Thanh toán 1 lần, dọn dẹp sạch sẽ." />
         <meta property="og:type" content="article" />
       </Head>
 

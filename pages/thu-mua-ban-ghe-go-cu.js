@@ -10,10 +10,10 @@ export default function ThuMuaBanGheGoPage() {
     <div className="min-h-screen bg-gray-50 font-sans antialiased text-gray-800 flex flex-col">
       <Head>
         {/* --- SEO META TAGS --- */}
-        <title>Thu Mua Bàn Ghế Gỗ Cũ Giá Cao TPHCM | Đồ Cũ Huy Hoàng</title>
-        <meta name="description" content="Đồ Cũ Huy Hoàng chuyên thu mua bàn ghế gỗ cũ, salon gỗ, bàn ghế nhà hàng, quán cafe, văn phòng giá cao nhất thị trường TPHCM. Báo giá Zalo siêu tốc 5 phút." />
-        <meta name="keywords" content="thu mua bàn ghế gỗ, thu mua salon gỗ, thu mua bàn ghế cũ, thanh lý bàn ghế gỗ, đồ cũ Huy Hoàng, thu mua bàn ghế cafe" />
-        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-ban-ghe-go-cu" />
+        <title>Thu Mua Bàn Ghế Gỗ Cũ Giá Cao TPHCM | Đồ Cũ Vui Hùng</title>
+        <meta name="description" content="Đồ Cũ Vui Hùng chuyên thu mua bàn ghế gỗ cũ, salon gỗ, bàn ghế nhà hàng, quán cafe, văn phòng giá cao nhất thị trường TPHCM. Báo giá Zalo siêu tốc 5 phút." />
+        <meta name="keywords" content="thu mua bàn ghế gỗ, thu mua salon gỗ, thu mua bàn ghế cũ, thanh lý bàn ghế gỗ, đồ cũ vui hùng, thu mua bàn ghế cafe" />
+        <link rel="canonical" href="https://thumuadocugiacao.net/thu-mua-ban-ghe-go" />
         <meta property="og:title" content="Dịch Vụ Thu Mua Bàn Ghế Gỗ Cũ Giá Cao Tận Nơi Tại TPHCM" />
         <meta property="og:description" content="Cần thanh lý bàn ghế gỗ cũ, salon phòng khách, bàn ghế quán cafe? Huy Hoàng thu mua mọi số lượng, giá cao nhất, miễn phí tháo dỡ vận chuyển." />
         <meta property="og:type" content="article" />
